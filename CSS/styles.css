@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Prompt', sans-serif;
     color: white;
     height: 100vh;
 }
@@ -12,11 +12,11 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url("https://vidyasheela.com/web-contents/website-components/Coming-Soon-Pages/website-under-construction-page-template-html/construction.jpg") #08093cb3;
+    background: url("../ASSETS/fundo.png") #08093cb3;
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
-    filter: blur(10px);
+    filter: blur(5px);
     z-index: -1;
 }
 
@@ -29,7 +29,8 @@ body {
 }
 
 .top p {
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 18px;
     width: 160px;
     text-align: center;
 }
@@ -39,13 +40,6 @@ body {
     align-items: center;
     font-weight: 900;
     margin: 10px;
-}
-
-hr {
-    width: 100px;
-    color: white;
-    border-radius: 5px;
-    margin: 0 15px
 }
 
 h1 {
@@ -90,7 +84,7 @@ i {
     border-radius: 5px;
     display: flex;
     justify-content: flex-end;
-    transition: all 0.06 ease-in;
+    transition: all 5 ease-in;
 }
 
 .progress span {
@@ -99,6 +93,12 @@ i {
     top: 13px;
     left: 25px;
     font-weight: 800;
+    transition: all 5 ease-in;
+}
+
+.fa-linkedin-in:hover,
+.fa-instagram:hover {
+    color: #cbb26a
 }
 
 @media screen and (max-width:640px) {
