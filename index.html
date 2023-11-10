@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital" rel="stylesheet">
 
-
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/styles.css">
     <title>Website Under Construction HTML Page</title>
 </head>
@@ -18,21 +18,49 @@
 <body>
     <div class="background"></div>
     <div class="container">
-        <div class="top">
-            <img src="./ASSETS/logo.png" alt="" srcset="">
-            <p>GLOBALMIGHTY</p>
-        </div>
-        <h1>EM DESENVOLVIMENTO</h1>
+        <nav>
+            <div class="top">
+                <img class="logo" src="./ASSETS/logo.png" alt="logo">
+                <p>GLOBALMIGHTY</p>
+            </div>
+        </nav>
+
+        <section class="title">
+            <h1>EM DESENVOLVIMENTO</h1>
+        </section>
+
         <h3>PROGRESSO</h3>
         <div class="progress-wrapper">
-            <div class="progress"><span>0%</span></div>
+            <div class="progressText"><span>0%</span></div>
         </div>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/company/globalmighty-development" target="_blank"><i
-                    class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/globalmighty/" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
+
+        <section>
+            <div class="social-text">
+                Siga-nos para mais novidades!
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/company/globalmighty-development" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/globalmighty/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
     </div>
+
+    <footer>
+        <div class="container-fluid Footer text-center">
+            <div class="container">
+                <div class="Footer mt-3 mb-3 py-3">
+                    <span id="copy"></span>&nbsp;
+                    <span>| Desenvolvido por
+                        <img class="footer-icon" src="./ASSETS/logo.png" alt="logo">
+                        <a href="https://www.linkedin.com/company/globalmighty-development" target="_blank" class="linkedin">
+                            GlobalMighty Development
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://kit.fontawesome.com/667417c7ec.js" crossorigin="anonymous"></script>
     <script src="./JS/main.js"></script>

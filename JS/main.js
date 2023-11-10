@@ -1,5 +1,5 @@
-const progress = document.querySelector('.progress')
-const percentage = document.querySelector('.progress span')
+const progress = document.querySelector('.progressText')
+const percentage = document.querySelector('.progressText span')
 
 let per = 0;
 function progressLoad(){
@@ -13,7 +13,10 @@ function progressLoad(){
 
     }
     per++
-
 }
 
-setInterval(progressLoad,90)
+setInterval(progressLoad,60)
+
+const data = new Date();
+let ano = data.getFullYear();
+document.getElementById("copy").innerHTML = `&copy; ` + ano;
