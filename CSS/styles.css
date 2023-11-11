@@ -115,6 +115,7 @@ i {
     transition: all 5 ease-in;
 }
 
+.social-icons a:hover,
 .fa-linkedin-in:hover,
 .fa-instagram:hover {
     color: #cbb26a
