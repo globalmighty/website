@@ -10,60 +10,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital" rel="stylesheet">
 
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link href="./ASSETS/fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/styles.css">
     <title>GlobalMighty - Em Desenvolvimento</title>
 </head>
 
 <body>
-    <div class="background"></div>
-    <div class="container">
-        <nav>
-            <div class="top">
-                <img class="logo" src="./ASSETS/logo.png" alt="logo">
-                <p>GLOBALMIGHTY</p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-ghost ps-5 pe-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" onclick="changeTema()">
+                <img class="logo" src="./ASSETS/logo.png" alt="GlobalMighty">
+            </a>
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home" aria-current="page" onclick="getPoint('#home')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="sobreNos" onclick="getPoint('#sobreNos')">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="servicos" onclick="getPoint('#servicos')">Services +</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="testemunhos" onclick="getPoint('#testemunhos')">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="faq" onclick="getPoint('#faq')">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="contacto" onclick="getPoint('#contacto')">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light procurar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-light tema" onclick="changeTema()">
+                            <i class="fa-solid fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
             </div>
-        </nav>
-
-        <section class="title">
-            <h1>EM DESENVOLVIMENTO</h1>
-        </section>
-
-        <h3>PROGRESSO</h3>
-        <div class="progress-wrapper">
-            <div class="progressText"><span>0%</span></div>
         </div>
+    </nav>
 
-        <section>
-            <div class="social-text">
-                Siga-nos para mais novidades!
-            </div>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/company/globalmighty-development" target="_blank"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/globalmighty/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <div class="container-fluid Footer text-center">
-            <div class="container">
-                <div class="Footer mt-3 mb-3 py-3">
-                    <span id="copy"></span>&nbsp;
-                    <span>| Desenvolvido por
-                        <img class="footer-icon" src="./ASSETS/logo.png" alt="logo">
-                        <a href="https://www.linkedin.com/company/globalmighty-development" target="_blank" class="linkedin">
-                            GlobalMighty Development
-                        </a>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://kit.fontawesome.com/667417c7ec.js" crossorigin="anonymous"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
     <script src="./JS/main.js"></script>
+    <script src="./JS/tema.js"></script>
 </body>
 
 </html>

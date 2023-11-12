@@ -1,22 +1,16 @@
-const progress = document.querySelector('.progressText')
-const percentage = document.querySelector('.progressText span')
+// const data = new Date();
+// let ano = data.getFullYear();
+// document.getElementById("copy").innerHTML = `&copy; ` + ano;
 
-let per = 0;
-function progressLoad(){
-    if(per>=50){
-        progress.style.width = `50%`;
-        percentage.innerHTML = "50%"
-
-    }else{
-        progress.style.width = `${per}%`;
-        percentage.innerHTML = `${per}%`;
-
+let lastPage = 'home'
+function getPoint(id) {
+    if (id.slice(1) != lastPage) {
+        document.getElementById(id.slice(1)).style.color = '#B8E4FE'
+        document.getElementById(lastPage).style.color = '#ffffff'
+        lastPage = id.slice(1)
     }
-    per++
+    document.querySelector(id).scrollIntoView({
+        behavior: 'smooth'
+    });
+
 }
-
-setInterval(progressLoad,60)
-
-const data = new Date();
-let ano = data.getFullYear();
-document.getElementById("copy").innerHTML = `&copy; ` + ano;
