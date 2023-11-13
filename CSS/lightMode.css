@@ -1,0 +1,26 @@
+:root {
+    /* lightMode */
+    --lightMode-background-color: #ffff;
+    --lightMode-color: #000;
+}
+
+
+body.light {
+    background-color: var(--lightMode-background-color);
+    color: var(--lightMode-color);
+}
+
+.light .nav-link {
+    color: #193055 !important;
+}
+
+.light .nav-link:hover {
+    color: #193055 !important;
+}
+
+.light #Home {
+    color: #193055;
+}
+.light .toggler-icon {
+    background: #193055;
+}

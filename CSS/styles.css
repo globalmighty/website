@@ -1,5 +1,10 @@
-body {
-    background-color: #193055;
+.showned {
+    display: inline;
+    animation: 0.5s forwards show-right;
+}
+
+.hiden {
+    display: none;
 }
 
 .navbar-brand .logo {
@@ -8,6 +13,11 @@ body {
 }
 
 .nav-link {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link span {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -26,6 +36,11 @@ body {
         margin-left: 30px;
     }
 
+    #Servicos:hover{
+        margin-left: 35px !important;
+        transition: none !important;
+    }
+
     .tema {
         margin-left: 10px;
     }
@@ -37,17 +52,23 @@ body {
     }
 }
 
-#home {
-    color: #B8E4FE;
-}
+@media screen and (max-width: 462px) {
+    .navbar-brand {
+        width: 70%;
+    }
 
+    .navbar-brand .logo {
+        width: 30%;
+        height: 30%;
+    }
+}
 
 .navbar-toggler {
     border: none;
     width: 20px;
     height: 20px;
     position: relative;
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .navbar-toggler,
@@ -64,21 +85,20 @@ body {
     padding: 0;
 }
 
+.middle-bar {
+    margin-top: 0 !important;
+}
+
 .toggler-icon {
     display: block;
     position: absolute;
     height: 3px;
     width: 100%;
-    background: #ffffff;
     border-radius: 1px;
     opacity: 1;
     left: 0;
     transform: rotate(0deg);
-    transition: .35s ease-in-out;
-}
-
-.middle-bar {
-    margin-top: 0 !important;
+    transition: 0.35s ease-in-out;
 }
 
 .navbar-toggler .top-bar {
@@ -110,4 +130,43 @@ body {
 .navbar-toggler.collapsed .bottom-bar {
     margin-top: 15px !important;
     transform: rotate(0deg);
+}
+
+.dropbtn {
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content #dropdownItem4:hover {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (min-width: 1249px) {
+    .dropdown:hover .dropdown-content {
+        margin-left: 30px;
+    }
 }

@@ -1,0 +1,40 @@
+:root {
+    /* darkMode */
+    --darkMode-background-color: #193055;
+    --darkMode-color: #ffffff;
+}
+
+
+body.dark {
+    background-color: #193055;
+    color: #ffffff;
+}
+
+.dark .nav-link:hover {
+    color: #B8E4FE !important;
+}
+
+.dark #Home {
+    color: #B8E4FE;
+}
+
+.dark .toggler-icon {
+    background: #ffffff;
+}
+
+.dropbtn {
+    color: white;
+}
+
+.dropdown-content {
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: #000;
+}
+
+.dropdown-content a:hover {
+    background-color: #dddd;
+}

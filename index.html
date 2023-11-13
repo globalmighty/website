@@ -12,11 +12,13 @@
 
     <link href="./ASSETS/fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/darkMode.css">
+    <link rel="stylesheet" href="./CSS/lightMode.css">
     <link rel="stylesheet" href="./CSS/styles.css">
     <title>GlobalMighty - Em Desenvolvimento</title>
 </head>
 
-<body>
+<body class="dark">
     <nav class="navbar navbar-expand-lg navbar-dark bg-ghost ps-5 pe-5">
         <div class="container-fluid">
             <a class="navbar-brand" onclick="changeTema()">
@@ -32,22 +34,34 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" id="home" aria-current="page" onclick="getPoint('#home')">Home</a>
+                        <a class="nav-link active" id="Home" aria-current="page" onclick="getPoint('#Home')"><span
+                                class="" id="dotHome">&#8226;</span> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" id="sobreNos" onclick="getPoint('#sobreNos')">About Us</a>
+                        <a class="nav-link active" id="SobreNos" onclick="getPoint('#SobreNos')"><span class="hiden"
+                                id="dotSobreNos">&#8226;</span> About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropbtn" id="Servicos" style="margin-left: 40px;" onclick="getPoint('#Servicos')"><span
+                                class="hiden" id="dotServicos">&#8226;</span> Services +</a>
+                        <div class="dropdown-content">
+                            <a href="#">Web Development</a>
+                            <a href="#">App Development</a>
+                            <a href="#">Maintenance</a>
+                            <a id="dropdownItem4" href="#">Restructuring</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" id="servicos" onclick="getPoint('#servicos')">Services +</a>
+                        <a class="nav-link active" id="Testemunhos" onclick="getPoint('#Testemunhos')"><span
+                                class="hiden" id="dotTestemunhos">&#8226;</span> Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" id="testemunhos" onclick="getPoint('#testemunhos')">Testimonials</a>
+                        <a class="nav-link active" id="FAQ" onclick="getPoint('#FAQ')"><span class="hiden"
+                                id="dotFAQ">&#8226;</span> FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" id="faq" onclick="getPoint('#faq')">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" id="contacto" onclick="getPoint('#contacto')">Contact</a>
+                        <a class="nav-link active" id="Contacto" onclick="getPoint('#Contacto')"><span class="hiden"
+                                id="dotContacto">&#8226;</span> Contact</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">

@@ -1,25 +1,13 @@
-// const data = new Date();
-// let ano = data.getFullYear();
-// document.getElementById("copy").innerHTML = `&copy; ` + ano;
-
-const tema = {
-    dark: {
-        backgroundColor: "#193055"
-    },
-    light: {
-        backgroundColor: "#ffffff"
-    }
-}
-
-
-let temaInicial = 'dark'
+let tema = 'dark'
 function changeTema() {
-    if (temaInicial == 'light') {
-        document.getElementsByTagName("body")[0].style.backgroundColor = tema.dark.backgroundColor;
-        temaInicial = 'dark'
+    if (tema == 'light') {
+        tema = 'dark'
+        document.getElementsByTagName("body")[0].classList.remove('light')
+        document.getElementsByTagName("body")[0].classList.add('dark')
     }
     else {
-        document.getElementsByTagName("body")[0].style.backgroundColor = tema.light.backgroundColor;
-        temaInicial = 'light'
+        tema = 'light'
+        document.getElementsByTagName("body")[0].classList.remove('dark')
+        document.getElementsByTagName("body")[0].classList.add('light')
     }
 } 
