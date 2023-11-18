@@ -8,7 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital" rel="stylesheet">
 
     <link href="./ASSETS/fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
@@ -19,7 +19,7 @@
 </head>
 
 <body class="dark">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-ghost ps-5 pe-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-ghost fixed-top ps-5 pe-5">
         <div class="container-fluid">
             <a class="navbar-brand dark-Logo" onclick="changeTema()">
                 <img id="logoDark" class="logo" src="./ASSETS/logoDark.png" alt="GlobalMighty">
@@ -35,16 +35,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" id="InicioNav" aria-current="page" onclick="getPoint('#Inicio')"><span
-                                class="" id="dotInicio">&#8226;</span> Ínicio</a>
+                        <a class="nav-link active" id="InicioNav" aria-current="page"
+                            onclick="getPoint('#Inicio')"><span class="" id="dotInicio">&#8226;</span> Ínicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" id="SobreNosNav" onclick="getPoint('#SobreNos')"><span class="hiden"
-                                id="dotSobreNos">&#8226;</span> About Us</a>
+                                id="dotSobreNos">&#8226;</span> Sobre Nós</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link active dropbtn" id="ServicosNav" onclick="getPoint('#Servicos')"><span
-                                class="hiden" id="dotServicos">&#8226;</span> Services +</a>
+                                class="hiden" id="dotServicos">&#8226;</span> Serviços +</a>
                         <div class="dropdown-content">
                             <a href="#">Web Development</a>
                             <a href="#">App Development</a>
@@ -81,19 +81,48 @@
         </div>
     </nav>
 
-    <div class="conteudo container">
-        <section id="Inicio">
-            <div class="text-center">
-                <div class="row">
-                    <div class="col">
-                        Column
+    <div class="conteudo container-fluid">
+        <section id="Inicio" class="Inicio">
+            <div class="px-5 text-center text-md-start">
+                <div class="row ms-lg-5">
+                    <div class="col-12 col-md-6 col-lg-6 ms-lg-5 me-5 me-lg-5">
+                        <div class="redesSociais">
+                            <a class="redeSocial" href="https://www.instagram.com/globalmighty/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="redeSocial" href="https://www.linkedin.com/company/globalmighty-development"
+                                target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div class="slogan">
+                            <span class="dot">&#8226;</span>SERVIÇOS TECNOLÓGICOS<span class="dot">&#8226;</span>
+                        </div>
+                        <div class="titulo">
+                            Fornecemos Soluções<br>Para <span class="dualTone">Web & App</span>
+                        </div>
+                        <div class="btnServicos">
+                            <button type="button" class="btn">Serviços</button>
+                        </div>
                     </div>
-                    <div class="col">
-                        Column
+                    <div class="col-12 col-md-5 col-lg-4 containerSVG">
+                        <div id="svgHome" class="tilt-box-wrap">
+                            <span class="t_over"></span>
+                            <span class="t_over"></span>
+                            <span class="t_over"></span>
+                            <span class="t_over"></span>
+                            <span class="t_over"></span>
+                            <span class="t_over"></span>
+                            <span class="t_over"></span>
+                            <span class="t_over"></span>
+                            <span class="t_over"></span>
+                            <div class="tilt-box">
+                                <img class="SVG" src="./ASSETS/home.svg" alt="SVG Home">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div style="margin: 50000px;"></div>
     </div>
 
     <script src="./JS/bootstrap.bundle.min.js"></script>

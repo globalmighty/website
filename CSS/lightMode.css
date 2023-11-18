@@ -2,6 +2,8 @@
     /* lightMode */
     --lightMode-background-color: #ffff;
     --lightMode-color: #000;
+    --lightMode-corNav: #193055;
+    --lightMode-hover: #7752FE;
 }
 
 
@@ -10,17 +12,61 @@ body.light {
     color: var(--lightMode-color);
 }
 
+.light .bg-ghost{
+    background-color: var(--lightMode-background-color);
+}
+
 .light .nav-link {
-    color: #193055 !important;
+    color: var(--lightMode-corNav) !important;
 }
 
 .light .nav-link:hover {
-    color: #193055 !important;
+    color: var(--lightMode-corNav) !important;
 }
 
 .light #InicioNav {
-    color: #193055;
+    color: var(--lightMode-corNav);
 }
+
 .light .toggler-icon {
-    background: #193055;
+    background: var(--lightMode-corNav);
+}
+
+.light .procurar i{ 
+    color: #000;
+}
+
+/* .light .procurar:hover{ 
+    background-color: #ffff !important;
+} */
+
+.light a {
+    color: var(--lightMode-corNav);
+}
+
+.light a:hover {
+    color: var(--lightMode-corNav);
+}
+
+.light a:hover {
+    color: var(--lightMode-hover);
+}
+
+.light .slogan {
+    color: var(--lightMode-corNav);
+}
+
+.light .Inicio .titulo .dualTone {
+    color: var(--lightMode-corNav);
+}
+
+.light .Inicio .btnServicos .btn {
+    color: var(--lightMode-corNav);
+    border-color: var(--lightMode-corNav);
+}
+
+.light .Inicio .btnServicos .btn:hover {
+    color: var(--lightMode-corNav);
+    border-color: var(--lightMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(119,82,254,0.65);
 }

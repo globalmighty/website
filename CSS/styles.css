@@ -1,3 +1,9 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+
 .showned {
     display: inline;
     animation: 0.5s forwards show-right;
@@ -7,9 +13,15 @@
     display: none;
 }
 
+.navbar-brand {
+    margin: 0;
+    max-width: 200px;
+}
+
 .navbar-brand .logo {
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
+    margin-left: 50%;
 }
 
 .nav-link {
@@ -32,20 +44,18 @@
 }
 
 @media screen and (min-width: 1249px) {
-    /* .navbar.ps-5 {
-        padding-left: 10% !important;
-    }
-    
-    .navbar.pe-5 {
-        padding-right: 10% !important;
-    } */
-
     .nav-link {
         margin-left: 30px;
     }
 
     .tema {
         margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .navbar-brand .logo {
+        margin: 0px;
     }
 }
 
@@ -173,3 +183,175 @@
         margin-left: 30px;
     }
 }
+
+.Inicio {
+    margin-top: 8%;
+}
+
+a i {
+    font-size: 25px;
+    transition: 0.2s ease-in-out;
+}
+
+.Inicio .redesSociais {
+    margin-bottom: 20px;
+}
+
+.Inicio .redesSociais .redeSocial {
+    margin-right: 10px;
+}
+
+.Inicio .slogan {
+    font-size: 17px;
+}
+
+.Inicio .slogan .dot {
+    margin: 0px 10px;
+}
+
+.Inicio .titulo {
+    font-size: 3.3582vw;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 33px;
+}
+
+.Inicio .btnServicos .btn {
+    font-size: 0.88541vw;
+    border: 2px solid;
+    padding: 10px 39px;
+    border-radius: 0px 25px 0px 25px;
+}
+
+.Inicio #svgHome {
+    width: 100%;
+    max-width: 427px;
+    max-height: 390px;
+}
+
+@media screen and (max-width: 1600px) {
+    .Inicio .btnServicos .btn {
+        font-size: 1.1vw;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .Inicio .btnServicos .btn {
+        font-size: 1.3vw;
+    }
+}
+
+@media screen and (max-width: 1249px) {
+    .Inicio {
+        margin-top: 15%;
+    }
+
+    .Inicio .btnServicos .btn {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .Inicio .btnServicos .btn {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Inicio {
+        margin-top: 20%;
+    }
+
+    .Inicio #svgHome {
+        display: none;
+    }
+
+    .Inicio .titulo {
+        font-size: 5vw;
+    }
+
+    .Inicio .btnServicos .btn {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .Inicio {
+        margin-top: 25%;
+    }
+
+    .Inicio .titulo {
+        font-size: 6vw;
+    }
+
+    .Inicio .btnServicos .btn {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .Inicio {
+        margin-top: 30%;
+    }
+
+    .Inicio .titulo {
+        font-size: 6.5vw;
+    }
+
+    .Inicio .btnServicos .btn {
+        font-size: 3.5vw;
+    }
+}
+
+
+.tilt-box-wrap{
+	width: 400px;
+	height: 400px;
+	position: relative;
+	transition: all 0.6s ease-out;
+	perspective: 1000px
+}
+.tilt-box-wrap:hover{
+	transition: all 0.3s linear;
+	transform: scale(1.1);
+}
+.tilt-box{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	transition: all 0.6s ease-out;
+	transform:rotateX(0deg) rotateY(0deg);
+	perspective: 500px;
+	transform-style: preserve-3d;
+}
+.tilt-box strong{
+	transform:translateZ(40px);
+}
+.t_over{
+	width: 33.333%;
+	height: 33.333%;
+	position: absolute;
+	z-index: 1;
+}
+
+.t_over:nth-child(1){ left: 0; top: 0; }
+.t_over:nth-child(2){ left: 33.333%; top: 0; }
+.t_over:nth-child(4){ left: 0; top: 33.333%; }
+.t_over:nth-child(5){ left: 33.333%; top: 33.333%; }
+.t_over:nth-child(6){ left: 66.666%; top: 33.333%; }
+.t_over:nth-child(7){ left: 0; top: 66.666%; }
+.t_over:nth-child(8){ left: 33.333%; top: 66.666%; }
+.t_over:nth-child(9){ left: 66.666%; top: 66.666%; }
+.t_over:nth-child(1):hover ~ .tilt-box{transform:rotateX(-15deg) rotateY(15deg);}
+.t_over:nth-child(2):hover ~ .tilt-box{transform: rotateX(-15deg) rotateY(5deg)}
+.t_over:nth-child(3):hover ~ .tilt-box{transform: rotateX(-15deg) rotateY(-15deg)}
+.t_over:nth-child(4):hover ~ .tilt-box{transform: rotateX(5deg) rotateY(15deg)}
+.t_over:nth-child(5):hover ~ .tilt-box{transform: rotateX(5deg) rotateY(5deg)}
+.t_over:nth-child(6):hover ~ .tilt-box{transform: rotateX(5deg) rotateY(-15deg)}
+.t_over:nth-child(7):hover ~ .tilt-box{transform:rotateX(15deg) rotateY(15deg);}
+.t_over:nth-child(8):hover ~ .tilt-box{transform: rotateX(15deg) rotateY(5deg)}
+.t_over:nth-child(9):hover ~ .tilt-box{transform: rotateX(15deg) rotateY(-15deg)}
