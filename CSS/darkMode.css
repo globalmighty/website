@@ -14,7 +14,7 @@ body.dark {
     color: #B8E4FE !important;
 }
 
-.dark #Home {
+.dark .nav-item #InicioNav {
     color: #B8E4FE;
 }
 

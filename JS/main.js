@@ -2,22 +2,18 @@
 // let ano = data.getFullYear();
 // document.getElementById("copy").innerHTML = `&copy; ` + ano;
 
-let lastPage = 'Home'
+let lastPage = 'Inicio'
 function getPoint(id) {
     if (id.slice(1) != lastPage) {
-        if (id.slice(1) != 'Servicos') {
-            document.getElementById('Servicos').style.marginLeft = '30px'
-        } 
-        else {
-            document.getElementById('Servicos').style.marginLeft = '40px'
-        }
-        document.getElementById(id.slice(1)).style.color = '#B8E4FE'
+
+        console.log(id.slice(1))
+        document.getElementById(id.slice(1) + 'Nav').style.color = '#B8E4FE'
         document.getElementById('dot' + id.slice(1)).classList.remove('hiden');
-        document.getElementById(lastPage).style.color = '#ffffff'
+        document.getElementById(lastPage + 'Nav').style.color = '#ffffff'
         document.getElementById('dot' + lastPage).classList.add('hiden');
         lastPage = id.slice(1)
     }
-    document.querySelector(id).scrollIntoView({
+    document.querySelector(id + 'Section').scrollIntoView({
         behavior: 'smooth'
     });
 }
