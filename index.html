@@ -21,8 +21,9 @@
 <body class="dark">
     <nav class="navbar navbar-expand-lg navbar-dark bg-ghost ps-5 pe-5">
         <div class="container-fluid">
-            <a class="navbar-brand" onclick="changeTema()">
-                <img class="logo" src="./ASSETS/logo.png" alt="GlobalMighty">
+            <a class="navbar-brand dark-Logo" onclick="changeTema()">
+                <img id="logoDark" class="logo" src="./ASSETS/logoDark.png" alt="GlobalMighty">
+                <img id="logoLight" class="logo hiden" src="./ASSETS/logoLight.png" alt="GlobalMighty">
             </a>
             <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -42,7 +43,7 @@
                                 id="dotSobreNos">&#8226;</span> About Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link active dropbtn" id="Servicos" style="margin-left: 40px;" onclick="getPoint('#Servicos')"><span
+                        <a class="nav-link active dropbtn" id="Servicos" onclick="getPoint('#Servicos')"><span
                                 class="hiden" id="dotServicos">&#8226;</span> Services +</a>
                         <div class="dropdown-content">
                             <a href="#">Web Development</a>

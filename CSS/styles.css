@@ -32,13 +32,16 @@
 }
 
 @media screen and (min-width: 1249px) {
+    /* .navbar.ps-5 {
+        padding-left: 10% !important;
+    }
+    
+    .navbar.pe-5 {
+        padding-right: 10% !important;
+    } */
+
     .nav-link {
         margin-left: 30px;
-    }
-
-    #Servicos:hover{
-        margin-left: 35px !important;
-        transition: none !important;
     }
 
     .tema {
