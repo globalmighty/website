@@ -12,7 +12,7 @@ body.light {
     color: var(--lightMode-color);
 }
 
-.light .bg-ghost{
+.light .bg-ghost {
     background-color: var(--lightMode-background-color);
 }
 
@@ -32,7 +32,7 @@ body.light {
     background: var(--lightMode-corNav);
 }
 
-.light .procurar i{ 
+.light .procurar i {
     color: #000;
 }
 
@@ -68,5 +68,28 @@ body.light {
 .light .Inicio .btnServicos .btn:hover {
     color: var(--lightMode-corNav);
     border-color: var(--lightMode-hover);
-    box-shadow: inset 0px 0px 50px 5px rgba(119,82,254,0.65);
+    box-shadow: inset 0px 0px 50px 5px rgba(119, 82, 254, 0.65);
+}
+
+.light .sobreNos .titulo .dualTone {
+    color: var(--lightMode-corNav);
+}
+
+.light .sobreNos .btnServicos .btn {
+    color: var(--lightMode-corNav);
+    border-color: var(--lightMode-corNav);
+}
+
+.light .sobreNos .btnServicos .btn:hover {
+    color: var(--lightMode-corNav);
+    border-color: var(--lightMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(119, 82, 254, 0.65);
+}
+
+.light .sobreNos .pontosFortes .conteudo .imagem {
+    background: rgba(25, 49, 87, 0.30)
+}
+
+.light .sobreNos .pontosFortes .conteudo .imagem .icon {
+    color: var(--lightMode-corNav);
 }

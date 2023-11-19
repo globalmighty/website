@@ -13,6 +13,7 @@ function getPoint(id) {
 
         lastPage = id.slice(1)
     }
+    console.log(document.getElementById("SobreNos").offsetWidth + 'px')
     document.querySelector(id).scrollIntoView({
         behavior: 'smooth'
     });
