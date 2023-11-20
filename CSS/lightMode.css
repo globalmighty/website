@@ -101,3 +101,8 @@ body.light {
 .light .servicos .servicosList .card {
     border-color: var(--lightMode-corNav);
 }
+
+.light .servicos .servicosList .card .icon svg {
+    fill: var(--lightMode-corNav) !important;
+    color: var(--lightMode-corNav) !important;
+}

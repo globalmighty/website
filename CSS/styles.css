@@ -630,7 +630,7 @@ a i {
     padding: 26px 30px;
 }
 
-.servicos .servicosList .card .icon {}
+.servicos .servicosList .card .icon {} 
 
 .servicos .servicosList .card .titulo {
     font-size: 20px;
@@ -641,6 +641,7 @@ a i {
 
 .servicos .servicosList .card .descricao {
     margin-bottom: 35px;
+    min-height: 80px;
 }
 
 .servicos .servicosList .card .lerMais a {

@@ -103,6 +103,19 @@ body.dark {
     border-color: var(--darkMode-corNav);
 }
 
+.dark .servicos .servicosList .card {
+    border-color: var(--darkMode-corNav);
+}
+
+.dark .servicos .servicosList .card .icon {
+    color: var(--darkMode-corNav);
+}
+
 .dark .servicos .servicosList .card .lerMais a {
     color: var(--darkMode-corNav);
+}
+
+.dark .servicos .servicosList .card .icon svg {
+    fill: var(--darkMode-corNav) !important;
+    color: var(--darkMode-corNav) !important;
 }
