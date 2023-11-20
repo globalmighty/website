@@ -224,7 +224,7 @@ a i {
     border-radius: 0px 25px 0px 25px;
 }
 
-.Inicio #svgHome{
+.Inicio #svgHome {
     width: 100%;
     max-width: 427px;
     max-height: 390px;
@@ -265,7 +265,8 @@ a i {
         margin-bottom: 10%;
     }
 
-    .SVG, .Inicio .containerSVG  {
+    .SVG,
+    .Inicio .containerSVG {
         display: none;
     }
 
@@ -425,6 +426,7 @@ a i {
 
 .sobreNos {
     padding-top: 8.75%;
+    margin-bottom: 8.75%;
 }
 
 .sobreNos .slogan {
@@ -531,7 +533,8 @@ a i {
         font-size: 2.3vw;
     }
 
-    .sobreNos .SVG {
+    .sobreNos .SVG,
+    .sobreNos .containerSVG {
         display: none;
     }
 }
@@ -585,5 +588,113 @@ a i {
 
     .sobreNos .btnServicos .btn {
         font-size: 3.5vw;
+    }
+}
+
+.servicos {
+    padding-top: 8.75%;
+}
+
+.servicos .slogan {
+    font-size: 17px;
+}
+
+.servicos .slogan .dot {
+    margin: 0px 10px;
+}
+
+.servicos .titulo {
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 33px;
+}
+
+.servicos .servicosList .card {
+    min-height: 260px;
+    max-width: 500px;
+    min-width: 300px;
+    background: none;
+    border: 2px solid;
+    border-color: #B8E4FE;
+    border-radius: 10px;
+}
+
+.servicos .servicosList .card {
+    min-height: 300px;
+    max-width: 500px;
+    min-width: 300px;
+    background: none;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 26px 30px;
+}
+
+.servicos .servicosList .card .icon {}
+
+.servicos .servicosList .card .titulo {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 27px;
+    margin-bottom: 10px;
+}
+
+.servicos .servicosList .card .descricao {
+    margin-bottom: 35px;
+}
+
+.servicos .servicosList .card .lerMais a {
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.servicos .servicosList .card .lerMais a .icon {
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1400px) {
+    .servicos .titulo {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 1249px) {}
+
+@media screen and (max-width: 1200px) {
+    .servicos .titulo {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .servicos .titulo {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .servicos .titulo {
+        font-size: 3vw;
+    }
+
+    .servicos .servicosList .card {
+        min-height: 260px;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .servicos .titulo {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .servicos .titulo {
+        font-size: 4.5vw;
     }
 }

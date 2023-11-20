@@ -93,3 +93,11 @@ body.light {
 .light .sobreNos .pontosFortes .conteudo .imagem .icon {
     color: var(--lightMode-corNav);
 }
+
+.light .servicos .titulo .dualTone {
+    color: var(--lightMode-corNav);
+}
+
+.light .servicos .servicosList .card {
+    border-color: var(--lightMode-corNav);
+}

@@ -14,4 +14,15 @@ function changeTema() {
         document.getElementById("logoDark").classList.add('hiden')
         document.getElementById("logoLight").classList.remove('hiden')
     }
-} 
+}
+
+var lerMais = [false, false, false, false]
+function overLerMais(id) {
+    if (lerMais[id - 1] == false) {
+        document.getElementById('lerMais' + id).style.marginLeft = '20px';
+        lerMais[id - 1] = !lerMais[id - 1]
+    } else {
+        document.getElementById('lerMais' + id).style.marginLeft = '1 0px';
+        lerMais[id - 1] = !lerMais[id - 1]
+    }
+}  

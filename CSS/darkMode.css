@@ -12,7 +12,7 @@ body.dark {
     color: #ffffff;
 }
 
-.dark .bg-ghost{
+.dark .bg-ghost {
     background-color: var(--darkMode-background-color);
 }
 
@@ -53,38 +53,38 @@ body.dark {
     color: var(--darkMode-corNav);
 }
 
-.dark .slogan{
+.dark .slogan {
     color: var(--darkMode-corNav);
 }
 
-.dark .Inicio .titulo .dualTone{
+.dark .Inicio .titulo .dualTone {
     color: var(--darkMode-corNav);
 }
 
-.dark .Inicio .btnServicos .btn{
-    color: var(--darkMode-corNav);
-    border-color: var(--darkMode-corNav);
-}
-
-.dark .Inicio .btnServicos .btn:hover{
-    color: var(--darkMode-color);
-    border-color: var(--darkMode-hover);
-    box-shadow: inset 0px 0px 50px 5px rgba(142,143,250,0.65);
-}
-
-.dark .sobreNos .titulo .dualTone{
-    color: var(--darkMode-corNav);
-}
-
-.dark .sobreNos .btnServicos .btn{
+.dark .Inicio .btnServicos .btn {
     color: var(--darkMode-corNav);
     border-color: var(--darkMode-corNav);
 }
 
-.dark .sobreNos .btnServicos .btn:hover{
+.dark .Inicio .btnServicos .btn:hover {
     color: var(--darkMode-color);
     border-color: var(--darkMode-hover);
-    box-shadow: inset 0px 0px 50px 5px rgba(142,143,250,0.65);
+    box-shadow: inset 0px 0px 50px 5px rgba(142, 143, 250, 0.65);
+}
+
+.dark .sobreNos .titulo .dualTone {
+    color: var(--darkMode-corNav);
+}
+
+.dark .sobreNos .btnServicos .btn {
+    color: var(--darkMode-corNav);
+    border-color: var(--darkMode-corNav);
+}
+
+.dark .sobreNos .btnServicos .btn:hover {
+    color: var(--darkMode-color);
+    border-color: var(--darkMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(142, 143, 250, 0.65);
 }
 
 .dark .sobreNos .pontosFortes .conteudo .imagem {
@@ -93,4 +93,16 @@ body.dark {
 
 .dark .sobreNos .pontosFortes .conteudo .imagem .icon {
     color: #B8E4FE;
+}
+
+.dark .servicos .titulo .dualTone {
+    color: var(--darkMode-corNav);
+}
+
+.dark .servicos .servicosList .card {
+    border-color: var(--darkMode-corNav);
+}
+
+.dark .servicos .servicosList .card .lerMais a {
+    color: var(--darkMode-corNav);
 }
