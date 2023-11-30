@@ -119,3 +119,7 @@ body.dark {
     fill: var(--darkMode-corNav) !important;
     color: var(--darkMode-corNav) !important;
 }
+
+.dark .contacto .titulo .dualTone {
+    color: var(--darkMode-corNav);
+}

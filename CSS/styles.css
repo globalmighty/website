@@ -593,6 +593,7 @@ a i {
 
 .servicos {
     padding-top: 8.75%;
+    margin-bottom: 8.75%;
 }
 
 .servicos .slogan {
@@ -695,4 +696,71 @@ a i {
     .servicos .titulo {
         font-size: 4.5vw;
     }
+}
+
+
+.contacto {
+    padding-top: 8.75%;
+}
+
+.contacto .slogan {
+    font-size: 17px;
+}
+
+.contacto .slogan .dot {
+    margin: 0px 10px;
+}
+
+.contacto .titulo {
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 33px;
+}
+
+
+.contacto form {
+    /* padding: 0px 10%; */
+}
+
+.contacto form .row {
+    justify-content: center;
+}
+
+.contacto form .inputGrupo {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 55px;
+}
+
+.contacto form .inputGrupo label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contacto form .inputGrupo .input {
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.10);
+    color: #ffff;
+    transition: 0.3s ease-in-out;
+}
+
+.contacto form .inputGrupo .input:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px 5px rgba(184, 229, 255, 0.4);
+}
+
+.contacto form .submit {
+    width: 242px;
+    height: 50px;
+    border-radius: 0px 20px;
+    border: 2px solid #B8E4FE;
+    background: #193055;
+    color: #B8E4FE;
+    font-size: 17px;
 }

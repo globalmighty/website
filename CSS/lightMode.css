@@ -106,3 +106,7 @@ body.light {
     fill: var(--lightMode-corNav) !important;
     color: var(--lightMode-corNav) !important;
 }
+
+.light .contacto .titulo .dualTone {
+    color: var(--lightMode-corNav);
+}
