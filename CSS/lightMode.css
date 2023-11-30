@@ -124,3 +124,9 @@ body.light {
     border: 2px solid var(--lightMode-corNav);
     color: var(--lightMode-corNav);
 }
+
+.light .contacto form .btnContacto .btn:hover {
+    color: var(--lightMode-corNav);
+    border-color: var(--lightMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(119, 82, 254, 0.65);
+}

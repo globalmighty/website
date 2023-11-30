@@ -137,3 +137,9 @@ body.dark {
     border: 2px solid var(--darkMode-corNav);
     color: var(--darkMode-corNav);
 }
+
+.dark .contacto form .btnContacto .btn:hover {
+    color: var(--darkMode-color);
+    border-color: var(--darkMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(142, 143, 250, 0.65);
+}
