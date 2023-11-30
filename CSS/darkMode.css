@@ -123,3 +123,17 @@ body.dark {
 .dark .contacto .titulo .dualTone {
     color: var(--darkMode-corNav);
 }
+
+.dark .contacto form .inputGrupo .input{
+    background: rgba(255, 255, 255, 0.10);
+    color: var(--darkMode-color);
+}
+
+.dark .contacto form .inputGrupo .input:focus {
+    box-shadow: 0 0 10px 5px rgba(184, 229, 255, 0.4);
+}
+
+.dark .contacto form .btnContacto .btn {
+    border: 2px solid var(--darkMode-corNav);
+    color: var(--darkMode-corNav);
+}

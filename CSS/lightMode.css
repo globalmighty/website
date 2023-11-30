@@ -110,3 +110,17 @@ body.light {
 .light .contacto .titulo .dualTone {
     color: var(--lightMode-corNav);
 }
+
+.light .contacto form .inputGrupo .input{
+    background: rgba(25, 49, 87, 0.25);
+    color: var(--lightMode-color);
+}
+
+.light .contacto form .inputGrupo .input:focus {
+    box-shadow: 0 0 10px 5px rgba(25, 49, 87, 0.5);
+}
+
+.light .contacto form .btnContacto .btn {
+    border: 2px solid var(--lightMode-corNav);
+    color: var(--lightMode-corNav);
+}

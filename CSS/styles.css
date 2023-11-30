@@ -593,7 +593,7 @@ a i {
 
 .servicos {
     padding-top: 8.75%;
-    margin-bottom: 8.75%;
+    margin-bottom: 8%;
 }
 
 .servicos .slogan {
@@ -699,8 +699,19 @@ a i {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 .contacto {
-    padding-top: 8.75%;
+    padding-top: 7%;
 }
 
 .contacto .slogan {
@@ -716,11 +727,6 @@ a i {
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 33px;
-}
-
-
-.contacto form {
-    /* padding: 0px 10%; */
 }
 
 .contacto form .row {
@@ -745,22 +751,100 @@ a i {
     min-height: 40px;
     border-radius: 5px;
     border: none;
-    background: rgba(255, 255, 255, 0.10);
-    color: #ffff;
     transition: 0.3s ease-in-out;
 }
 
 .contacto form .inputGrupo .input:focus {
     outline: none !important;
-    box-shadow: 0 0 10px 5px rgba(184, 229, 255, 0.4);
 }
 
-.contacto form .submit {
-    width: 242px;
-    height: 50px;
+.contacto form .btnContacto {
+    display: flex;
+    justify-content: start;
+}
+
+.contacto form .btnContacto .btn {
+    max-width: 242px;
+    max-height: 50px;
+    padding: 10px 39px;
     border-radius: 0px 20px;
-    border: 2px solid #B8E4FE;
-    background: #193055;
-    color: #B8E4FE;
-    font-size: 17px;
+    font-size: 0.88541vw;
+}
+
+
+@media screen and (max-width: 1600px) {
+    .contacto form .btnContacto .btn {
+        font-size: 1.1vw;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .contacto .titulo {
+        font-size: 2vw;
+    }
+
+    .contacto form .btnContacto .btn {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 1249px) {
+    .contacto form .btnContacto .btn {
+        font-size: 1.3vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contacto .titulo {
+        font-size: 2.3vw;
+    }
+
+    .contacto form .btnContacto .btn {
+        font-size: 1.45vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contacto .titulo {
+        font-size: 2.5vw;
+    }
+
+    .contacto form .btnContacto .btn {
+        font-size: 1.6vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contacto .titulo {
+        font-size: 3vw;
+    }
+
+    .contacto form .btnContacto {
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    .contacto form .btnContacto .btn {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .contacto .titulo {
+        font-size: 4vw;
+    }
+
+    .contacto form .btnContacto .btn {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .contacto .titulo {
+        font-size: 4.5vw;
+    }
+    .contacto form .btnContacto .btn {
+        font-size: 3.5vw;
+    }
 }
