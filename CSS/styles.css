@@ -4,6 +4,10 @@ body {
     font-size: 17px;
 }
 
+.container-fluid {
+    --bs-gutter-x: 0
+}
+
 .showned {
     display: inline;
     animation: 0.5s forwards show-right;
@@ -699,6 +703,163 @@ a i {
 }
 
 
+.depoimentos {
+    padding-top: 8.75%;
+    margin-bottom: 8.75%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.depoimentos .col-12 {
+    padding: 0;
+}
+
+.depoimentos .row {
+    --bs-gutter-x: 0;
+}
+
+.depoimentos .bgDepoimento {
+    width: 100%;
+    min-height: 650px;
+}
+
+.depoimentos .bgDepoimento .depoimento {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos .bgDepoimento .depoimento {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos .bgDepoimento .depoimento .btnDepoimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos .bgDepoimento .depoimento .btnDepoimento i {
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard {
+    height: 100%;
+    text-align: center;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .slogan {
+    font-size: 15px;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .slogan .dot {
+    margin: 0px 10px;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo {
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 87px
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .fotoCliente img {
+    border-radius: 100%;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .descricao {
+    max-width: 900px;
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .empresa {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .profissao {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1400px) {
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 1249px) {}
+
+@media screen and (max-width: 1200px) {
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo {
+        font-size: 2.5vw;
+    }
+
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .descricao {
+        font-size: 18px;
+    }
+
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .empresa {
+        margin-top: 50px;
+        font-size: 18px;
+    }
+
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .profissao {
+        margin-top: 20px;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo {
+        font-size: 4.5vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -823,7 +984,7 @@ a i {
         display: flex;
         justify-content: center;
     }
-    
+
 
     .contacto form .btnContacto .btn {
         font-size: 2.3vw;
@@ -844,6 +1005,7 @@ a i {
     .contacto .titulo {
         font-size: 4.5vw;
     }
+
     .contacto form .btnContacto .btn {
         font-size: 3.5vw;
     }

@@ -111,7 +111,7 @@ body.light {
     color: var(--lightMode-corNav);
 }
 
-.light .contacto form .inputGrupo .input{
+.light .contacto form .inputGrupo .input {
     background: rgba(25, 49, 87, 0.25);
     color: var(--lightMode-color);
 }
@@ -129,4 +129,25 @@ body.light {
     color: var(--lightMode-corNav);
     border-color: var(--lightMode-hover);
     box-shadow: inset 0px 0px 50px 5px rgba(119, 82, 254, 0.65);
+}
+
+.light .depoimentos .bgDepoimento {
+    background: rgba(25, 49, 87, 0.25);
+}
+
+.light .depoimentos .bgDepoimento .depoimento .depoimentoCard .dualTone {
+    color: var(--lightMode-corNav);
+}
+
+.light .depoimentos .bgDepoimento .depoimento .btnDepoimento i {
+    color: var(--lightMode-corNav);
+}
+
+.light .depoimentos .bgDepoimento .depoimento .btnDepoimento i:hover {
+    color: var(--lightMode-corNav);
+}
+
+.light .depoimentos .bgDepoimento .depoimento .btnDepoimento i:active,
+.light .depoimentos .bgDepoimento .depoimento .btnDepoimento i:focus {
+    color: var(--lightMode-hover);
 }
