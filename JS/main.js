@@ -25,9 +25,7 @@ function search(string) {
 
 let clienteID = 1;
 
-function cliente(tipo) {
-    let nClientes = 2;
-
+function cliente() {
     if (clienteID === 1) {
         document.getElementById("cliente" + (clienteID + 1)).className = "depoimentoCard col-8 showned"
 
