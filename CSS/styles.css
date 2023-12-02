@@ -716,7 +716,7 @@ a i {
 
 .depoimentos {
     padding-top: 8.75%;
-    margin-bottom: 8.75%;
+    margin-bottom: 9%;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -899,24 +899,99 @@ a i {
 }
 
 
+.faq {
+    padding-top: 9%;
+    margin-bottom: 9%;
+    min-height: 620px;
+}
 
+.faq .slogan {
+    font-size: 17px;
+}
 
+.faq .slogan .dot {
+    margin: 0px 10px;
+}
 
+.faq .titulo {
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 94px;
+}
 
+.faq .accordion-button.collapsed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.faq .accordion-button.collapsed::after {
+    background: url("nada");
+    content: "\2b";
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    transform: rotate(+180deg);
+}
 
+.faq .accordion-button:not(.collapsed)::after {
+    background: url("nada");
+    content: "\2212";
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-180deg);
+    transition: 0.5s ease-in-out;
+}
 
+@media screen and (max-width: 1600px) {}
 
+@media screen and (max-width: 1400px) {
+    .faq .titulo {
+        font-size: 2vw;
+    }
+}
 
+@media screen and (max-width: 1249px) {}
 
+@media screen and (max-width: 1200px) {
+    .faq .titulo {
+        font-size: 2.3vw;
+    }
+}
 
+@media screen and (max-width: 992px) {
+    .faq {
+        min-height: none;
+        margin-bottom: 10%;
+    }
 
+    .faq .titulo {
+        font-size: 2.5vw;
+    }
+}
 
+@media screen and (max-width: 767px) {
+    .faq .titulo {
+        font-size: 3vw;
+    }
+}
 
+@media screen and (max-width: 580px) {
+    .faq .titulo {
+        font-size: 4vw;
+    }
+}
 
-
-
-
+@media screen and (max-width: 462px) {
+    .faq .titulo {
+        font-size: 4.5vw;
+    }
+}
 
 .contacto {
     padding-top: 7%;

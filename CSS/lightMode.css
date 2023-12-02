@@ -151,3 +151,16 @@ body.light {
 .light .depoimentos .bgDepoimento .depoimento .btnDepoimento i:focus {
     color: var(--lightMode-hover);
 }
+
+.light .faq .accordion {
+    --bs-accordion-bg: none;
+    --bs-accordion-color: none;
+    --bs-accordion-border-color: var(--lightMode-corNav);
+    --bs-accordion-border-width: 2px;
+    --bs-accordion-btn-color: var(--lightMode-color);
+    --bs-accordion-btn-bg: var(--lightMode-background-color);
+    --bs-accordion-btn-focus-border-color: var(--lightMode-corNav);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-color: var(--lightMode-color);
+    --bs-accordion-active-bg: var(--lightMode-background-color);
+}

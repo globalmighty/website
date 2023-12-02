@@ -163,3 +163,20 @@ body.dark {
 .dark .depoimentos .bgDepoimento .depoimento .btnDepoimento i:focus {
     color: var(--darkMode-background-color);
 }
+
+.dark .faq .dualTone {
+    color: var(--darkMode-corNav);
+}
+
+.dark .faq .accordion {
+    --bs-accordion-bg: none;
+    --bs-accordion-color: none;
+    --bs-accordion-border-color: var(--darkMode-corNav);
+    --bs-accordion-border-width: 2px;
+    --bs-accordion-btn-color: var(--darkMode-color);
+    --bs-accordion-btn-bg: var(--darkMode-background-color);
+    --bs-accordion-btn-focus-border-color: var(--darkMode-corNav);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-color: var(--darkMode-color);
+    --bs-accordion-active-bg: var(--darkMode-background-color);
+}
