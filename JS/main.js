@@ -6,10 +6,10 @@ let lastPage = 'Inicio'
 function getPoint(id) {
     if (id.slice(1) != lastPage) {
         document.getElementById(id.slice(1) + 'Nav').style.color = '#B8E4FE'
-        document.getElementById('dot' + id.slice(1)).classList.remove('hiden');
+        document.getElementById('dot' + id.slice(1)).classList.remove('hidden');
 
         document.getElementById(lastPage + 'Nav').style.color = '#ffffff'
-        document.getElementById('dot' + lastPage).classList.add('hiden');
+        document.getElementById('dot' + lastPage).classList.add('hidden');
 
         lastPage = id.slice(1)
     }
