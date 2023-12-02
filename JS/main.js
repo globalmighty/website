@@ -18,3 +18,25 @@ function getPoint(id) {
         behavior: 'smooth'
     });
 }
+
+function search(string) {
+    window.find(string);
+}
+
+let clienteID = 1;
+
+function cliente(tipo) {
+    let nClientes = 2;
+
+    if (clienteID === 1) {
+        document.getElementById("cliente" + (clienteID + 1)).className = "depoimentoCard col-8 showned"
+
+        document.getElementById("cliente" + clienteID).className = "depoimentoCard col-8 hidden"
+        clienteID = clienteID + 1;
+    } else if (clienteID === 2) {
+        document.getElementById("cliente" + (clienteID - 1)).className = "depoimentoCard col-8 showned"
+
+        document.getElementById("cliente" + clienteID).className = "depoimentoCard col-8 hidden"
+        clienteID = clienteID - 1;
+    }
+}

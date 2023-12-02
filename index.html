@@ -23,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-ghost fixed-top ps-5 pe-5">
             <div class="container-fluid">
-                <a class="navbar-brand dark-Logo" onclick="changeTema()">
+                <a class="navbar-brand dark-Logo" onclick="getPoint('#Inicio')">
                     <img id="logoDark" class="logo" src="./ASSETS/logoDark.png" alt="GlobalMighty">
                     <img id="logoLight" class="logo hiden" src="./ASSETS/logoLight.png" alt="GlobalMighty">
                 </a>
@@ -69,7 +69,7 @@
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <button class="btn btn-outline-light procurar">
+                            <button class="btn btn-outline-light procurar" onclick="search('Desenvolvimento Web')">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
                         </li>
@@ -335,9 +335,10 @@
                         <div class="col-12">
                             <div class="bgDepoimento col-12">
                                 <div class="row depoimento">
-                                    <div class="btnDepoimento col-2" id="btnPrevious"><i
-                                            class="fa-solid fa-circle-arrow-left"></i></i></div>
-                                    <div class="depoimentoCard col-8">
+                                    <div class="btnDepoimento col-2" id="btnPrevious" onclick="cliente('anterior')">
+                                        <i class="fa-solid fa-circle-arrow-left"></i></i>
+                                    </div>
+                                    <div id="cliente1" class="depoimentoCard col-8 showned">
                                         <div class="slogan">
                                             <span class="dot">&#8226;</span>DEPOIMENTOS<span class="dot">&#8226;</span>
                                         </div>
@@ -357,8 +358,23 @@
                                             Joias</div>
                                         <div class="profissao">Gerente</div>
                                     </div>
-                                    <div class="btnDepoimento col-2" id="btnNext"><i
-                                            class="fa-solid fa-circle-arrow-right"></i></i></div>
+
+                                    <div id="cliente2" class="depoimentoCard col-8 hidden">
+                                        <div class="slogan">
+                                            <span class="dot">&#8226;</span>DEPOIMENTOS<span class="dot">&#8226;</span>
+                                        </div>
+                                        <div class="titulo">
+                                            Depoimentos de <span class="dualTone">Clientes</span>
+                                        </div>
+                                        <div class="texto1">Tens um projeto e queres ser o nosso proximo cliente?<br>
+
+                                        </div>
+                                        <div class="texto2">Junta-te a nós e vamos criar um</div>
+                                        <div class="texto3">futuro tecnológico!</div>
+                                    </div>
+                                    <div class="btnDepoimento col-2" id="btnNext" onclick="cliente('proximo')">
+                                        <i class="fa-solid fa-circle-arrow-right"></i></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -367,14 +383,14 @@
             </section>
 
 
-            <!-- <section id="FAQ" class="faq">
+            <section id="FAQ" class="faq">
                 <div class="px-5 text-center">
                     <div class="row ms-lg-5">
                         <div class="col-12 me-lg-5">
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
 
             <!-- <section id="Contacto" class="contacto">
                 <div class="px-5 text-center">
