@@ -1140,6 +1140,8 @@ ul {
 
 footer {
     margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
 }
 
 footer .row {
@@ -1236,13 +1238,15 @@ footer .contactos .redesSociais .item {
     }
 }
 
+@media screen and (max-width: 1400px) {
+    footer .contactos .texto {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 992px) {
     footer .contactos .icon {
         font-size: 20px;
-    }
-    
-    footer .contactos .texto {
-        font-size: 16px;
     }
 }
 
