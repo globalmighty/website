@@ -209,6 +209,10 @@ a i {
     transition: 0.2s ease-in-out;
 }
 
+ul {
+    padding: 0;
+}
+
 .Inicio .redesSociais {
     margin-bottom: 20px;
 }
@@ -995,6 +999,7 @@ a i {
 
 .contacto {
     padding-top: 7%;
+    margin-bottom: 7%;
 }
 
 .contacto .slogan {
@@ -1132,3 +1137,117 @@ a i {
         font-size: 3.5vw;
     }
 }
+
+footer {
+    margin-top: 150px;
+}
+
+footer .row {
+    --bs-gutter-x: 0;
+}
+
+footer .logo img {
+    width: 100%;
+    height: 100%;
+    max-width: 66px;
+    max-height: 70px;
+}
+
+footer .logo {
+    margin-bottom: 25px;
+}
+
+footer .titulo {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+footer .descricao {
+    font-weight: 300;
+}
+
+footer ul {
+    font-weight: 400;
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
+
+footer ul li a span {
+    margin-right: 10px;
+}
+
+footer .footerLinks {
+    margin-top: 25px;
+}
+
+footer .footerLinks .link {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+footer .contactos .email {
+    margin-top: 20px;
+}
+
+footer .contactos .email,
+footer .contactos .telemovel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer .contactos .icon {
+    padding: 10px;
+    margin-right: 15px;
+    font-size: 24px;
+}
+
+footer .contactos .texto {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+footer .contactos .redesSociais {
+    display: flex;
+}
+
+footer .contactos .redesSociais .item {
+    font-size: 30px;
+    margin-right: 20px;
+    padding: 0 9.39px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1250px) {
+    footer .marginEnd {
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    footer .marginEnd {
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    footer .contactos .icon {
+        font-size: 20px;
+    }
+    
+    footer .contactos .texto {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 580px) {}
+
+@media screen and (max-width: 462px) {}

@@ -164,3 +164,36 @@ body.light {
     --bs-accordion-active-color: var(--lightMode-color);
     --bs-accordion-active-bg: var(--lightMode-background-color);
 }
+
+.light footer {
+    background-color: rgba(25, 49, 87, 0.4);
+}
+
+.light footer .footerLinks .link {
+    color: var(--lightMode-corNav);
+}
+
+.light footer .footerLinks .link a:hover {
+    color: var(--lightMode-hover);
+}
+
+.light footer .footerLinks .link:hover {
+    color: var(--lightMode-corNav);
+}
+
+.light footer .contactos .texto {
+    color: var(--lightMode-corNav);
+}
+
+.light footer .contactos .icon {
+    color: var(--lightMode-corNav);
+}
+
+.light footer .contactos .redesSociais .item {
+    background-color: rgba(25, 49, 87, 0.3);
+    color: var(--lightMode-corNav);
+}
+
+.light footer .contactos .redesSociais .item:hover {
+    background-color: rgba(119, 82, 254, 0.4);
+}
