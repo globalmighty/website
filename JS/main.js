@@ -1,7 +1,3 @@
-// const data = new Date();
-// let ano = data.getFullYear();
-// document.getElementById("copy").innerHTML = `&copy; ` + ano;
-
 let lastPage = 'Inicio'
 function getPoint(id) {
     if (id.slice(1) != lastPage) {
@@ -13,10 +9,50 @@ function getPoint(id) {
 
         lastPage = id.slice(1)
     }
-    console.log(document.getElementById("SobreNos").offsetWidth + 'px')
     document.querySelector(id).scrollIntoView({
         behavior: 'smooth'
     });
+}
+
+function setLastPage(nextPage) {
+    console.log("goTo: " + localStorage.getItem("goTo"))
+    document.getElementById("Servicos" + 'Nav').style.color = '#B8E4FE'
+    document.getElementById('dot' + "Servicos").classList.remove('hidden');
+
+    document.getElementById(lastPage + 'Nav').style.color = '#ffffff'
+    document.getElementById('dot' + lastPage).classList.add('hidden');
+    lastPage = nextPage;
+}
+
+function getPointSubPage(id) {
+    console.log(id)
+    localStorage.setItem("goTo", id);
+    window.location.pathname = ""
+}
+
+function goToSubPage() {
+    console.log("goTo: " + localStorage.getItem("goTo"))
+    let id = localStorage.getItem("goTo")
+    console.log(id)
+    if (id != undefined || id != null || id != "") {
+        document.getElementById(id.slice(1) + 'Nav').style.color = '#B8E4FE'
+        document.getElementById('dot' + id.slice(1)).classList.remove('hidden');
+
+        document.getElementById("Servicos" + 'Nav').style.color = '#ffffff'
+        document.getElementById('dot' + "Servicos").classList.add('hidden');
+        
+        if (id != "#Inicio") {
+            document.getElementById("Inicio" + 'Nav').style.color = '#ffffff'
+            document.getElementById('dot' + "Inicio").classList.add('hidden');
+        }
+
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+
+    localStorage.removeItem("goTo");
 }
 
 function search(string) {

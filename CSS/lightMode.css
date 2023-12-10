@@ -196,4 +196,50 @@ body.light {
 
 .light footer .contactos .redesSociais .item:hover {
     background-color: rgba(119, 82, 254, 0.4);
+    color: var(--lightMode-background-color);
+}
+
+.light .servico .dualTone {
+    color: var(--lightMode-corNav);
+}
+
+.light .servico .foto img {
+    filter: drop-shadow(3px 4px 9px rgba(0, 0, 0, 0.45));
+}
+
+.light .servico .sideContainer1,
+.light .servico .sideContainer2 {
+    background: rgba(25, 49, 87, 0.3);
+}
+
+.light .servico .sideContainer1 .item {
+    color: var(--lightMode-color);
+    background: rgba(184, 228, 254, 0.70);
+}
+
+.light .servico .sideContainer1 .item:hover {
+    background-color: var(--lightMode-background-color);
+}
+
+.light .servico .sideContainer1 .item:hover a {
+    color: var(--lightMode-hover);
+}
+
+
+.light .servico .sideContainer1 .item svg {
+    fill: var(--lightMode-corNav);
+}
+
+.light .servico .sideContainer1 .item:hover svg {
+    fill: var(--lightMode-hover);
+}
+
+.light .servico .sideContainer2 .redesSociais .redes .item {
+    background-color: rgba(25, 49, 87, 0.3);
+    color: var(--lightMode-corNav);
+}
+
+.light .servico .sideContainer2 .redesSociais .redes .item:hover {
+    background-color: rgba(119, 82, 254, 0.4);
+    color: var(--lightMode-background-color);
 }

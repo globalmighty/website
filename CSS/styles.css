@@ -1187,8 +1187,6 @@ footer .footerLinks {
 
 footer .footerLinks .link {
     cursor: pointer;
-    user-select: none;
-    -webkit-user-drag: none;
 }
 
 footer .contactos .email {
@@ -1250,8 +1248,255 @@ footer .contactos .redesSociais .item {
     }
 }
 
-@media screen and (max-width: 767px) {}
+/* Sub Páginas */
+.servico {
+    padding-top: 8.75%;
+    margin-bottom: 8.75%;
+}
 
-@media screen and (max-width: 580px) {}
+.servico .slogan {
+    font-size: 17px;
+}
 
-@media screen and (max-width: 462px) {}
+.servico .slogan .dot {
+    margin: 0px 10px;
+}
+
+.servico .titulo {
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 57px;
+}
+
+.servico .foto {
+    margin-bottom: 57px;
+}
+
+.servico .foto img {
+    width: 95%;
+    border-radius: 10px;
+}
+
+.servico .descricao {
+    font-size: 16px;
+    font-weight: 400;
+    width: 95%;
+    text-align: start;
+}
+
+.servico .sideContainers {
+    margin-top: 153.25px;
+}
+
+.servico .sideContainer1,
+.servico .sideContainer2 {
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.servico .sideContainer1 {
+    min-width: 280px;
+    min-height: 313px;
+    max-width: 300px;
+    max-height: 335px;
+    width: 100%;
+    height: 100%;
+}
+
+.servico .sideContainers .titulo {
+    font-size: 20px;
+    margin-bottom: 27px;
+}
+
+.servico .sideContainer1 .item {
+    width: 100%;
+    height: 42px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.servico .sideContainer1 .item svg {
+    width: 22px;
+    margin-right: 10px;
+}
+
+.servico .sideContainer1 .item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.servico .sideContainer1 .item a i {
+    font-size: 13px;
+}
+
+.servico .sideContainer1 .item #arrowDevWeb {
+    margin-left: 45px;
+}
+
+.servico .sideContainer1 .item #arrowDevApp {
+    margin-left: 5px;
+}
+
+.servico .sideContainer1 .item #arrowManutencao {
+    margin-left: 105px;
+}
+
+.servico .sideContainer1 .item #arrowRestruturacao {
+    margin-left: 95px;
+}
+
+.hide {
+    display: none;
+}
+
+.item:hover .hide {
+    display: block;
+}
+
+
+.servico .sideContainer2 {
+    min-width: 280px;
+    min-height: 139px;
+    max-width: 300px;
+    max-height: 149px;
+    width: 100%;
+    height: 100%;
+}
+
+.servico .sideContainer2 .redes {
+    display: flex;
+    flex-direction: row;
+}
+
+.servico .sideContainer2 .redesSociais .redes .item {
+    font-size: 22px;
+    margin-right: 9px;
+    padding: 5px 12.6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.servico .sideContainer2 .redesSociais .redes .item a {
+    vertical-align: middle;
+}
+
+
+@media screen and (max-width: 1450px) {
+    .servico .sideContainer1 .item #arrowDevWeb {
+        margin-left: 40px;
+    }
+
+    .servico .sideContainer1 .item #arrowDevApp {
+        margin-left: 0;
+    }
+
+    .servico .sideContainer1 .item #arrowManutencao {
+        margin-left: 100px;
+    }
+
+    .servico .sideContainer1 .item #arrowRestruturacao {
+        margin-left: 90px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .servico .titulo {
+        font-size: 2vw;
+    }
+
+    .servico .sideContainer1 .item #arrowDevWeb {
+        margin-left: 40px;
+    }
+
+    .servico .sideContainer1 .item #arrowDevApp {
+        margin-left: 0;
+    }
+
+    .servico .sideContainer1 .item #arrowManutencao {
+        margin-left: 90px;
+    }
+
+    .servico .sideContainer1 .item #arrowRestruturacao {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 1249px) {}
+
+@media screen and (max-width: 1200px) {
+    .servico .titulo {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .servico .titulo {
+        font-size: 2.5vw;
+    }
+
+    .servico .descricao {
+        font-size: 16px;
+        font-weight: 400;
+        max-width: none;
+    }
+
+    .servico .foto img {
+        width: 100%;
+    }
+
+
+    .servico .descricao {
+        width: 100%;
+    }
+
+    .servico {
+        padding-top: 15%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .servico {
+        padding-top: 16%;
+    }
+
+    .servico .titulo {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .servico {
+        padding-top: 20%;
+    }
+
+    .servico .foto img {
+        width: 110%;
+    }
+
+    .servico .descricao {
+        width: 110%;
+    }
+
+    .servico .titulo {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .servico {
+        padding-top: 25%;
+    }
+
+    .servico .titulo {
+        font-size: 5vw;
+    }
+}

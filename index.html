@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <link rel="icon" href="ASSETS/xIcon.png">
     <link href="./ASSETS/fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/darkMode.css">
@@ -19,7 +20,7 @@
     <title>GlobalMighty - Em Desenvolvimento</title>
 </head>
 
-<body class="dark">
+<body class="dark" onload="goToSubPage()">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-ghost fixed-top ps-5 pe-5">
             <div class="container-fluid">
@@ -48,10 +49,10 @@
                             <a class="nav-link active dropbtn" id="ServicosNav" onclick="getPoint('#Servicos')"><span
                                     class="hidden" id="dotServicos">&#8226;</span> Serviços +</a>
                             <div class="dropdown-content">
-                                <a href="#">Desenvolvimento Web</a>
-                                <a href="#">Desenvolvimento de Aplicações</a>
-                                <a href="#">Manutenção</a>
-                                <a id="dropdownItem4" href="#">Restruturação</a>
+                                <a href="./servicos/desenvolvimento-web.html">Desenvolvimento Web</a>
+                                <a href="./servicos/desenvolvimento-apps.html">Desenvolvimento de Aplicações</a>
+                                <a href="./servicos/manutencao.html">Manutenção</a>
+                                <a id="dropdownItem4" href="./servicos/restruturacao.html">Restruturação</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -146,7 +147,7 @@
                             </div>
                             <div class="pontosFortes text-start">
                                 <div class="row">
-                                    <div class="col-12 col-md-5mb-5">
+                                    <div class="col-12 col-md-5 mb-5">
                                         <div class="conteudo">
                                             <div class="imagem">
                                                 <i class="fa-solid fa-handshake-angle icon"></i>
@@ -632,16 +633,16 @@
                         <li class="link"><a onclick="getPoint('#Servicos')">
                                 Serviços</a>
                         </li>
-                        <li class="link"><a href="">
+                        <li class="link"><a href="./servicos/desenvolvimento-web.html">
                                 Desenvolvimento Web</a>
                         </li>
-                        <li class="link"><a href="">
+                        <li class="link"><a href="./servicos/desenvolvimento-apps.html">
                                 Desenvolvimento de Aplicações</a>
                         </li>
-                        <li class="link"><a href="">
+                        <li class="link"><a href="./servicos/manutencao.html">
                                 Manutenção</a>
                         </li>
-                        <li class="link"><a href="">
+                        <li class="link"><a href="./servicos/restruturacao.html">
                                 Restruturação</a>
                         </li>
                         <li class="link"><a onclick="getPoint('#Depoimentos')">
@@ -681,7 +682,8 @@
                     <div class="row">
                         <div class="item row">
                             <div class="email">
-                                <i class="icon fa-solid fa-envelope"></i><span class="texto">globalmighty.development@gmail.com</span>
+                                <i class="icon fa-solid fa-envelope"></i><span
+                                    class="texto">globalmighty.development@gmail.com</span>
                             </div>
                         </div>
                     </div>
@@ -693,8 +695,10 @@
                         </div>
                     </div>
                     <div class="redesSociais">
-                        <div class="item instagram"><i class="fa-brands fa-instagram"></i></div>
-                        <div class="item linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="item instagram"><a href="https://www.instagram.com/globalmighty/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></div>
+                        <div class="item linkedin"><a href="https://www.linkedin.com/company/globalmighty-development"
+                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
                     </div>
                 </div>
             </div>
