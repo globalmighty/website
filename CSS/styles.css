@@ -1138,6 +1138,160 @@ ul {
     }
 }
 
+.orcamento {
+    padding-top: 7%;
+    margin-bottom: 7%;
+}
+
+.orcamento .slogan {
+    font-size: 17px;
+}
+
+.orcamento .slogan .dot {
+    margin: 0px 10px;
+}
+
+.orcamento .titulo {
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 33px;
+}
+
+.orcamento form .row {
+    justify-content: center;
+}
+
+.orcamento form .inputGrupo {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 55px;
+}
+
+.orcamento form .inputGrupo label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.orcamento form .inputGrupo .input {
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 40px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.orcamento form .inputGrupo .input:focus {
+    outline: none !important;
+}
+
+.orcamento form .inputGrupo .form-select {
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 40px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.orcamento form .inputGrupo .form-select:focus {
+    outline: none !important;
+}
+
+.orcamento form .btnOrcamento {
+    display: flex;
+    justify-content: start;
+}
+
+.orcamento form .btnOrcamento .btn {
+    max-width: 242px;
+    max-height: 50px;
+    padding: 10px 39px;
+    border-radius: 0px 20px;
+    font-size: 0.88541vw;
+}
+
+
+@media screen and (max-width: 1600px) {
+    .orcamento form .btnOrcamento .btn {
+        font-size: 1.1vw;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .orcamento .titulo {
+        font-size: 2vw;
+    }
+
+    .orcamento form .btnOrcamento .btn {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 1249px) {
+    .orcamento form .btnOrcamento .btn {
+        font-size: 1.3vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .orcamento .titulo {
+        font-size: 2.3vw;
+    }
+
+    .orcamento form .btnOrcamento .btn {
+        font-size: 1.45vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .orcamento .titulo {
+        font-size: 2.5vw;
+    }
+
+    .orcamento form .btnOrcamento .btn {
+        font-size: 1.6vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .orcamento .titulo {
+        font-size: 3vw;
+    }
+
+    .orcamento form .btnOrcamento {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .orcamento form .btnOrcamento .btn {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .orcamento .titulo {
+        font-size: 4vw;
+    }
+
+    .orcamento form .btnOrcamento .btn {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .orcamento .titulo {
+        font-size: 4.5vw;
+    }
+
+    .orcamento form .btnOrcamento .btn {
+        font-size: 3.5vw;
+    }
+}
+
 footer {
     margin-top: 150px;
     display: flex;

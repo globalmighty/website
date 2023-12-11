@@ -181,6 +181,49 @@ body.dark {
     --bs-accordion-active-bg: var(--darkMode-background-color);
 }
 
+
+.dark .orcamento .titulo .dualTone {
+    color: var(--darkMode-corNav);
+}
+
+.dark .orcamento form .inputGrupo .input {
+    background: rgba(255, 255, 255, 0.10);
+    color: var(--darkMode-color);
+}
+
+.dark .orcamento form .inputGrupo .input:focus {
+    box-shadow: 0 0 10px 5px rgba(184, 229, 255, 0.4);
+}
+
+.dark .orcamento form .inputGrupo .form-select {
+    background: rgba(255, 255, 255, 0.10);
+    color: var(--darkMode-color);
+}
+
+.dark .orcamento form .inputGrupo .form-check-input:focus,
+.dark .orcamento form .inputGrupo .form-check-input:hover{
+    box-shadow: 0 0 10px 1px rgba(184, 229, 255, 0.4);
+}
+
+.dark .orcamento form .inputGrupo .form-select option {
+    background-color: #193055;
+}
+
+.dark .orcamento form .inputGrupo .form-select:focus {
+    box-shadow: 0 0 10px 5px rgba(184, 229, 255, 0.4);
+}
+
+.dark .orcamento form .btnOrcamento .btn {
+    border: 2px solid var(--darkMode-corNav);
+    color: var(--darkMode-corNav);
+}
+
+.dark .orcamento form .btnOrcamento .btn:hover {
+    color: var(--darkMode-color);
+    border-color: var(--darkMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(142, 143, 250, 0.65);
+}
+
 .dark footer {
     background-color: rgba(255, 255, 255, 0.20);
 }
