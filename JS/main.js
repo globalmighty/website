@@ -74,3 +74,7 @@ function cliente() {
         clienteID = clienteID - 1;
     }
 }
+
+function orcamentoSubject() {
+    document.getElementById("subject").value = "Pedido de orçamento para " + document.getElementById("Empresa").value
+}

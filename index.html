@@ -56,6 +56,10 @@
                             </div>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link active" id="OrcamentoNav" onclick="getPoint('#Orcamento')"><span
+                                    class="hidden" id="dotOrcamento">&#8226;</span> Orçamento</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link active" id="DepoimentosNav" onclick="getPoint('#Depoimentos')"><span
                                     class="hidden" id="dotDepoimentos">&#8226;</span> Depoimentos</a>
                         </li>
@@ -177,7 +181,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-12 col-md-5 me-5 mb-5">
+                                    <div class="col-12 col-md-5 mb-5">
                                         <div class="conteudo">
                                             <div class="imagem">
                                                 <i class="fa-solid fa-person icon"></i>
@@ -330,7 +334,137 @@
                     </div>
             </section>
 
+            <section id="Orcamento" class="orcamento">
+                <div class="px-5 text-center">
+                    <div class="row ms-lg-5">
+                        <div class="col-12 me-lg-5">
+                            <div class="slogan">
+                                <span class="dot">&#8226;</span>Orçamento<span class="dot">&#8226;</span>
+                            </div>
+                            <div class="titulo">
+                                Apreciamos estar prontos para o nosso <span class="dualTone">primeiro diálogo</span>.
+                                <br>Inicie preenchendo o <span class="dualTone">formulário</span> de pedido de
+                                proposta!</span>
+                            </div>
 
+                            <form action="https://formsubmit.co/9a4e79af8a52126bc1941c9f9edbd68c" method="POST">
+                                <input type="hidden" name="_template" value="box">
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                                <input type="hidden" name="_subject" id="subject" value="">
+
+                                <div class="row">
+                                    <div class="inputGrupo col-12 col-lg-5">
+                                        <label for="Nome">Nome</label>
+                                        <input type="text" id="Nome" name="Nome" class="input">
+                                    </div>
+                                    <div class="inputGrupo col-12 col-lg-5">
+                                        <label for="Empresa">Empresa</label>
+                                        <input type="text" name="Empresa" id="Empresa" class="input" oninput="orcamentoSubject()">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="inputGrupo col-12 col-lg-5">
+                                        <label for="Telemovel">Telemóvel</label>
+                                        <input type="tel" name="Telemovel" class="input">
+                                    </div>
+                                    <div class="inputGrupo col-12 col-lg-5">
+                                        <label for="Email">Email</label>
+                                        <input type="email" name="Email" class="input">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="inputGrupo col-12 col-lg-10">
+                                        <label for="Preferencia">Como prefere ser contactado?</label>
+                                        <select class="form-select" name="Opção de Contacto" aria-label="Default select example">
+                                            <option selected>Escolha uma Opção</option>
+                                            <option value="Email">Email</option>
+                                            <option value="Telemovel">Chamada Telefónica</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="inputGrupo col-12 col-lg-10">
+                                        <label for="Servicos">Serviços</label>
+                                        <div class="row">
+                                            <div class="col-12 col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="Desenvolvimento Site" value="Selecionado"
+                                                        id="flexCheckDevWeb">
+                                                    <label class="form-check-label" for="flexCheckDevWeb">
+                                                        Desenvolvimento de Site</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="Manutenção Site" value="Selecionado"
+                                                        id="flexCheckManutencaoSite">
+                                                    <label class="form-check-label" for="flexCheckManutencaoSite">
+                                                        Manutenção de Site</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="Restruturação Site" value="Selecionado"
+                                                        id="flexCheckRestruturacaoSite">
+                                                    <label class="form-check-label" for="flexCheckRestruturacaoSite">
+                                                        Restruturação de Site</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="Desenvolvimento Mobile" value="Selecionado"
+                                                        id="flexCheckDevMobile">
+                                                    <label class="form-check-label" for="flexCheckDevMobile">
+                                                        Desenvolvimento de Aplicação Mobile</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="Manutenção Mobile" value="Selecionado"
+                                                        id="flexCheckManutencaoAppMobile">
+                                                    <label class="form-check-label" for="flexCheckManutencaoAppMobile">
+                                                        Manutenção de Aplicação Mobile</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="Restruturação Mobile" value="Selecionado"
+                                                        id="flexCheckRestruturacaoMobile">
+                                                    <label class="form-check-label" for="flexCheckRestruturacaoMobile">
+                                                        Restruturação de Aplicação Mobile</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-5">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="Desenvolvimento App Web" value="Selecionado"
+                                                        id="flexCheckDevAppWeb">
+                                                    <label class="form-check-label" for="flexCheckDevAppWeb">
+                                                        Desenvolvimento de Aplicação Web</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="Manutenção App Web" value="Selecionado"
+                                                        id="flexCheckManutencaoAppWeb">
+                                                    <label class="form-check-label" for="flexCheckManutencaAppWebo">
+                                                        Manutenção de Aplicação Web</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="Restruturação App Web" value="Selecionado"
+                                                        id="flexCheckRestruturacaoAppWeb">
+                                                    <label class="form-check-label" for="flexCheckRestruturacaoAppWeb">
+                                                        Restruturação de Aplicação Web</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="inputGrupo col-12 col-lg-10">
+                                        <label for="Detalhes">Detalhes</label>
+                                        <textarea id="Mensagem" name="Detalhes" class="input" rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="btnOrcamento col-12 col-lg-10">
+                                        <button type="submit" class="btn">Submeter</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section id="Depoimentos" class="depoimentos">
                 <div class="col-12">
@@ -598,135 +732,6 @@
                                 <div class="row">
                                     <div class="btnContacto col-12 col-lg-10">
                                         <button type="submit" class="btn">Enviar a Mensagem</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="Orcamento" class="orcamento">
-                <div class="px-5 text-center">
-                    <div class="row ms-lg-5">
-                        <div class="col-12 me-lg-5">
-                            <div class="slogan">
-                                <span class="dot">&#8226;</span>Orçamento<span class="dot">&#8226;</span>
-                            </div>
-                            <div class="titulo">
-                                Apreciamos estar prontos para o nosso <span class="dualTone">primeiro diálogo</span>.
-                                Inicie <br> preenchendo o <span class="dualTone">formulário</span> de pedido de
-                                proposta!</span>
-                            </div>
-
-                            <form action="https://formsubmit.co/9a4e79af8a52126bc1941c9f9edbd68c" method="POST">
-                                <input type="hidden" name="_template" value="box">
-                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
-
-                                <div class="row">
-                                    <div class="inputGrupo col-12 col-lg-5">
-                                        <label for="Nome">Nome</label>
-                                        <input type="text" id="Nome" name="Nome" class="input">
-                                    </div>
-                                    <div class="inputGrupo col-12 col-lg-5">
-                                        <label for="Empresa">Empresa</label>
-                                        <input type="text" name="Empresa" class="input">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="inputGrupo col-12 col-lg-5">
-                                        <label for="Telemovel">Telemóvel</label>
-                                        <input type="tel" name="Telemovel" class="input">
-                                    </div>
-                                    <div class="inputGrupo col-12 col-lg-5">
-                                        <label for="Email">Email</label>
-                                        <input type="email" name="Email" class="input">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="inputGrupo col-12 col-lg-10">
-                                        <label for="Preferencia">Como prefere ser contactado?</label>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>Escolha uma Opção</option>
-                                            <option value="1">Email</option>
-                                            <option value="2">Chamada Telefónica</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="inputGrupo col-12 col-lg-10">
-                                        <label for="Servicos">Serviços</label>
-                                        <div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Desenvolvimento de Site </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Manutenção de Site </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Restruturação de Site </label>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Desenvolvimento de Aplicação Mobile </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Manutenção de Aplicação Mobile </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Restruturação de Aplicação Mobile </label>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Desenvolvimento de Aplicação Web </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Manutenção de Aplicação Web </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Restruturação de Aplicação Web </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="inputGrupo col-12 col-lg-10">
-                                        <label for="Detalhes">Detalhes</label>
-                                        <textarea id="Mensagem" name="Detalhes" class="input" rows="6"></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="btnOrcamento col-12 col-lg-10">
-                                        <button type="submit" class="btn">Submeter</button>
                                     </div>
                                 </div>
                             </form>
