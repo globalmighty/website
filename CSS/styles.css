@@ -924,6 +924,12 @@ ul {
     margin-bottom: 94px;
 }
 
+.faq .accordion-body{
+    text-align: left;
+    font-size: 0.8vw;
+    font-weight: 400;
+}
+
 .faq .accordion-button.collapsed {
     display: flex;
     justify-content: center;
@@ -1320,10 +1326,11 @@ footer .titulo {
 
 footer .descricao {
     font-weight: 300;
+    font-size: 15px;
 }
 
 footer ul {
-    font-weight: 400;
+    font-weight: 300;
     list-style: none;
 }
 
