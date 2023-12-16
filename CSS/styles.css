@@ -797,6 +797,11 @@ ul {
     -webkit-user-drag: none;
 }
 
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .avaliacao {
+    margin-top: 60px;
+    font-size: 20px;
+}
+
 .depoimentos .bgDepoimento .depoimento .depoimentoCard .descricao {
     max-width: 900px;
     margin-top: 35px;
@@ -924,10 +929,15 @@ ul {
     margin-bottom: 94px;
 }
 
-.faq .accordion-body{
+.faq .accordion-body {
     text-align: left;
     font-size: 0.8vw;
     font-weight: 400;
+}
+
+.faq .accordion-body a {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .faq .accordion-button.collapsed {
@@ -946,6 +956,7 @@ ul {
     transition: 0.5s ease-in-out;
     transform: rotate(+180deg);
 }
+
 
 .faq .accordion-button:not(.collapsed)::after {
     background: url("nada");
@@ -1299,7 +1310,6 @@ ul {
 }
 
 footer {
-    margin-top: 150px;
     display: flex;
     justify-content: space-around;
 }
@@ -1515,6 +1525,35 @@ footer .contactos .redesSociais .item {
     margin-left: 95px;
 }
 
+.pedirOrcamento {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pedirOrcamento a {
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px 10px;
+    border: 2px solid #ffffff;
+    border-radius: 0px 25px 0px 25px;
+}
+
+.pedirOrcamento a:hover {
+    color: #000 !important;
+    background-color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+.pedirOrcamento a:active,
+.pedirOrcamento a:focus {
+    color: #000 !important;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
 .hide {
     display: none;
 }
@@ -1659,5 +1698,139 @@ footer .contactos .redesSociais .item {
 
     .servico .titulo {
         font-size: 5vw;
+    }
+}
+
+.politicas {
+    padding-top: 8.75%;
+    margin-bottom: 8.75%;
+}
+
+.politicas .slogan {
+    font-size: 17px;
+}
+
+.politicas .slogan .dot {
+    margin: 0px 10px;
+}
+
+.politicas .artigo {
+    margin-bottom: 57px;
+}
+
+.politicas .titulo {
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.politicas .subtitulo {
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.politicas .foto {
+    margin-bottom: 57px;
+}
+
+.politicas .foto img {
+    width: 95%;
+    border-radius: 10px;
+}
+
+.politicas .descricao {
+    font-size: 16px;
+    font-weight: 400;
+    width: 80%;
+    text-align: start;
+}
+
+.politicas .descricao a {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+    .politicas .titulo {
+        font-size: 2.3vw;
+    }
+
+    .politicas .subtitulo {
+        font-size: 1.7vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .politicas .titulo {
+        font-size: 2.5vw;
+    }
+
+    .politicas .subtitulo {
+        font-size: 1.9vw;
+    }
+
+    .politicas .descricao {
+        font-size: 16px;
+        font-weight: 400;
+        max-width: none;
+    }
+
+    .politicas .descricao {
+        width: 100%;
+    }
+
+    .politicas {
+        padding-top: 15%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .politicas {
+        padding-top: 16%;
+        margin-bottom: 5%;
+    }
+
+    .politicas .titulo {
+        font-size: 4vw;
+    }
+
+    .politicas .subtitulo {
+        font-size: 3.4vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .politicas {
+        padding-top: 20%;
+        margin-bottom: 3%;
+    }
+
+    .politicas .descricao {
+        width: 100%;
+    }
+
+    .politicas .titulo {
+        font-size: 5vw;
+    }
+
+    .politicas .subtitulo {
+        font-size: 4.4vw;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .politicas {
+        padding-top: 25%;
+        margin-bottom: 1%;
+    }
+
+    .politicas .titulo {
+        font-size: 5vw;
+    }
+
+    .politicas .subtitulo {
+        font-size: 4.4vw;
     }
 }

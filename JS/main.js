@@ -40,7 +40,7 @@ function goToSubPage() {
 
         document.getElementById("Servicos" + 'Nav').style.color = '#ffffff'
         document.getElementById('dot' + "Servicos").classList.add('hidden');
-        
+
         if (id != "#Inicio") {
             document.getElementById("Inicio" + 'Nav').style.color = '#ffffff'
             document.getElementById('dot' + "Inicio").classList.add('hidden');

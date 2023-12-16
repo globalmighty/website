@@ -235,6 +235,9 @@ body.light {
 
 .light footer .contactos .redesSociais .item:hover {
     background-color: rgba(119, 82, 254, 0.4);
+}
+
+.light footer .contactos .redesSociais .item:hover a {
     color: var(--lightMode-background-color);
 }
 
@@ -254,6 +257,18 @@ body.light {
 .light .servico .sideContainer1 .item {
     color: var(--lightMode-color);
     background: rgba(184, 228, 254, 0.70);
+}
+
+.light .servico .sideContainer1 .item.selected {
+    background-color: var(--lightMode-background-color);
+}
+
+.light .servico .sideContainer1 .item.selected a {
+    color: var(--lightMode-hover);
+}
+
+.light .servico .sideContainer1 .item.selected svg {
+    fill: var(--lightMode-hover);
 }
 
 .light .servico .sideContainer1 .item:hover {
@@ -278,7 +293,30 @@ body.light {
     color: var(--lightMode-corNav);
 }
 
-.light .servico .sideContainer2 .redesSociais .redes .item:hover {
+.light .servico .sideContainer2 .redesSociais .redes .item:hover{
     background-color: rgba(119, 82, 254, 0.4);
+}
+
+.light .servico .sideContainer2 .redesSociais .redes .item:hover a{
     color: var(--lightMode-background-color);
+}
+
+.light .depoimentos .bgDepoimento .depoimento .depoimentoCard .avaliacao .estrelaPreenchida{
+    color: var(--lightMode-corNav);
+}
+
+.light .depoimentos .bgDepoimento .depoimento .depoimentoCard .avaliacao .estrela{
+    color: rgba(25, 49, 87, 0.5);
+}
+
+.light .servico .pedirOrcamento a {
+    color: var(--lightMode-corNav);
+    border: 2px solid var(--lightMode-corNav);
+    background-color: transparent;
+}
+
+.light .servico .pedirOrcamento a:hover {
+    color: var(--lightMode-corNav) !important;
+    box-shadow: inset 0px 0px 50px 5px rgba(119, 82, 254, 0.65);
+    border-color: var(--lightMode-hover);
 }

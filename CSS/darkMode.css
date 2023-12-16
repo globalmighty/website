@@ -201,7 +201,7 @@ body.dark {
 }
 
 .dark .orcamento form .inputGrupo .form-check-input:focus,
-.dark .orcamento form .inputGrupo .form-check-input:hover{
+.dark .orcamento form .inputGrupo .form-check-input:hover {
     box-shadow: 0 0 10px 1px rgba(184, 229, 255, 0.4);
 }
 
@@ -266,6 +266,10 @@ body.dark {
     background: rgba(25, 48, 85, 0.50);
 }
 
+.dark .servico .sideContainer1 .item.selected {
+    background-color: var(--darkMode-background-color);
+}
+
 .dark .servico .sideContainer1 .item:hover {
     background-color: var(--darkMode-background-color);
 }
@@ -280,4 +284,39 @@ body.dark {
 
 .dark .servico .sideContainer2 .redesSociais .redes .item {
     background-color: var(--darkMode-background-color);
+}
+
+.dark .depoimentos .bgDepoimento .depoimento .depoimentoCard .avaliacao .estrelaPreenchida {
+    color: var(--darkMode-corNav);
+}
+
+.dark .depoimentos .bgDepoimento .depoimento .depoimentoCard .avaliacao .estrela {
+    color: rgba(184, 229, 255, 0.4);
+}
+
+.dark .faq .accordion-body a {
+    color: var(--darkMode-corNav);
+}
+
+.dark .faq .accordion-body a:hover {
+    color: var(--darkMode-corNav);
+}
+
+.dark .servico .pedirOrcamento a {
+    color: var(--darkMode-corNav);
+    border: 2px solid var(--darkMode-corNav);
+    background-color: var(--darkMode-background-color);
+}
+
+.dark .servico .pedirOrcamento a:hover {
+    color: var(--darkMode-color) !important;
+    border-color: var(--darkMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(142, 143, 250, 0.65) !important;
+}
+
+.dark .servico .pedirOrcamento a:active,
+.dark .servico .pedirOrcamento a:focus {
+    color: var(--darkMode-color) !important;
+    border-color: var(--darkMode-hover);
+    box-shadow: inset 0px 0px 50px 0px rgba(142, 143, 250, 0.65) !important;
 }

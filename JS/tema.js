@@ -26,7 +26,7 @@ function overLerMais(id) {
         document.getElementById('lerMais' + id).style.marginLeft = '20px';
         lerMais[id - 1] = !lerMais[id - 1]
     } else {
-        document.getElementById('lerMais' + id).style.marginLeft = '1 0px';
+        document.getElementById('lerMais' + id).style.marginLeft = '10px';
         lerMais[id - 1] = !lerMais[id - 1]
     }
-}  
+}
