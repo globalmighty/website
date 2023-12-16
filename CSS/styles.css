@@ -708,7 +708,7 @@ ul {
 
 .servicos .servicosList .card .titulo {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 27px;
     margin-bottom: 10px;
 }
@@ -716,6 +716,8 @@ ul {
 .servicos .servicosList .card .descricao {
     margin-bottom: 35px;
     min-height: 80px;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 .servicos .servicosList .card .lerMais a {
