@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Desenvolvimento, Site, GlobalMighty , globalmighty, Web, Website, Desenvolvimento Web, Desenvolvimento Mobile, Manutenção Website">
+    <meta name="keywords"
+        content="Desenvolvimento, Site, GlobalMighty , globalmighty, Web, Website, Desenvolvimento Web, Desenvolvimento Mobile, Manutenção Website">
     <meta name="author" content="Guilherme Tavares, Mariana Gabriel">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,7 +77,10 @@
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <button class="btn btn-outline-light procurar" onclick="search('Desenvolvimento Web')">
+                            <input type="search" class="hidden" id="pesquisa" onchange="searchAperance(1)"
+                                onsearch="search()">
+                            <button class=" btn btn-outline-light procurar" id="btnPesquisa"
+                                onclick="searchAperance(1)">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
                         </li>
@@ -267,7 +271,8 @@
                                                 digitais.
                                             </div>
                                             <div class="lerMais align-text-bottom">
-                                                <a href="servicos/desenvolvimento-web.html" onmouseover="overLerMais('1')" onmouseout="overLerMais('1')">
+                                                <a href="servicos/desenvolvimento-web.html"
+                                                    onmouseover="overLerMais('1')" onmouseout="overLerMais('1')">
                                                     LER MAIS<i id="lerMais1" class="fa-solid fa-arrow-right icon"></i>
                                                 </a>
                                             </div>
@@ -292,7 +297,8 @@
                                                 público.
                                             </div>
                                             <div class="lerMais">
-                                                <a href="servicos/desenvolvimento-apps.html" onmouseover="overLerMais('2')" onmouseout="overLerMais('2')">
+                                                <a href="servicos/desenvolvimento-apps.html"
+                                                    onmouseover="overLerMais('2')" onmouseout="overLerMais('2')">
                                                     LER MAIS<i id="lerMais2" class="fa-solid fa-arrow-right icon"></i>
                                                 </a>
                                             </div>
@@ -314,7 +320,8 @@
                                                 proativa visa prevenir problemas antes que impactem o desempenho.
                                             </div>
                                             <div class="lerMais">
-                                                <a href="servicos/manutencao.html" onmouseover="overLerMais('3')" onmouseout="overLerMais('3')">
+                                                <a href="servicos/manutencao.html" onmouseover="overLerMais('3')"
+                                                    onmouseout="overLerMais('3')">
                                                     LER MAIS<i id="lerMais3" class="fa-solid fa-arrow-right icon"></i>
                                                 </a>
                                             </div>
@@ -336,7 +343,8 @@
                                                 otimizar as suas soluções digitais existentes.
                                             </div>
                                             <div class="lerMais">
-                                                <a href="servicos/restruturacao.html" onmouseover="overLerMais('4')" onmouseout="overLerMais('4')">
+                                                <a href="servicos/restruturacao.html" onmouseover="overLerMais('4')"
+                                                    onmouseout="overLerMais('4')">
                                                     LER MAIS<i id="lerMais4" class="fa-solid fa-arrow-right icon"></i>
                                                 </a>
                                             </div>
@@ -577,7 +585,8 @@
                                                     aria-labelledby="heading1" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
                                                         O primeiro passo é entrar em contacto connosco através do
-                                                        formulário de <a onclick="getPoint('#Orcamento')">orçamento</a> no nosso website ou por email. A nossa
+                                                        formulário de <a onclick="getPoint('#Orcamento')">orçamento</a>
+                                                        no nosso website ou por email. A nossa
                                                         equipa entrará em contacto consigo para discutir os detalhes do
                                                         seu projeto, compreender as suas necessidades e fornecer uma
                                                         proposta personalizada.
@@ -654,7 +663,8 @@
                                                         uma compreensão clara dos investimentos envolvidos antes de
                                                         iniciarmos o trabalho. Estamos comprometidos em oferecer
                                                         soluções acessíveis e personalizadas que atendam às suas
-                                                        necessidades e ao seu <a onclick="getPoint('#Orcamento')">orçamento</a>.
+                                                        necessidades e ao seu <a
+                                                            onclick="getPoint('#Orcamento')">orçamento</a>.
                                                     </div>
                                                 </div>
                                             </div>

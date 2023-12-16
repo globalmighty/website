@@ -49,6 +49,36 @@ body {
     transition: color 0.3s ease-in-out 0s, background-color 0.3s ease-in-out 0s, border-color 0.3s ease-in-out 0s, box-shadow 0.3s ease-in-out 0s;
 }
 
+#pesquisa {
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    height: 38px;
+    background-color: transparent;
+    width: 130px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 50em;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0.5;
+    filter: invert(100%);
+    pointer-events: none;
+}
+
+input[type="search"]:focus::-webkit-search-cancel-button {
+    opacity: 1;
+    pointer-events: all;
+}
+
+input[type="search"].dark::-webkit-search-cancel-button {
+    filter: invert(1);
+}
+
 .procurar {
     border: none;
     height: 38px;
@@ -1750,6 +1780,7 @@ footer .contactos .redesSociais .item {
 
 .politicas .descricao a {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
