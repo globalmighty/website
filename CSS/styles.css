@@ -991,6 +991,7 @@ ul {
 .faq .accordion-body {
     text-align: left;
     font-weight: 400;
+    font-size: 15px;
 }
 
 .faq .accordion-body a {
