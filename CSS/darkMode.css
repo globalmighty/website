@@ -1,0 +1,335 @@
+:root {
+    /* darkMode */
+    --darkMode-background-color: #193055;
+    --darkMode-color: #ffffff;
+    --darkMode-corNav: #B8E4FE;
+    --darkMode-hover: #8E8FFA;
+}
+
+
+body.dark {
+    background-color: #193055;
+    color: #ffffff;
+}
+
+.dark .bg-ghost {
+    background-color: var(--darkMode-background-color);
+}
+
+.dark .nav-link:hover {
+    color: var(--darkMode-corNav) !important;
+}
+
+.dark .nav-item #InicioNav {
+    color: var(--darkMode-corNav);
+}
+
+.dark .toggler-icon {
+    background: #ffffff;
+}
+
+.dropbtn {
+    color: white;
+}
+
+.dropdown-content {
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: #000 !important;
+}
+
+.dropdown-content a:hover {
+    background-color: #dddd;
+}
+
+.dark a {
+    color: #ffffff;
+}
+
+.dark a:hover {
+    color: var(--darkMode-corNav);
+}
+
+.dark .slogan {
+    color: var(--darkMode-corNav);
+}
+
+.dark .Inicio .titulo .dualTone {
+    color: var(--darkMode-corNav);
+}
+
+.dark .Inicio .btnServicos .btn {
+    color: var(--darkMode-corNav);
+    border-color: var(--darkMode-corNav);
+}
+
+.dark .Inicio .btnServicos .btn:hover {
+    color: var(--darkMode-color);
+    border-color: var(--darkMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(142, 143, 250, 0.65);
+}
+
+.dark .sobreNos .titulo .dualTone {
+    color: var(--darkMode-corNav);
+}
+
+.dark .sobreNos .btnServicos .btn {
+    color: var(--darkMode-corNav);
+    border-color: var(--darkMode-corNav);
+}
+
+.dark .sobreNos .btnServicos .btn:hover {
+    color: var(--darkMode-color);
+    border-color: var(--darkMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(142, 143, 250, 0.65);
+}
+
+.dark .sobreNos .pontosFortes .conteudo .imagem {
+    background: rgba(184, 228, 254, 0.30);
+}
+
+.dark .sobreNos .pontosFortes .conteudo .imagem .icon {
+    color: #B8E4FE;
+}
+
+.dark .servicos .titulo .dualTone {
+    color: var(--darkMode-corNav);
+}
+
+.dark .servicos .servicosList .card {
+    border-color: var(--darkMode-corNav);
+}
+
+.dark .servicos .servicosList .card {
+    border-color: var(--darkMode-corNav);
+}
+
+.dark .servicos .servicosList .card .icon {
+    color: var(--darkMode-corNav);
+}
+
+.dark .servicos .servicosList .card .lerMais a {
+    color: var(--darkMode-corNav);
+}
+
+.dark .servicos .servicosList .card .icon svg {
+    fill: var(--darkMode-corNav) !important;
+    color: var(--darkMode-corNav) !important;
+}
+
+.dark .contacto .titulo .dualTone {
+    color: var(--darkMode-corNav);
+}
+
+.dark .contacto form .inputGrupo .input {
+    background: rgba(255, 255, 255, 0.10);
+    color: var(--darkMode-color);
+}
+
+.dark .contacto form .inputGrupo .input:focus {
+    box-shadow: 0 0 10px 5px rgba(184, 229, 255, 0.4);
+}
+
+.dark .contacto form .btnContacto .btn {
+    border: 2px solid var(--darkMode-corNav);
+    color: var(--darkMode-corNav);
+}
+
+.dark .contacto form .btnContacto .btn:hover {
+    color: var(--darkMode-color);
+    border-color: var(--darkMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(142, 143, 250, 0.65);
+}
+
+
+.dark .depoimentos .bgDepoimento {
+    background: rgba(255, 255, 255, 0.20);
+}
+
+
+.dark .depoimentos .bgDepoimento .depoimento .depoimentoCard .dualTone {
+    color: var(--darkMode-corNav);
+}
+
+
+.dark .depoimentos .bgDepoimento .depoimento .btnDepoimento i:hover {
+    color: var(--darkMode-corNav);
+}
+
+.dark .depoimentos .bgDepoimento .depoimento .btnDepoimento i:active,
+.dark .depoimentos .bgDepoimento .depoimento .btnDepoimento i:focus {
+    color: var(--darkMode-background-color);
+}
+
+.dark .faq .dualTone {
+    color: var(--darkMode-corNav);
+}
+
+.dark .faq .accordion {
+    --bs-accordion-bg: none;
+    --bs-accordion-color: none;
+    --bs-accordion-border-color: var(--darkMode-corNav);
+    --bs-accordion-border-width: 2px;
+    --bs-accordion-btn-color: var(--darkMode-color);
+    --bs-accordion-btn-bg: var(--darkMode-background-color);
+    --bs-accordion-btn-focus-border-color: var(--darkMode-corNav);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-color: var(--darkMode-color);
+    --bs-accordion-active-bg: var(--darkMode-background-color);
+}
+
+
+.dark .orcamento .titulo .dualTone {
+    color: var(--darkMode-corNav);
+}
+
+.dark .orcamento form .inputGrupo .input {
+    background: rgba(255, 255, 255, 0.10);
+    color: var(--darkMode-color);
+}
+
+.dark .orcamento form .inputGrupo .input:focus {
+    box-shadow: 0 0 10px 5px rgba(184, 229, 255, 0.4);
+}
+
+.dark .orcamento form .inputGrupo .form-select {
+    background: rgba(255, 255, 255, 0.10);
+    color: var(--darkMode-color);
+}
+
+.dark .orcamento form .inputGrupo .form-check-input:focus,
+.dark .orcamento form .inputGrupo .form-check-input:hover {
+    box-shadow: 0 0 10px 1px rgba(184, 229, 255, 0.4);
+}
+
+.dark .orcamento form .inputGrupo .form-select option {
+    background-color: #193055;
+}
+
+.dark .orcamento form .inputGrupo .form-select:focus {
+    box-shadow: 0 0 10px 5px rgba(184, 229, 255, 0.4);
+}
+
+.dark .orcamento form .btnOrcamento .btn {
+    border: 2px solid var(--darkMode-corNav);
+    color: var(--darkMode-corNav);
+}
+
+.dark .orcamento form .btnOrcamento .btn:hover {
+    color: var(--darkMode-color);
+    border-color: var(--darkMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(142, 143, 250, 0.65);
+}
+
+.dark footer {
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+.dark footer .footerLinks .link {
+    color: var(--darkMode-color);
+}
+
+.dark footer .footerLinks .link:hover {
+    color: var(--darkMode-corNav);
+}
+
+.dark footer .contactos .texto {
+    color: var(--darkMode-color);
+}
+
+.dark footer .contactos .icon {
+    color: var(--darkMode-corNav);
+}
+
+.dark footer .contactos .redesSociais .item {
+    background-color: var(--darkMode-background-color);
+}
+
+.dark .servico .dualTone {
+    color: var(--darkMode-corNav);
+}
+
+.dark .servico .foto img {
+    filter: drop-shadow(3px 4px 9px rgba(0, 0, 0, 0.45));
+}
+
+.dark .servico .sideContainer1,
+.dark .servico .sideContainer2 {
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.dark .servico .sideContainer1 .item {
+    color: var(--darkMode-color);
+    background: rgba(25, 48, 85, 0.50);
+}
+
+.dark .servico .sideContainer1 .item.selected {
+    background-color: var(--darkMode-background-color);
+}
+
+.dark .servico .sideContainer1 .item:hover {
+    background-color: var(--darkMode-background-color);
+}
+
+.dark .servico .sideContainer1 .item:hover a {
+    color: var(--darkMode-color);
+}
+
+.dark .servico .sideContainer1 .item svg {
+    fill: var(--darkMode-color);
+}
+
+.dark .servico .sideContainer2 .redesSociais .redes .item {
+    background-color: var(--darkMode-background-color);
+}
+
+.dark .depoimentos .bgDepoimento .depoimento .depoimentoCard .avaliacao .estrelaPreenchida {
+    color: var(--darkMode-corNav);
+}
+
+.dark .depoimentos .bgDepoimento .depoimento .depoimentoCard .avaliacao .estrela {
+    color: rgba(184, 229, 255, 0.4);
+}
+
+.dark .faq .accordion-body a {
+    color: var(--darkMode-corNav);
+}
+
+.dark .faq .accordion-body a:hover {
+    color: var(--darkMode-corNav);
+}
+
+.dark .servico .pedirOrcamento a {
+    color: var(--darkMode-corNav);
+    border: 2px solid var(--darkMode-corNav);
+    background-color: var(--darkMode-background-color);
+}
+
+.dark .servico .pedirOrcamento a:hover {
+    color: var(--darkMode-color) !important;
+    border-color: var(--darkMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(142, 143, 250, 0.65) !important;
+}
+
+.dark .servico .pedirOrcamento a:active,
+.dark .servico .pedirOrcamento a:focus {
+    color: var(--darkMode-color) !important;
+    border-color: var(--darkMode-hover);
+    box-shadow: inset 0px 0px 50px 0px rgba(142, 143, 250, 0.65) !important;
+}
+
+.dark .politicas .descricao a:hover {
+    color: var(--darkMode-hover);
+}
+
+.dark #pesquisa {
+    color: var(--darkMode-color);
+    border-bottom: 1px solid var(--darkMode-color);
+}
+
+.dark input[type="search"]::-webkit-search-cancel-button {
+    filter: invert(100%);
+}

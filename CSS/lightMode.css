@@ -1,0 +1,341 @@
+:root {
+    /* lightMode */
+    --lightMode-background-color: #ffff;
+    --lightMode-color: #000;
+    --lightMode-corNav: #193055;
+    --lightMode-hover: #7752FE;
+}
+
+
+body.light {
+    background-color: var(--lightMode-background-color);
+    color: var(--lightMode-color);
+}
+
+.light .bg-ghost {
+    background-color: var(--lightMode-background-color);
+}
+
+.light .nav-link {
+    color: var(--lightMode-corNav) !important;
+}
+
+.light .nav-link:hover {
+    color: var(--lightMode-corNav) !important;
+}
+
+.light #InicioNav {
+    color: var(--lightMode-corNav);
+}
+
+.light .toggler-icon {
+    background: var(--lightMode-corNav);
+}
+
+.light .procurar i {
+    color: #000;
+}
+
+/* .light .procurar:hover{ 
+    background-color: #ffff !important;
+} */
+
+.light a {
+    color: var(--lightMode-corNav);
+}
+
+.light a:hover {
+    color: var(--lightMode-corNav);
+}
+
+.light a:hover {
+    color: var(--lightMode-hover);
+}
+
+.light .slogan {
+    color: var(--lightMode-corNav);
+}
+
+.light .Inicio .titulo .dualTone {
+    color: var(--lightMode-corNav);
+}
+
+.light .Inicio .btnServicos .btn {
+    color: var(--lightMode-corNav);
+    border-color: var(--lightMode-corNav);
+}
+
+.light .Inicio .btnServicos .btn:hover {
+    color: var(--lightMode-corNav);
+    border-color: var(--lightMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(119, 82, 254, 0.65);
+}
+
+.light .sobreNos .titulo .dualTone {
+    color: var(--lightMode-corNav);
+}
+
+.light .sobreNos .btnServicos .btn {
+    color: var(--lightMode-corNav);
+    border-color: var(--lightMode-corNav);
+}
+
+.light .sobreNos .btnServicos .btn:hover {
+    color: var(--lightMode-corNav);
+    border-color: var(--lightMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(119, 82, 254, 0.65);
+}
+
+.light .sobreNos .pontosFortes .conteudo .imagem {
+    background: rgba(25, 49, 87, 0.30)
+}
+
+.light .sobreNos .pontosFortes .conteudo .imagem .icon {
+    color: var(--lightMode-corNav);
+}
+
+.light .servicos .titulo .dualTone {
+    color: var(--lightMode-corNav);
+}
+
+.light .servicos .servicosList .card {
+    border-color: var(--lightMode-corNav);
+}
+
+.light .servicos .servicosList .card .icon svg {
+    fill: var(--lightMode-corNav) !important;
+    color: var(--lightMode-corNav) !important;
+}
+
+.light .contacto .titulo .dualTone {
+    color: var(--lightMode-corNav);
+}
+
+.light .contacto form .inputGrupo .input {
+    background: rgba(25, 49, 87, 0.25);
+    color: var(--lightMode-color);
+}
+
+.light .contacto form .inputGrupo .input:focus {
+    box-shadow: 0 0 10px 5px rgba(25, 49, 87, 0.5);
+}
+
+.light .contacto form .btnContacto .btn {
+    border: 2px solid var(--lightMode-corNav);
+    color: var(--lightMode-corNav);
+}
+
+.light .contacto form .btnContacto .btn:hover {
+    color: var(--lightMode-corNav);
+    border-color: var(--lightMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(119, 82, 254, 0.65);
+}
+
+.light .depoimentos .bgDepoimento {
+    background: rgba(25, 49, 87, 0.25);
+}
+
+.light .depoimentos .bgDepoimento .depoimento .depoimentoCard .dualTone {
+    color: var(--lightMode-corNav);
+}
+
+.light .depoimentos .bgDepoimento .depoimento .btnDepoimento i {
+    color: var(--lightMode-corNav);
+}
+
+.light .depoimentos .bgDepoimento .depoimento .btnDepoimento i:hover {
+    color: var(--lightMode-corNav);
+}
+
+.light .depoimentos .bgDepoimento .depoimento .btnDepoimento i:active,
+.light .depoimentos .bgDepoimento .depoimento .btnDepoimento i:focus {
+    color: var(--lightMode-hover);
+}
+
+.light .faq .accordion {
+    --bs-accordion-bg: none;
+    --bs-accordion-color: none;
+    --bs-accordion-border-color: var(--lightMode-corNav);
+    --bs-accordion-border-width: 2px;
+    --bs-accordion-btn-color: var(--lightMode-color);
+    --bs-accordion-btn-bg: var(--lightMode-background-color);
+    --bs-accordion-btn-focus-border-color: var(--lightMode-corNav);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-color: var(--lightMode-color);
+    --bs-accordion-active-bg: var(--lightMode-background-color);
+}
+
+
+.light .orcamento .titulo .dualTone {
+    color: var(--lightMode-corNav);
+}
+
+.light .orcamento form .inputGrupo .input {
+    background: rgba(25, 49, 87, 0.25);
+    color: var(--lightMode-color);
+}
+
+.light .orcamento form .inputGrupo .input:focus {
+    box-shadow: 0 0 10px 5px rgba(25, 49, 87, 0.5);
+}
+
+.light .orcamento form .inputGrupo .form-select {
+    background: rgba(25, 49, 87, 0.25);
+    color: var(--lightMode-color);
+}
+
+.light .orcamento form .inputGrupo .form-select:focus {
+    box-shadow: 0 0 10px 5px rgba(25, 49, 87, 0.5);
+}
+
+.light .orcamento form .inputGrupo .form-check-input:focus,
+.light .orcamento form .inputGrupo .form-check-input:hover {
+    box-shadow: 0 0 10px 1px rgba(25, 49, 87, 0.5);
+}
+
+.light .orcamento form .btnOrcamento .btn {
+    border: 2px solid var(--lightMode-corNav);
+    color: var(--lightMode-corNav);
+}
+
+.light .orcamento form .btnOrcamento .btn:hover {
+    color: var(--lightMode-corNav);
+    border-color: var(--lightMode-hover);
+    box-shadow: inset 0px 0px 50px 5px rgba(119, 82, 254, 0.65);
+}
+
+.light footer {
+    background-color: rgba(25, 49, 87, 0.4);
+}
+
+.light footer .footerLinks .link {
+    color: var(--lightMode-corNav);
+}
+
+.light footer .footerLinks .link a:hover {
+    color: var(--lightMode-hover);
+}
+
+.light footer .footerLinks .link:hover {
+    color: var(--lightMode-corNav);
+}
+
+.light footer .contactos .texto {
+    color: var(--lightMode-corNav);
+}
+
+.light footer .contactos .icon {
+    color: var(--lightMode-corNav);
+}
+
+.light footer .contactos .redesSociais .item {
+    background-color: rgba(25, 49, 87, 0.3);
+    color: var(--lightMode-corNav);
+}
+
+.light footer .contactos .redesSociais .item:hover {
+    background-color: rgba(119, 82, 254, 0.4);
+}
+
+.light footer .contactos .redesSociais .item:hover a {
+    color: var(--lightMode-background-color);
+}
+
+.light .servico .dualTone {
+    color: var(--lightMode-corNav);
+}
+
+.light .servico .foto img {
+    filter: drop-shadow(3px 4px 9px rgba(0, 0, 0, 0.45));
+}
+
+.light .servico .sideContainer1,
+.light .servico .sideContainer2 {
+    background: rgba(25, 49, 87, 0.3);
+}
+
+.light .servico .sideContainer1 .item {
+    color: var(--lightMode-color);
+    background: rgba(184, 228, 254, 0.70);
+}
+
+.light .servico .sideContainer1 .item.selected {
+    background-color: var(--lightMode-background-color);
+}
+
+.light .servico .sideContainer1 .item.selected a {
+    color: var(--lightMode-hover);
+}
+
+.light .servico .sideContainer1 .item.selected svg {
+    fill: var(--lightMode-hover);
+}
+
+.light .servico .sideContainer1 .item:hover {
+    background-color: var(--lightMode-background-color);
+}
+
+.light .servico .sideContainer1 .item:hover a {
+    color: var(--lightMode-hover);
+}
+
+
+.light .servico .sideContainer1 .item svg {
+    fill: var(--lightMode-corNav);
+}
+
+.light .servico .sideContainer1 .item:hover svg {
+    fill: var(--lightMode-hover);
+}
+
+.light .servico .sideContainer2 .redesSociais .redes .item {
+    background-color: rgba(25, 49, 87, 0.3);
+    color: var(--lightMode-corNav);
+}
+
+.light .servico .sideContainer2 .redesSociais .redes .item:hover {
+    background-color: rgba(119, 82, 254, 0.4);
+}
+
+.light .servico .sideContainer2 .redesSociais .redes .item:hover a {
+    color: var(--lightMode-background-color);
+}
+
+.light .depoimentos .bgDepoimento .depoimento .depoimentoCard .avaliacao .estrelaPreenchida {
+    color: var(--lightMode-corNav);
+}
+
+.light .depoimentos .bgDepoimento .depoimento .depoimentoCard .avaliacao .estrela {
+    color: rgba(25, 49, 87, 0.5);
+}
+
+.light .servico .pedirOrcamento a {
+    color: var(--lightMode-corNav);
+    border: 2px solid var(--lightMode-corNav);
+    background-color: transparent;
+}
+
+.light .servico .pedirOrcamento a:hover {
+    color: var(--lightMode-corNav) !important;
+    box-shadow: inset 0px 0px 50px 5px rgba(119, 82, 254, 0.65);
+    border-color: var(--lightMode-hover);
+}
+
+.light .politicas .descricao a:hover {
+    color: var(--lightMode-hover);
+}
+
+.light #pesquisa {
+    color: var(--lightMode-color);
+    border-bottom: 1px solid var(--lightMode-color);
+}
+
+.light #pesquisa:focus,
+.light #pesquisa:active {
+    border: none;
+    color: var(--lightMode-color);
+}
+
+.light input[type="search"]::-webkit-search-cancel-button {
+    filter: invert(0%);
+}
