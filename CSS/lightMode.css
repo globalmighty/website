@@ -289,16 +289,16 @@ body.light {
 }
 
 .light .servico .sideContainer2 .redesSociais .redes .item {
-    background-color: rgba(25, 49, 87, 0.3);
-    color: var(--lightMode-corNav);
+    color: var(--lightMode-color);
+    background: rgba(184, 228, 254, 0.70);
 }
 
 .light .servico .sideContainer2 .redesSociais .redes .item:hover {
-    background-color: rgba(119, 82, 254, 0.4);
+    background-color: var(--lightMode-background-color);
 }
 
 .light .servico .sideContainer2 .redesSociais .redes .item:hover a {
-    color: var(--lightMode-background-color);
+    color: var(--lightMode-hover);
 }
 
 .light .depoimentos .bgDepoimento .depoimento .depoimentoCard .avaliacao .estrelaPreenchida {

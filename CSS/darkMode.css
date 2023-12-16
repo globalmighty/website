@@ -28,6 +28,7 @@ body.dark {
     background: #ffffff;
 }
 
+
 .dropbtn {
     color: white;
 }
@@ -283,6 +284,15 @@ body.dark {
 }
 
 .dark .servico .sideContainer2 .redesSociais .redes .item {
+    color: var(--darkMode-color);
+    background: rgba(25, 48, 85, 0.50);
+}
+
+.dark .servico .sideContainer2 .redesSociais .redes .item:hover a {
+    color: var(--darkMode-color);
+}
+
+.dark .servico .sideContainer2 .redesSociais .redes .item:hover {
     background-color: var(--darkMode-background-color);
 }
 
