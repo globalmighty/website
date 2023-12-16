@@ -15,8 +15,16 @@ function getPoint(id) {
 }
 
 function setLastPage(nextPage) {
-    document.getElementById("Servicos" + 'Nav').style.color = '#B8E4FE'
-    document.getElementById('dot' + "Servicos").classList.remove('hidden');
+    if (nextPage == "Orcamentos") {
+        document.getElementById("Orcamento" + 'Nav').style.color = '#B8E4FE'
+        document.getElementById('dot' + "Orcamento").classList.remove('hidden');
+    } else if (nextPage == "Contacto") {
+        document.getElementById("Contacto" + 'Nav').style.color = '#B8E4FE'
+        document.getElementById('dot' + "Contacto").classList.remove('hidden');
+    } else {
+        document.getElementById("Servicos" + 'Nav').style.color = '#B8E4FE'
+        document.getElementById('dot' + "Servicos").classList.remove('hidden');
+    }
 
     document.getElementById(lastPage + 'Nav').style.color = '#ffffff'
     document.getElementById('dot' + lastPage).classList.add('hidden');
