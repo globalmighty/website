@@ -87,7 +87,7 @@ function durationSlider() {
         if (count >= listItems) {
             count = 0;
         }
-    }, 4000);
+    }, 6000);
 
 }
 
