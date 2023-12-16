@@ -15,7 +15,6 @@ function getPoint(id) {
 }
 
 function setLastPage(nextPage) {
-    console.log("goTo: " + localStorage.getItem("goTo"))
     document.getElementById("Servicos" + 'Nav').style.color = '#B8E4FE'
     document.getElementById('dot' + "Servicos").classList.remove('hidden');
 
@@ -25,15 +24,12 @@ function setLastPage(nextPage) {
 }
 
 function getPointSubPage(id) {
-    console.log(id)
     localStorage.setItem("goTo", id);
     window.location.pathname = ""
 }
 
 function goToSubPage() {
-    console.log("goTo: " + localStorage.getItem("goTo"))
     let id = localStorage.getItem("goTo")
-    console.log(id)
     if (id != undefined || id != null || id != "") {
         document.getElementById(id.slice(1) + 'Nav').style.color = '#B8E4FE'
         document.getElementById('dot' + id.slice(1)).classList.remove('hidden');
