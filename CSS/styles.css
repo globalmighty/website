@@ -50,9 +50,7 @@ body {
 }
 
 #pesquisa {
-    color: #ffffff;
     border: none;
-    border-bottom: 1px solid #ffffff;
     height: 38px;
     background-color: transparent;
     width: 130px;
@@ -66,17 +64,12 @@ input[type="search"]::-webkit-search-cancel-button {
     background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
     background-size: contain;
     opacity: 0.5;
-    filter: invert(100%);
     pointer-events: none;
 }
 
 input[type="search"]:focus::-webkit-search-cancel-button {
     opacity: 1;
     pointer-events: all;
-}
-
-input[type="search"].dark::-webkit-search-cancel-button {
-    filter: invert(1);
 }
 
 .procurar {
@@ -92,6 +85,19 @@ input[type="search"].dark::-webkit-search-cancel-button {
     .tema {
         margin-left: 10px;
     }
+
+    #pesquisa {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .navbar-brand .logo {
+        margin: 0px;
+    }
+    #pesquisa {
+        width: 70px;
+    }
 }
 
 @media screen and (max-width: 1050px) {
@@ -103,6 +109,13 @@ input[type="search"].dark::-webkit-search-cancel-button {
 @media screen and (min-width: 992px) {
     .tema {
         margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #pesquisa {
+        width: 200px;
+        margin-bottom: 10px;
     }
 }
 
