@@ -59,46 +59,7 @@ function goToSubPage() {
     localStorage.removeItem("goTo");
 }
 
-function search() {
-    let string = document.getElementById("pesquisa").value
-    window.find(string);
-}
-
-let aperance = false
-function searchAperance(parent) {
-    if (aperance) {
-        if (document.getElementById("pesquisa").value == "") {
-            document.getElementById("pesquisa").classList.add('hidden');
-            document.getElementById("btnPesquisa").classList.remove('hidden');
-            aperance = false
-        }
-    } else {
-        if (parent != 0) {
-            document.getElementById("btnPesquisa").classList.add('hidden');
-            document.getElementById("pesquisa").classList.remove('hidden');
-            aperance = true
-        }
-    }
-}
-
-function durationSlider() {
-    var listItems = 1;
-    var count = 0;
-
-    setInterval(function () {
-        searchAperance(0)
-        count += 1;
-        if (count >= listItems) {
-            count = 0;
-        }
-    }, 6000);
-
-}
-
-durationSlider();
-
 let clienteID = 1;
-
 function cliente() {
     if (clienteID === 1) {
         document.getElementById("cliente" + (clienteID + 1)).className = "depoimentoCard col-8 showned"
