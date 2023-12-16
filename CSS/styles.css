@@ -109,6 +109,7 @@ input[type="search"]:focus::-webkit-search-cancel-button {
     .navbar-brand .logo {
         margin: 0px;
     }
+
     #pesquisa {
         width: 70px;
     }
@@ -1891,6 +1892,94 @@ footer .contactos .redesSociais .item {
     }
 
     .politicas .subtitulo {
+        font-size: 4.4vw;
+    }
+}
+
+.agradecimento {
+    padding-top: 10%;
+    margin-bottom: 10%;
+}
+
+.agradecimento .titulo {
+    font-size: 3vw;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.agradecimento .subtitulo {
+    font-size: 1.5vw;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .agradecimento .titulo {
+        font-size: 3.5vw;
+    }
+
+    .agradecimento .subtitulo {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .agradecimento {
+        padding-top: 15%;
+        margin-bottom: 12%;
+    }
+    
+    .agradecimento .titulo {
+        font-size: 3.7vw;
+    }
+
+    .agradecimento .subtitulo {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .agradecimento {
+        padding-top: 16%;
+    }
+
+    .agradecimento .titulo {
+        font-size: 4.5vw;
+    }
+
+    .agradecimento .subtitulo {
+        font-size: 3.4vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .agradecimento {
+        padding-top: 20%;
+        margin-bottom: 13%;
+    }
+
+    .agradecimento .titulo {
+        font-size: 5vw;
+    }
+
+    .agradecimento .subtitulo {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .agradecimento {
+        padding-top: 25%;
+        margin-bottom: 15%;
+    }
+
+    .agradecimento .titulo {
+        font-size: 5vw;
+    }
+
+    .agradecimento .subtitulo {
         font-size: 4.4vw;
     }
 }
