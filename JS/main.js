@@ -38,13 +38,14 @@ function getPointSubPage(id) {
 
 function goToSubPage() {
     let id = localStorage.getItem("goTo")
-    if (id != undefined || id != null || id != "") {
-        document.getElementById(id.slice(1) + 'Nav').style.color = '#B8E4FE'
-        document.getElementById('dot' + id.slice(1)).classList.remove('hidden');
 
+    if (id != undefined || id != null || id != "") {
         document.getElementById("Servicos" + 'Nav').style.color = '#ffffff'
         document.getElementById('dot' + "Servicos").classList.add('hidden');
 
+        document.getElementById(id.slice(1) + 'Nav').style.color = '#B8E4FE'
+        document.getElementById('dot' + id.slice(1)).classList.remove('hidden');
+        
         if (id != "#Inicio") {
             document.getElementById("Inicio" + 'Nav').style.color = '#ffffff'
             document.getElementById('dot' + "Inicio").classList.add('hidden');
@@ -55,6 +56,8 @@ function goToSubPage() {
             behavior: 'smooth'
         });
     }
+
+    lastPage = id.slice(1);
 
     localStorage.removeItem("goTo");
 }
