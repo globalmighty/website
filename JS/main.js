@@ -39,10 +39,6 @@ function getPointSubPage(id) {
 function goToSubPage() {
     let id = localStorage.getItem("goTo")
 
-    if(id == null){
-        id = "#Inicio"
-    }
-
     if (id != undefined || id != null || id != "") {
         document.getElementById("Servicos" + 'Nav').style.color = '#ffffff'
         document.getElementById('dot' + "Servicos").classList.add('hidden');

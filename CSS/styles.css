@@ -287,7 +287,7 @@ ul {
     margin: 0px 10px;
 }
 
-.Inicio .titulo h1 {
+.Inicio .titulo {
     font-size: 3.3582vw;
     font-weight: 600;
     margin-top: 20px;
@@ -303,7 +303,6 @@ ul {
 
 .Inicio #svgHome {
     width: 100%;
-    height: 100%;
     max-width: 427px;
     max-height: 390px;
 }
@@ -348,7 +347,7 @@ ul {
         display: none;
     }
 
-    .Inicio .titulo h1 {
+    .Inicio .titulo {
         font-size: 5vw;
     }
 
@@ -363,7 +362,7 @@ ul {
         margin-bottom: 8.5%;
     }
 
-    .Inicio .titulo h1 {
+    .Inicio .titulo {
         font-size: 6vw;
     }
 
@@ -378,7 +377,7 @@ ul {
         margin-bottom: 15%;
     }
 
-    .Inicio .titulo h1 {
+    .Inicio .titulo {
         font-size: 6.5vw;
     }
 
@@ -515,14 +514,14 @@ ul {
     margin: 0px 10px;
 }
 
-.sobreNos .titulo h2 {
+.sobreNos .titulo {
     font-size: 1.8vw;
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 33px;
 }
 
-.sobreNos .descricao p {
+.sobreNos .descricao {
     font-size: 16px;
     font-weight: 400;
     max-width: 600px;
@@ -551,13 +550,13 @@ ul {
     text-align: center;
 }
 
-.sobreNos .pontosFortes .conteudo .informacoes .titulo h3 {
+.sobreNos .pontosFortes .conteudo .informacoes .titulo {
     font-size: 22px;
     font-weight: 500;
     margin: 0;
 }
 
-.sobreNos .pontosFortes .conteudo .informacoes .descricao p {
+.sobreNos .pontosFortes .conteudo .informacoes .descricao {
     font-size: 15px;
     font-weight: 400;
 }
@@ -587,7 +586,7 @@ ul {
 }
 
 @media screen and (max-width: 1400px) {
-    .sobreNos .titulo h2 {
+    .sobreNos .titulo {
         font-size: 2vw;
     }
 
@@ -607,7 +606,7 @@ ul {
 }
 
 @media screen and (max-width: 1200px) {
-    .sobreNos .titulo h2 {
+    .sobreNos .titulo {
         font-size: 2.3vw;
     }
 
@@ -618,7 +617,7 @@ ul {
 }
 
 @media screen and (max-width: 992px) {
-    .sobreNos .titulo h2 {
+    .sobreNos .titulo {
         font-size: 2.5vw;
     }
 
@@ -632,7 +631,7 @@ ul {
         padding-top: 10%;
     }
 
-    .sobreNos .titulo h2 {
+    .sobreNos .titulo {
         font-size: 4vw;
     }
 
@@ -646,7 +645,7 @@ ul {
         padding-top: 8.5%;
     }
 
-    .sobreNos .titulo h2 {
+    .sobreNos .titulo {
         font-size: 4vw;
     }
 
@@ -660,7 +659,7 @@ ul {
         padding-top: 15%;
     }
 
-    .sobreNos .titulo h2 {
+    .sobreNos .titulo {
         font-size: 5vw;
     }
 
@@ -682,7 +681,7 @@ ul {
     margin: 0px 10px;
 }
 
-.servicos .titulo h2 {
+.servicos .titulo {
     font-size: 1.8vw;
     font-weight: 600;
     margin-top: 20px;
@@ -708,14 +707,14 @@ ul {
     padding: 26px 30px;
 }
 
-.servicos .servicosList .card .titulo h3 {
+.servicos .servicosList .card .titulo {
     font-size: 20px;
     font-weight: 500;
     margin-top: 27px;
     margin-bottom: 10px;
 }
 
-.servicos .servicosList .card .descricao p {
+.servicos .servicosList .card .descricao {
     margin-bottom: 35px;
     min-height: 80px;
     font-weight: 400;
@@ -736,7 +735,7 @@ ul {
 @media screen and (max-width: 1600px) {}
 
 @media screen and (max-width: 1400px) {
-    .servicos .titulo h2 {
+    .servicos .titulo {
         font-size: 2vw;
     }
 }
@@ -744,19 +743,19 @@ ul {
 @media screen and (max-width: 1249px) {}
 
 @media screen and (max-width: 1200px) {
-    .servicos .titulo h2 {
+    .servicos .titulo {
         font-size: 2.3vw;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .servicos .titulo h2 {
+    .servicos .titulo {
         font-size: 2.5vw;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .servicos .titulo h2 {
+    .servicos .titulo {
         font-size: 3vw;
     }
 
@@ -773,11 +772,448 @@ ul {
 }
 
 @media screen and (max-width: 462px) {
-    .servicos .titulo h2 {
+    .servicos .titulo {
         font-size: 4.5vw;
     }
 }
 
+
+.depoimentos {
+    padding-top: 8.75%;
+    margin-bottom: 9%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.depoimentos .col-12 {
+    padding: 0;
+}
+
+.depoimentos .row {
+    --bs-gutter-x: 0;
+}
+
+.depoimentos .bgDepoimento {
+    width: 100%;
+    min-height: 650px;
+}
+
+.depoimentos .bgDepoimento .depoimento {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos .bgDepoimento .depoimento {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos .bgDepoimento .depoimento .btnDepoimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos .bgDepoimento .depoimento .btnDepoimento i {
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard {
+    height: 100%;
+    min-height: 650px;
+    text-align: center;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .slogan {
+    font-size: 15px;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .slogan .dot {
+    margin: 0px 10px;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo {
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 87px
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .fotoCliente img {
+    border-radius: 100%;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .avaliacao {
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .descricao {
+    max-width: 900px;
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .empresa {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .profissao {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .texto1 {
+    max-width: 900px;
+    margin-top: 45px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .texto2 {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.depoimentos .bgDepoimento .depoimento .depoimentoCard .texto3 {
+    margin-top: 12px;
+    margin-bottom: 180px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1400px) {
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 1249px) {}
+
+@media screen and (max-width: 1200px) {
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo {
+        font-size: 2.5vw;
+    }
+
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .descricao {
+        font-size: 18px;
+    }
+
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .empresa {
+        margin-top: 50px;
+        font-size: 18px;
+    }
+
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .profissao {
+        margin-top: 20px;
+        font-size: 19px;
+    }
+
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .texto1 {
+        font-size: 18px;
+    }
+
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .texto2 {
+        margin-top: 50px;
+        font-size: 18px;
+    }
+
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .texto3 {
+        margin-top: 20px;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo {
+        font-size: 4.5vw;
+    }
+}
+
+
+.faq {
+    padding-top: 9%;
+    margin-bottom: 9%;
+    min-height: 620px;
+}
+
+.faq .slogan {
+    font-size: 17px;
+}
+
+.faq .slogan .dot {
+    margin: 0px 10px;
+}
+
+.faq .titulo {
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 94px;
+}
+
+.faq .accordion-body {
+    text-align: left;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.faq .accordion-body a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.faq .accordion-button.collapsed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq .accordion-button.collapsed::after {
+    background: url("nada");
+    content: "\2b";
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    transform: rotate(+180deg);
+}
+
+
+.faq .accordion-button:not(.collapsed)::after {
+    background: url("nada");
+    content: "\2212";
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-180deg);
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1400px) {
+    .faq .titulo {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 1249px) {}
+
+@media screen and (max-width: 1200px) {
+    .faq .titulo {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .faq {
+        min-height: none;
+        margin-bottom: 10%;
+    }
+
+    .faq .titulo {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .faq .titulo {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .faq .titulo {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .faq .titulo {
+        font-size: 4.5vw;
+    }
+}
+
+.contacto {
+    padding-top: 7%;
+    margin-bottom: 7%;
+}
+
+.contacto .slogan {
+    font-size: 17px;
+}
+
+.contacto .slogan .dot {
+    margin: 0px 10px;
+}
+
+.contacto .titulo {
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 33px;
+}
+
+.contacto form .row {
+    justify-content: center;
+}
+
+.contacto form .inputGrupo {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 55px;
+}
+
+.contacto form .inputGrupo label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contacto form .inputGrupo .input {
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 40px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.contacto form .inputGrupo .input:focus {
+    outline: none !important;
+}
+
+.contacto form .btnContacto {
+    display: flex;
+    justify-content: start;
+}
+
+.contacto form .btnContacto .btn {
+    max-width: 242px;
+    max-height: 50px;
+    padding: 10px 39px;
+    border-radius: 0px 20px;
+    font-size: 0.88541vw;
+}
+
+
+@media screen and (max-width: 1600px) {
+    .contacto form .btnContacto .btn {
+        font-size: 1.1vw;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .contacto .titulo {
+        font-size: 2vw;
+    }
+
+    .contacto form .btnContacto .btn {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 1249px) {
+    .contacto form .btnContacto .btn {
+        font-size: 1.3vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contacto .titulo {
+        font-size: 2.3vw;
+    }
+
+    .contacto form .btnContacto .btn {
+        font-size: 1.45vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contacto .titulo {
+        font-size: 2.5vw;
+    }
+
+    .contacto form .btnContacto .btn {
+        font-size: 1.6vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contacto .titulo {
+        font-size: 3vw;
+    }
+
+    .contacto form .btnContacto {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .contacto form .btnContacto .btn {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .contacto .titulo {
+        font-size: 4vw;
+    }
+
+    .contacto form .btnContacto .btn {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .contacto .titulo {
+        font-size: 4.5vw;
+    }
+
+    .contacto form .btnContacto .btn {
+        font-size: 3.5vw;
+    }
+}
 
 .orcamento {
     padding-top: 7%;
@@ -792,7 +1228,7 @@ ul {
     margin: 0px 10px;
 }
 
-.orcamento .titulo h2 {
+.orcamento .titulo {
     font-size: 1.8vw;
     font-weight: 600;
     margin-top: 20px;
@@ -862,7 +1298,7 @@ ul {
 }
 
 @media screen and (max-width: 1400px) {
-    .orcamento .titulo h2 {
+    .orcamento .titulo {
         font-size: 2vw;
     }
 
@@ -878,7 +1314,7 @@ ul {
 }
 
 @media screen and (max-width: 1200px) {
-    .orcamento .titulo h2 {
+    .orcamento .titulo {
         font-size: 2.3vw;
     }
 
@@ -888,7 +1324,7 @@ ul {
 }
 
 @media screen and (max-width: 992px) {
-    .orcamento .titulo h2 {
+    .orcamento .titulo {
         font-size: 2.5vw;
     }
 
@@ -898,7 +1334,7 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
-    .orcamento .titulo h2 {
+    .orcamento .titulo {
         font-size: 3vw;
     }
 
@@ -914,7 +1350,7 @@ ul {
 }
 
 @media screen and (max-width: 580px) {
-    .orcamento .titulo h2 {
+    .orcamento .titulo {
         font-size: 4vw;
     }
 
@@ -924,448 +1360,11 @@ ul {
 }
 
 @media screen and (max-width: 462px) {
-    .orcamento .titulo h2 {
+    .orcamento .titulo {
         font-size: 4.5vw;
     }
 
     .orcamento form .btnOrcamento .btn {
-        font-size: 3.5vw;
-    }
-}
-
-.depoimentos {
-    padding-top: 8.75%;
-    margin-bottom: 9%;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.depoimentos .col-12 {
-    padding: 0;
-}
-
-.depoimentos .row {
-    --bs-gutter-x: 0;
-}
-
-.depoimentos .bgDepoimento {
-    width: 100%;
-    min-height: 650px;
-}
-
-.depoimentos .bgDepoimento .depoimento {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.depoimentos .bgDepoimento .depoimento {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.depoimentos .bgDepoimento .depoimento .btnDepoimento {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.depoimentos .bgDepoimento .depoimento .btnDepoimento i {
-    font-size: 30px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-}
-
-.depoimentos .bgDepoimento .depoimento .depoimentoCard {
-    height: 100%;
-    min-height: 650px;
-    text-align: center;
-    padding: 30px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.depoimentos .bgDepoimento .depoimento .depoimentoCard .slogan {
-    font-size: 15px;
-}
-
-.depoimentos .bgDepoimento .depoimento .depoimentoCard .slogan .dot {
-    margin: 0px 10px;
-}
-
-.depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo h2 {
-    font-size: 1.5vw;
-    font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 87px
-}
-
-.depoimentos .bgDepoimento .depoimento .depoimentoCard .fotoCliente img {
-    border-radius: 100%;
-    user-select: none;
-    -webkit-user-drag: none;
-}
-
-.depoimentos .bgDepoimento .depoimento .depoimentoCard .avaliacao {
-    margin-top: 60px;
-    font-size: 20px;
-}
-
-.depoimentos .bgDepoimento .depoimento .depoimentoCard .descricao p {
-    max-width: 900px;
-    margin-top: 35px;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.depoimentos .bgDepoimento .depoimento .depoimentoCard .empresa p {
-    margin-top: 40px;
-    font-size: 20px;
-}
-
-.depoimentos .bgDepoimento .depoimento .depoimentoCard .profissao p {
-    margin-top: 12px;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.depoimentos .bgDepoimento .depoimento .depoimentoCard .texto1 p {
-    max-width: 900px;
-    margin-top: 45px;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.depoimentos .bgDepoimento .depoimento .depoimentoCard .texto2 p {
-    margin-top: 40px;
-    font-size: 20px;
-}
-
-.depoimentos .bgDepoimento .depoimento .depoimentoCard .texto3 p {
-    margin-top: 12px;
-    margin-bottom: 180px;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-@media screen and (max-width: 1600px) {}
-
-@media screen and (max-width: 1400px) {
-    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo h2 {
-        font-size: 2vw;
-    }
-}
-
-@media screen and (max-width: 1249px) {}
-
-@media screen and (max-width: 1200px) {
-    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo h2 {
-        font-size: 2.3vw;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo h2 {
-        font-size: 2.5vw;
-    }
-
-    .depoimentos .bgDepoimento .depoimento .depoimentoCard .descricao p {
-        font-size: 18px;
-    }
-
-    .depoimentos .bgDepoimento .depoimento .depoimentoCard .empresa p {
-        margin-top: 50px;
-        font-size: 18px;
-    }
-
-    .depoimentos .bgDepoimento .depoimento .depoimentoCard .profissao p {
-        margin-top: 20px;
-        font-size: 19px;
-    }
-
-    .depoimentos .bgDepoimento .depoimento .depoimentoCard .texto1 p {
-        font-size: 18px;
-    }
-
-    .depoimentos .bgDepoimento .depoimento .depoimentoCard .texto2 p {
-        margin-top: 50px;
-        font-size: 18px;
-    }
-
-    .depoimentos .bgDepoimento .depoimento .depoimentoCard .texto3 p {
-        margin-top: 20px;
-        font-size: 19px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo h2 {
-        font-size: 3vw;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo h2 {
-        font-size: 4vw;
-    }
-}
-
-@media screen and (max-width: 462px) {
-    .depoimentos .bgDepoimento .depoimento .depoimentoCard .titulo h2 {
-        font-size: 4.5vw;
-    }
-}
-
-
-.faq {
-    padding-top: 9%;
-    margin-bottom: 9%;
-    min-height: 620px;
-}
-
-.faq .slogan {
-    font-size: 17px;
-}
-
-.faq .slogan .dot {
-    margin: 0px 10px;
-}
-
-.faq .titulo h2 {
-    font-size: 1.8vw;
-    font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 94px;
-}
-
-.faq .accordion-body p {
-    text-align: left;
-    font-weight: 400;
-    font-size: 15px;
-}
-
-.faq .accordion-body p a {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.faq .accordion-button.collapsed {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.faq .accordion-button.collapsed::after {
-    background: url("nada");
-    content: "\2b";
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease-in-out;
-    transform: rotate(+180deg);
-}
-
-
-.faq .accordion-button:not(.collapsed)::after {
-    background: url("nada");
-    content: "\2212";
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(-180deg);
-    transition: 0.5s ease-in-out;
-}
-
-@media screen and (max-width: 1600px) {}
-
-@media screen and (max-width: 1400px) {
-    .faq .titulo {
-        font-size: 2vw;
-    }
-}
-
-@media screen and (max-width: 1249px) {}
-
-@media screen and (max-width: 1200px) {
-    .faq .titulo h2 {
-        font-size: 2.3vw;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .faq {
-        min-height: none;
-        margin-bottom: 10%;
-    }
-
-    .faq .titulo h2 {
-        font-size: 2.5vw;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .faq .titulo h2 {
-        font-size: 3vw;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .faq .titulo h2 {
-        font-size: 4vw;
-    }
-}
-
-@media screen and (max-width: 462px) {
-    .faq .titulo h2 {
-        font-size: 4.5vw;
-    }
-}
-
-.contacto {
-    padding-top: 7%;
-    margin-bottom: 7%;
-}
-
-.contacto .slogan {
-    font-size: 17px;
-}
-
-.contacto .slogan .dot {
-    margin: 0px 10px;
-}
-
-.contacto .titulo h2 {
-    font-size: 1.8vw;
-    font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 33px;
-}
-
-.contacto form .row {
-    justify-content: center;
-}
-
-.contacto form .inputGrupo {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    margin-bottom: 55px;
-}
-
-.contacto form .inputGrupo label {
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.contacto form .inputGrupo .input {
-    margin-top: 10px;
-    padding: 10px;
-    min-height: 40px;
-    border-radius: 5px;
-    border: none;
-    transition: 0.3s ease-in-out;
-}
-
-.contacto form .inputGrupo .input:focus {
-    outline: none !important;
-}
-
-.contacto form .btnContacto {
-    display: flex;
-    justify-content: start;
-}
-
-.contacto form .btnContacto .btn {
-    max-width: 242px;
-    max-height: 50px;
-    padding: 10px 39px;
-    border-radius: 0px 20px;
-    font-size: 0.88541vw;
-}
-
-
-@media screen and (max-width: 1600px) {
-    .contacto form .btnContacto .btn {
-        font-size: 1.1vw;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .contacto .titulo h2 {
-        font-size: 2vw;
-    }
-
-    .contacto form .btnContacto .btn {
-        font-size: 1.2vw;
-    }
-}
-
-@media screen and (max-width: 1249px) {
-    .contacto form .btnContacto .btn {
-        font-size: 1.3vw;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .contacto .titulo h2 {
-        font-size: 2.3vw;
-    }
-
-    .contacto form .btnContacto .btn {
-        font-size: 1.45vw;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .contacto .titulo h2 {
-        font-size: 2.5vw;
-    }
-
-    .contacto form .btnContacto .btn {
-        font-size: 1.6vw;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .contacto .titulo h2 {
-        font-size: 3vw;
-    }
-
-    .contacto form .btnContacto {
-        display: flex;
-        justify-content: center;
-    }
-
-
-    .contacto form .btnContacto .btn {
-        font-size: 2.3vw;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .contacto .titulo h2 {
-        font-size: 4vw;
-    }
-
-    .contacto form .btnContacto .btn {
-        font-size: 3vw;
-    }
-}
-
-@media screen and (max-width: 462px) {
-    .contacto .titulo h2 {
-        font-size: 4.5vw;
-    }
-
-    .contacto form .btnContacto .btn {
         font-size: 3.5vw;
     }
 }
@@ -1390,12 +1389,12 @@ footer .logo {
     margin-bottom: 25px;
 }
 
-footer .titulo h2{
+footer .titulo {
     font-size: 24px;
     font-weight: 500;
 }
 
-footer .descricao p{
+footer .descricao {
     font-weight: 300;
     font-size: 15px;
 }
@@ -1494,7 +1493,7 @@ footer .contactos .redesSociais .item {
     margin: 0px 10px;
 }
 
-.servico .titulo h1{
+.servico .titulo {
     font-size: 1.8vw;
     font-weight: 600;
     margin-top: 20px;
@@ -1510,7 +1509,7 @@ footer .contactos .redesSociais .item {
     border-radius: 10px;
 }
 
-.servico .descricao p{
+.servico .descricao {
     font-size: 16px;
     font-weight: 400;
     width: 95%;
@@ -1931,7 +1930,7 @@ footer .contactos .redesSociais .item {
         padding-top: 15%;
         margin-bottom: 12%;
     }
-
+    
     .agradecimento .titulo {
         font-size: 3.7vw;
     }
