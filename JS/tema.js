@@ -22,9 +22,7 @@ function changeTema() {
 }
 
 function onLoadTema(temaAnterior) {
-    if (tema == temaAnterior) {
-        console.log(temaAnterior);
-    } else {
+    if (tema != temaAnterior) {
         changeTema()
     }
 }

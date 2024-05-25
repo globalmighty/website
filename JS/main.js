@@ -28,8 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (ultimoLoad == null) {
         storeLoadTime();
     } else {
-        let minutosPassados = tempoPassado / (1000 * 60)
-        console.log(minutosPassados);
+        let minutosPassados = tempoPassado / (1000 * 60);
         if (minutosPassados >= 120) {
             localStorage.clear();
             storeLoadTime();
