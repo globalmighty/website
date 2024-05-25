@@ -14,6 +14,31 @@ function getPoint(id) {
     });
 }
 
+function storeLoadTime() {
+    let now = new Date().getTime(); // Data e hora atual em milissegundos
+    localStorage.setItem('lastLoadTime', now);
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    let tema = localStorage.getItem("tema") || 'dark'; // Ou 'dark' dependendo do seu tema padrão
+    let ultimoLoad = localStorage.getItem("lastLoadTime");
+    let now = new Date().getTime();
+    let tempoPassado = now - ultimoLoad;
+
+    if (ultimoLoad == null) {
+        storeLoadTime();
+    } else {
+        let minutosPassados = tempoPassado / (1000 * 60)
+        console.log(minutosPassados);
+        if (minutosPassados >= 120) {
+            localStorage.clear();
+            storeLoadTime();
+        }
+    }
+
+    onLoadTema(tema);
+});
+
 function setLastPage(nextPage) {
     if (nextPage == "Orcamentos") {
         document.getElementById("Orcamento" + 'Nav').style.color = '#B8E4FE'
@@ -39,7 +64,7 @@ function getPointSubPage(id) {
 function goToSubPage() {
     let id = localStorage.getItem("goTo")
 
-    if(id == null){
+    if (id == null) {
         id = "#Inicio"
     }
 
@@ -49,7 +74,7 @@ function goToSubPage() {
 
         document.getElementById(id.slice(1) + 'Nav').style.color = '#B8E4FE'
         document.getElementById('dot' + id.slice(1)).classList.remove('hidden');
-        
+
         if (id != "#Inicio") {
             document.getElementById("Inicio" + 'Nav').style.color = '#ffffff'
             document.getElementById('dot' + "Inicio").classList.add('hidden');
