@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Desenvolvimento de Software, Aplicações Web, Aplicações Móveis, Manutenção de Sistemas, Soluções Digitais, Inovação Tecnológica, Experência do Utilizador, Transformação Digital, Consultoria em TI, Programação Personalizada, Eficiência Operacional, Segurança da Informação, Suporte Técnico, GlobalMighty Development, Web Design Responsivo">
+    <meta name="description" content="Politicas da nossa empresa e site.">
+    <meta name="author" content="Guilherme Tavares, Mariana Gabriel">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <link rel="icon" href="ASSETS/xIcon.png">
+    <link rel="icon" href="../ASSETS/xIcon.png">
     <link href="../ASSETS/fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/darkMode.css">
     <link rel="stylesheet" href="../CSS/lightMode.css">
     <link rel="stylesheet" href="../CSS/styles.css">
-    <title>GlobalMighty - Desenvolvimento Web</title>
+    <title>GlobalMighty - Politicas</title>
 </head>
 
 <body class="dark" onload="setLastPage('DevWeb')">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-ghost fixed-top ps-5 pe-5">
             <div class="container-fluid">
-                <a class="navbar-brand dark-Logo" onclick="getPointSubPage('#Inicio')">
+                <a class="navbar-brand dark-Logo" href="javascript:getPointSubPage('#Inicio')">
                     <img id="logoDark" class="logo" src="../ASSETS/logoDark.png" alt="GlobalMighty">
                     <img id="logoLight" class="logo hidden" src="../ASSETS/logoLight.png" alt="GlobalMighty">
                 </a>
@@ -39,48 +41,47 @@
                     <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" id="InicioNav" aria-current="page"
-                                onclick="getPointSubPage('#Inicio')"><span class="" id="dotInicio">&#8226;</span>
+                                href="javascript:getPointSubPage('#Inicio')"><span class=""
+                                    id="dotInicio">&#8226;</span>
                                 Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="SobreNosNav" onclick="getPointSubPage('#SobreNos')"><span
-                                    class="hidden" id="dotSobreNos">&#8226;</span> Sobre Nós</a>
+                            <a class="nav-link active" id="SobreNosNav"
+                                href="javascript:getPointSubPage('#SobreNos')"><span class="hidden"
+                                    id="dotSobreNos">&#8226;</span> Sobre Nós</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link active dropbtn" id="ServicosNav"
-                                onclick="getPointSubPage('#Servicos')"><span class="hidden"
+                                href="javascript:getPointSubPage('#Servicos')"><span class="hidden"
                                     id="dotServicos">&#8226;</span> Serviços +</a>
                             <div class="dropdown-content">
-                                <a href="../servicos/desenvolvimento-web.html">Desenvolvimento Web</a>
-                                <a href="../servicos/desenvolvimento-apps.html">Desenvolvimento de Aplicações</a>
-                                <a href="../servicos/manutencao.html">Manutenção</a>
-                                <a id="dropdownItem4" href="../servicos/restruturacao.html">Restruturação</a>
+                                <a href="./desenvolvimento-web.html">Desenvolvimento Web</a>
+                                <a href="./desenvolvimento-apps.html">Desenvolvimento de Aplicações</a>
+                                <a href="./manutencao.html">Manutenção</a>
+                                <a id="dropdownItem4" href="./restruturacao.html">Restruturação</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="OrcamentoNav" onclick="getPointSubPage('#Orcamento')"><span
-                                    class="hidden" id="dotOrcamento">&#8226;</span> Orçamento</a>
+                            <a class="nav-link active" id="OrcamentoNav"
+                                href="javascript:getPointSubPage('#Orcamento')"><span class="hidden"
+                                    id="dotOrcamento">&#8226;</span> Orçamento</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" id="DepoimentosNav"
-                                onclick="getPointSubPage('#Depoimentos')"><span class="hidden"
+                                href="javascript:getPointSubPage('#Depoimentos')"><span class="hidden"
                                     id="dotDepoimentos">&#8226;</span> Depoimentos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="FAQNav" onclick="getPointSubPage('#FAQ')"><span
+                            <a class="nav-link active" id="FAQNav" href="javascript:getPointSubPage('#FAQ')"><span
                                     class="hidden" id="dotFAQ">&#8226;</span> FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="ContactoNav" onclick="getPointSubPage('#Contacto')"><span
-                                    class="hidden" id="dotContacto">&#8226;</span> Contacto</a>
+                            <a class="nav-link active" id="ContactoNav"
+                                href="javascript:getPointSubPage('#Contacto')"><span class="hidden"
+                                    id="dotContacto">&#8226;</span> Contacto</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <button class="btn btn-outline-light procurar" onclick="search('Desenvolvimento Web')">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </li>
                         <li class="nav-item">
                             <button class="btn btn-light tema" onclick="changeTema()">
                                 <i class="fa-solid fa-sun"></i>
@@ -99,100 +100,92 @@
                     <div class="row ms-lg-5">
                         <div class="col-12">
                             <div class="slogan">
-                                <span class="dot">&#8226;</span>Políticas de Utilização<span class="dot">&#8226;</span>
+                                <span class="dot">&#8226;</span>Políticas de Privacidade e Cookies<span
+                                    class="dot">&#8226;</span>
                             </div>
                             <article class="artigo text-start">
                                 <div class="titulo">
-                                    1. Política de Utilização do Website
+                                    Política de Privacidade e Cookies da GlobalMighty Development
+                                </div>
+                                <div class="descricao">
+                                    Na GlobalMighty Development, valorizamos a sua privacidade e estamos empenhados em
+                                    proteger as informações pessoais que nos fornece. A nossa Política de Privacidade e
+                                    Cookies explica como recolhemos, utilizamos e protegemos os seus dados ao interagir
+                                    com o nosso site.
                                 </div>
                                 <section class="subArtigo">
                                     <div class="subtitulo">
-                                        1.1 Aceitação dos Termos
+                                        Recolha de Informações
                                     </div>
                                     <div class="descricao">
-                                        Ao aceder a este website, o utilizador concorda em cumprir estes termos de
-                                        utilização.<br><br>Se não concordar com alguma parte destes termos, por favor,
-                                        não utilize o website.
+                                        Recolhemos informações que nos fornece diretamente, como nome, email e dados de
+                                        contacto, quando preenche formulários no nosso site. Utilizamos estas
+                                        informações para responder a pedidos e fornecer os serviços solicitados.
                                     </div>
                                 </section>
                                 <section class="subArtigo">
                                     <div class="subtitulo">
-                                        1.2 Utilização Responsável
+                                        Cookies
                                     </div>
                                     <div class="descricao">
-                                        O utilizador compromete-se a utilizar este website de forma responsável,
-                                        respeitando todas as leis e regulamentos aplicáveis. Qualquer uso indevido do
-                                        website, incluindo mas não limitado a atividades ilegais, será estritamente
-                                        proibido.
+                                        Utilizamos cookies para melhorar a sua experiência no nosso site. Estes pequenos
+                                        ficheiros são armazenados no seu dispositivo para personalizar conteúdo,
+                                        analisar o tráfego e entender padrões de utilização. Pode controlar e gerir os
+                                        cookies nas configurações do seu navegador.
                                     </div>
                                 </section>
                                 <section class="subArtigo">
                                     <div class="subtitulo">
-                                        1.3 Privacidade e Proteção de Dados
+                                        Partilha de Informações
                                     </div>
                                     <div class="descricao">
-                                        A nossa política de privacidade detalha como recolhemos, utilizamos e protegemos
-                                        as informações fornecidas pelos utilizadores. Ao utilizar este website, o
-                                        utilizador consente a recolha e utilização de informações ao submeter qualquer
-                                        formulário de acordo com a nossa política de privacidade.
+                                        Comprometemo-nos a não partilhar as suas informações pessoais com terceiros sem
+                                        o seu consentimento, exceto quando necessário para fornecer os serviços
+                                        solicitados ou cumprir requisitos legais.
                                     </div>
                                 </section>
                                 <section class="subArtigo">
                                     <div class="subtitulo">
-                                        1.4 Conteúdo do Utilizador
+                                        Segurança
                                     </div>
                                     <div class="descricao">
-                                        O website permite a submissão de conteúdo pelos utilizadores, estes
-                                        concordam em não enviar material ilegal, difamatório, obsceno, ou que viole
-                                        direitos de terceiros. Reservamo-nos o direito de remover qualquer conteúdo que
-                                        consideremos inadequado e reportar às entidades competentes.
+                                        Implementamos medidas de segurança para proteger as suas informações pessoais
+                                        contra acesso não autorizado ou divulgação. No entanto, lembre-se de que nenhum
+                                        método de transmissão pela Internet ou armazenamento eletrónico é totalmente
+                                        seguro.
                                     </div>
                                 </section>
                                 <section class="subArtigo">
                                     <div class="subtitulo">
-                                        1.5 Propriedade Intelectual
+                                        Ligações Externas
                                     </div>
                                     <div class="descricao">
-                                        O conteúdo presente neste website, incluindo texto, gráficos, logótipos, imagens
-                                        e software, é propriedade exclusiva da GlobalMighty e está protegido por
-                                        leis de direitos autorais e propriedade intelectual.
+                                        O nosso site pode conter ligações para sites externos. Não somos responsáveis
+                                        pelas práticas de privacidade desses sites. Recomendamos que reveja as políticas
+                                        de privacidade de cada site que visita.
                                     </div>
                                 </section>
                                 <section class="subArtigo">
                                     <div class="subtitulo">
-                                        1.6 Links para Outros Websites
+                                        Alterações à Política de Privacidade
                                     </div>
                                     <div class="descricao">
-                                        O website pode conter links para sites de terceiros. Não somos responsáveis pelo
-                                        conteúdo ou pelas práticas de privacidade desses sites. Recomendamos que os
-                                        utilizadores leiam as políticas de privacidade de qualquer site que visitam.
+                                        Reservamo-nos o direito de atualizar esta política periodicamente. Recomendamos
+                                        que reveja regularmente para estar ciente de quaisquer alterações.
                                     </div>
                                 </section>
-                                <section class="subArtigo">
-                                    <div class="subtitulo">
-                                        1.7 Alterações aos Termos de Utilização
-                                    </div>
-                                    <div class="descricao">
-                                        Reservamo-nos o direito de alterar estes termos de utilização a qualquer
-                                        momento. As alterações serão efetivas imediatamente após a sua publicação no
-                                        website. O utilizador é encorajado a rever periodicamente os termos de
-                                        utilização para estar ciente de quaisquer atualizações.
-                                    </div>
-                                </section>
-                                <section class="subArtigo">
-                                    <div class="subtitulo">
-                                        1.8 Contacto
-                                    </div>
-                                    <div class="descricao">
-                                        Se tiver alguma dúvida ou preocupação em relação a estas políticas de
-                                        utilização, por favor, entre em contacto connosco através do
-                                        nosso <a onclick="getPointSubPage('#Contacto')">contacto</a>.
-                                        <br><br><br><br>
-                                        Agradecemos por escolher a <b>GlobalMighty</b>!
-                                        <br><br>
-                                        <b>16/12/2023</b>
-                                    </div>
-                                </section>
+                                <div class="descricao">
+                                    Ao continuar a utilizar o nosso site, concorda com os termos da nossa Política
+                                    de Privacidade e Cookies. Se tiver dúvidas ou preocupações, entre em contacto
+                                    connosco em <a
+                                        href="mailto:globalmighty.development@gmail.com">globalmighty.development@gmail.com</a>.
+                                    A sua privacidade é importante
+                                    para nós.
+                                    <br><br><br><br>
+                                    Agradecemos por escolher a <b>GlobalMighty</b>!
+                                    <br><br>
+                                    <b>16/12/2023</b>
+                                </div>
                             </article>
                         </div>
                     </div>
@@ -201,32 +194,37 @@
         </div>
     </main>
 
-    <footer>
-        <div class="row p-5">
+    <footer class="p-5">
+        <div class="row">
             <div class="col-12 col-xl-4 mb-3 marginEnd">
                 <div class="logo">
                     <img id="logoDarkFooter" class="" src="../ASSETS/logoDark.png" alt="GlobalMighty">
                     <img id="logoLightFooter" class="hidden" src="../ASSETS/logoLight.png" alt="GlobalMighty">
                 </div>
                 <div class="descricao">
-                    Somos a GlobalMighty Development, uma equipa dinâmica que combina a paixão pelo desenvolvimento de
-                    software com anos de experiência. Oferecemos soluções inovadoras e personalizadas aos nossos
-                    clientes, transformando ideias em realidade digital.
-                    Comprometemo-nos a fornecer serviços de desenvolvimento de software de alta qualidade,
-                    destacando-nos pela excelência e dedicação.
+                    <p>
+                        Somos a GlobalMighty Development, uma equipa dinâmica que combina a paixão pelo desenvolvimento
+                        de
+                        software com anos de experiência. Oferecemos soluções inovadoras e personalizadas aos nossos
+                        clientes, transformando ideias em realidade digital.
+                        Comprometemo-nos a fornecer serviços de desenvolvimento de software de alta qualidade,
+                        destacando-nos pela excelência e dedicação.
+                    </p>
                 </div>
             </div>
             <div class="col-12 col-xl-2 mb-3 marginEnd">
-                <div class="titulo">Links Úteis</div>
+                <div class="titulo">
+                    <h2>Links Úteis</h2>
+                </div>
                 <div class="items">
                     <ul class="footerLinks">
-                        <li class="link"><a onclick="getPointSubPage('#Inicio')">
+                        <li class="link"><a href="javascript:getPoint('#Inicio')">
                                 Início</a>
                         </li>
-                        <li class="link"><a onclick="getPointSubPage('#SobreNos')">
+                        <li class="link"><a href="javascript:getPoint('#SobreNos')">
                                 Sobre Nós</a>
                         </li>
-                        <li class="link"><a onclick="getPointSubPage('#Servicos')">
+                        <li class="link"><a href="javascript:getPoint('#Servicos')">
                                 Serviços</a>
                         </li>
                         <li class="link"><a href="../servicos/desenvolvimento-web.html">
@@ -241,20 +239,25 @@
                         <li class="link"><a href="../servicos/restruturacao.html">
                                 Restruturação</a>
                         </li>
-                        <li class="link"><a onclick="getPointSubPage('#Depoimentos')">
+                        <li class="link"><a href="javascript:getPointSubPage('#Orcamento')">
+                                Orçamento</a>
+                        </li>
+                        <li class="link"><a href="javascript:getPointSubPage('#Depoimentos')">
                                 Depoimentos</a>
                         </li>
-                        <li class="link"><a onclick="getPointSubPage('#FAQ')">
+                        <li class="link"><a href="javascript:getPointSubPage('#FAQ')">
                                 FAQ</a>
                         </li>
-                        <li class="link"><a onclick="getPointSubPage('#Contacto')">
+                        <li class="link"><a href="javascript:getPointSubPage('#Contacto')">
                                 Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-12 col-xl-2 mb-3">
-                <div class="titulo">Recursos</div>
+                <div class="titulo">
+                    <h2>Recursos</h2>
+                </div>
                 <div class="items">
                     <ul class="footerLinks">
                         <li class="link"><a href="">
@@ -264,20 +267,16 @@
                 </div>
             </div>
             <div class="col-12 col-xl-3 mb-3">
-                <div class="titulo">Informações de Contacto</div>
+                <div class="titulo">
+                    <h2>Informações de Contacto</h2>
+                </div>
                 <div class="contactos">
                     <div class="row">
                         <div class="item row">
                             <div class="email">
-                                <i class="icon fa-solid fa-envelope"></i><span
-                                    class="texto">globalmighty.development@gmail.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="item">
-                            <div class="telemovel">
-                                <i class="icon fa-solid fa-phone"></i><span class="texto">(+351) 962 817 885</span>
+                                <i class="icon fa-solid fa-envelope"></i>
+                                <a href="mailto:globalmighty.development@gmail.com"
+                                    class="texto">globalmighty.development@gmail.com</a>
                             </div>
                         </div>
                     </div>

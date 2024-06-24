@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="../ASSETS/xIcon.png">
+    <link href="../ASSETS/fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/darkMode.css">
+    <link rel="stylesheet" href="../CSS/lightMode.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>GlobalMighty - Agradecemos o Contacto</title>
+</head>
+
+<body class="dark" onload="setLastPage('Orcamento')">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-ghost fixed-top ps-5 pe-5">
+            <div class="container-fluid">
+                <a class="navbar-brand dark-Logo" onclick="getPointSubPage('#Inicio')">
+                    <img id="logoDark" class="logo" src="../ASSETS/logoDark.png" alt="GlobalMighty">
+                    <img id="logoLight" class="logo hidden" src="../ASSETS/logoLight.png" alt="GlobalMighty">
+                </a>
+                <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="InicioNav" aria-current="page"
+                                onclick="getPointSubPage('#Inicio')"><span class="" id="dotInicio">&#8226;</span>
+                                Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="SobreNosNav" onclick="getPointSubPage('#SobreNos')"><span
+                                    class="hidden" id="dotSobreNos">&#8226;</span> Sobre Nós</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropbtn" id="ServicosNav"
+                                onclick="getPointSubPage('#Servicos')"><span class="hidden"
+                                    id="dotServicos">&#8226;</span> Serviços +</a>
+                            <div class="dropdown-content">
+                                <a href="../servicos/desenvolvimento-web.html">Desenvolvimento Web</a>
+                                <a href="../servicos/desenvolvimento-apps.html">Desenvolvimento de Aplicações</a>
+                                <a href="../servicos/manutencao.html">Manutenção</a>
+                                <a id="dropdownItem4" href="../servicos/restruturacao.html">Restruturação</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="OrcamentoNav" onclick="getPointSubPage('#Orcamento')"><span
+                                    class="hidden" id="dotOrcamento">&#8226;</span> Orçamento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="DepoimentosNav"
+                                onclick="getPointSubPage('#Depoimentos')"><span class="hidden"
+                                    id="dotDepoimentos">&#8226;</span> Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="FAQNav" onclick="getPointSubPage('#FAQ')"><span
+                                    class="hidden" id="dotFAQ">&#8226;</span> FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="ContactoNav" onclick="getPointSubPage('#Contacto')"><span
+                                    class="hidden" id="dotContacto">&#8226;</span> Contacto</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <button class="btn btn-light tema" onclick="changeTema()">
+                                <i class="fa-solid fa-sun"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="conteudo container-fluid text-center">
+            <section id="agradecimento" class="agradecimento">
+                <div class="titulo">Obrigado pelo seu pedido de orçamento!</div>
+                <div class="subtitulo">Fornceremos uma resposta assim que possivel.</div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="p-5">
+        <div class="row">
+            <div class="col-12 col-xl-4 mb-3 marginEnd">
+                <div class="logo">
+                    <img id="logoDarkFooter" class="" src="../ASSETS/logoDark.png" alt="GlobalMighty">
+                    <img id="logoLightFooter" class="hidden" src="../ASSETS/logoLight.png" alt="GlobalMighty">
+                </div>
+                <div class="descricao">
+                    Somos a GlobalMighty Development, uma equipa dinâmica que combina a paixão pelo desenvolvimento de
+                    software com anos de experiência. Oferecemos soluções inovadoras e personalizadas aos nossos
+                    clientes, transformando ideias em realidade digital.
+                    Comprometemo-nos a fornecer serviços de desenvolvimento de software de alta qualidade,
+                    destacando-nos pela excelência e dedicação.
+                </div>
+            </div>
+            <div class="col-12 col-xl-2 mb-3 marginEnd">
+                <div class="titulo">Links Úteis</div>
+                <div class="items">
+                    <ul class="footerLinks">
+                        <li class="link"><a onclick="getPointSubPage('#Inicio')">
+                                Início</a>
+                        </li>
+                        <li class="link"><a onclick="getPointSubPage('#SobreNos')">
+                                Sobre Nós</a>
+                        </li>
+                        <li class="link"><a onclick="getPointSubPage('#Servicos')">
+                                Serviços</a>
+                        </li>
+                        <li class="link"><a href="../servicos/desenvolvimento-web.html">
+                                Desenvolvimento Web</a>
+                        </li>
+                        <li class="link"><a href="../servicos/desenvolvimento-apps.html">
+                                Desenvolvimento de Aplicações</a>
+                        </li>
+                        <li class="link"><a href="../servicos/manutencao.html">
+                                Manutenção</a>
+                        </li>
+                        <li class="link"><a href="../servicos/restruturacao.html">
+                                Restruturação</a>
+                        </li>
+                        <li class="link"><a onclick="getPointSubPage('#Depoimentos')">
+                                Depoimentos</a>
+                        </li>
+                        <li class="link"><a onclick="getPointSubPage('#FAQ')">
+                                FAQ</a>
+                        </li>
+                        <li class="link"><a onclick="getPointSubPage('#Contacto')">
+                                Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-xl-2 mb-3">
+                <div class="titulo">Recursos</div>
+                <div class="items">
+                    <ul class="footerLinks">
+                        <li class="link"><a href="">
+                                Políticas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-xl-3 mb-3">
+                <div class="titulo">Informações de Contacto</div>
+                <div class="contactos">
+                    <div class="row">
+                        <div class="item row">
+                            <div class="email">
+                                <i class="icon fa-solid fa-envelope"></i><span
+                                    class="texto">globalmighty.development@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="item">
+                            <div class="telemovel">
+                                <i class="icon fa-solid fa-phone"></i><span class="texto">(+351) 962 817 885</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="redesSociais">
+                        <div class="item instagram"><a href="https://www.instagram.com/globalmighty/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></div>
+                        <div class="item linkedin"><a href="https://www.linkedin.com/company/globalmighty-development"
+                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="../JS/tema.js"></script>
+</body>
+
+</html>

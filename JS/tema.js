@@ -18,6 +18,13 @@ function changeTema() {
         document.getElementById("logoDarkFooter").classList.add('hidden')
         document.getElementById("logoLightFooter").classList.remove('hidden')
     }
+    localStorage.setItem("tema", tema);
+}
+
+function onLoadTema(temaAnterior) {
+    if (tema != temaAnterior) {
+        changeTema()
+    }
 }
 
 var lerMais = [false, false, false, false]

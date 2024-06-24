@@ -14,10 +14,41 @@ function getPoint(id) {
     });
 }
 
+function storeLoadTime() {
+    let now = new Date().getTime(); // Data e hora atual em milissegundos
+    localStorage.setItem('lastLoadTime', now);
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    let tema = localStorage.getItem("tema") || 'dark'; // Ou 'dark' dependendo do seu tema padrão
+    let ultimoLoad = localStorage.getItem("lastLoadTime");
+    let now = new Date().getTime();
+    let tempoPassado = now - ultimoLoad;
+
+    if (ultimoLoad == null) {
+        storeLoadTime();
+    } else {
+        let minutosPassados = tempoPassado / (1000 * 60);
+        if (minutosPassados >= 120) {
+            localStorage.clear();
+            storeLoadTime();
+        }
+    }
+
+    onLoadTema(tema);
+});
+
 function setLastPage(nextPage) {
-    console.log("goTo: " + localStorage.getItem("goTo"))
-    document.getElementById("Servicos" + 'Nav').style.color = '#B8E4FE'
-    document.getElementById('dot' + "Servicos").classList.remove('hidden');
+    if (nextPage == "Orcamentos") {
+        document.getElementById("Orcamento" + 'Nav').style.color = '#B8E4FE'
+        document.getElementById('dot' + "Orcamento").classList.remove('hidden');
+    } else if (nextPage == "Contacto") {
+        document.getElementById("Contacto" + 'Nav').style.color = '#B8E4FE'
+        document.getElementById('dot' + "Contacto").classList.remove('hidden');
+    } else {
+        document.getElementById("Servicos" + 'Nav').style.color = '#B8E4FE'
+        document.getElementById('dot' + "Servicos").classList.remove('hidden');
+    }
 
     document.getElementById(lastPage + 'Nav').style.color = '#ffffff'
     document.getElementById('dot' + lastPage).classList.add('hidden');
@@ -25,21 +56,23 @@ function setLastPage(nextPage) {
 }
 
 function getPointSubPage(id) {
-    console.log(id)
     localStorage.setItem("goTo", id);
     window.location.pathname = ""
 }
 
 function goToSubPage() {
-    console.log("goTo: " + localStorage.getItem("goTo"))
     let id = localStorage.getItem("goTo")
-    console.log(id)
-    if (id != undefined || id != null || id != "") {
-        document.getElementById(id.slice(1) + 'Nav').style.color = '#B8E4FE'
-        document.getElementById('dot' + id.slice(1)).classList.remove('hidden');
 
+    if (id == null) {
+        id = "#Inicio"
+    }
+
+    if (id != undefined || id != null || id != "") {
         document.getElementById("Servicos" + 'Nav').style.color = '#ffffff'
         document.getElementById('dot' + "Servicos").classList.add('hidden');
+
+        document.getElementById(id.slice(1) + 'Nav').style.color = '#B8E4FE'
+        document.getElementById('dot' + id.slice(1)).classList.remove('hidden');
 
         if (id != "#Inicio") {
             document.getElementById("Inicio" + 'Nav').style.color = '#ffffff'
@@ -52,49 +85,12 @@ function goToSubPage() {
         });
     }
 
+    lastPage = id.slice(1);
+
     localStorage.removeItem("goTo");
 }
 
-function search() {
-    let string = document.getElementById("pesquisa").value
-    window.find(string);
-}
-
-let aperance = false
-function searchAperance(parent) {
-    if (aperance) {
-        if (document.getElementById("pesquisa").value == "") {
-            document.getElementById("pesquisa").classList.add('hidden');
-            document.getElementById("btnPesquisa").classList.remove('hidden');
-            aperance = false
-        }
-    } else {
-        if (parent != 0) {
-            document.getElementById("btnPesquisa").classList.add('hidden');
-            document.getElementById("pesquisa").classList.remove('hidden');
-            aperance = true
-        }
-    }
-}
-
-function durationSlider() {
-    var listItems = 1;
-    var count = 0;
-
-    setInterval(function () {
-        searchAperance(0)
-        count += 1;
-        if (count >= listItems) {
-            count = 0;
-        }
-    }, 4000);
-
-}
-
-durationSlider();
-
 let clienteID = 1;
-
 function cliente() {
     if (clienteID === 1) {
         document.getElementById("cliente" + (clienteID + 1)).className = "depoimentoCard col-8 showned"

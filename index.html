@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
-        content="Desenvolvimento, Site, GlobalMighty , globalmighty, Web, Website, Desenvolvimento Web, Desenvolvimento Mobile, Manutenção Website">
+        content="Desenvolvimento de Software, Aplicações Web, Aplicações Móveis, Manutenção de Sistemas, Soluções Digitais, Inovação Tecnológica, Experência do Utilizador, Transformação Digital, Consultoria em TI, Programação Personalizada, Eficiência Operacional, Segurança da Informação, Suporte Técnico, GlobalMighty Development, Web Design Responsivo, desenvolvedor de software, desenvolvimento de software">
+    <meta name="description"
+        content="Na GlobalMighty Development, dedicamo-nos ao desenvolvimento de software e à criação de soluções digitais inovadoras. Especializamo-nos em aplicações web, móveis e na manutenção de sistemas, combinando a nossa paixão pela tecnologia com um foco inabalável na eficiência e segurança. Junte-se a nós para uma experiência única, onde a excelência é construída hoje e molda o futuro digital.">
     <meta name="author" content="Guilherme Tavares, Mariana Gabriel">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
@@ -20,14 +21,14 @@
     <link rel="stylesheet" href="./CSS/darkMode.css">
     <link rel="stylesheet" href="./CSS/lightMode.css">
     <link rel="stylesheet" href="./CSS/styles.css">
-    <title>GlobalMighty - Em Desenvolvimento</title>
+    <title>GlobalMighty</title>
 </head>
 
 <body class="dark" onload="goToSubPage()">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-ghost fixed-top ps-5 pe-5">
             <div class="container-fluid">
-                <a class="navbar-brand dark-Logo" onclick="getPoint('#Inicio')">
+                <a class="navbar-brand dark-Logo" href="javascript:getPoint('#Inicio')">
                     <img id="logoDark" class="logo" src="./ASSETS/logoDark.png" alt="GlobalMighty">
                     <img id="logoLight" class="logo hidden" src="./ASSETS/logoLight.png" alt="GlobalMighty">
                 </a>
@@ -42,15 +43,17 @@
                     <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" id="InicioNav" aria-current="page"
-                                onclick="getPoint('#Inicio')"><span class="" id="dotInicio">&#8226;</span> Início</a>
+                                href="javascript:getPoint('#Inicio')"><span class="" id="dotInicio">&#8226;</span>
+                                Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="SobreNosNav" onclick="getPoint('#SobreNos')"><span
+                            <a class="nav-link active" id="SobreNosNav" href="javascript:getPoint('#SobreNos')"><span
                                     class="hidden" id="dotSobreNos">&#8226;</span> Sobre Nós</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link active dropbtn" id="ServicosNav" onclick="getPoint('#Servicos')"><span
-                                    class="hidden" id="dotServicos">&#8226;</span> Serviços +</a>
+                            <a class="nav-link active dropbtn" id="ServicosNav"
+                                href="javascript:getPoint('#Servicos')"><span class="hidden"
+                                    id="dotServicos">&#8226;</span> Serviços +</a>
                             <div class="dropdown-content">
                                 <a href="./servicos/desenvolvimento-web.html">Desenvolvimento Web</a>
                                 <a href="./servicos/desenvolvimento-apps.html">Desenvolvimento de Aplicações</a>
@@ -59,31 +62,24 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="OrcamentoNav" onclick="getPoint('#Orcamento')"><span
+                            <a class="nav-link active" id="OrcamentoNav" href="javascript:getPoint('#Orcamento')"><span
                                     class="hidden" id="dotOrcamento">&#8226;</span> Orçamento</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="DepoimentosNav" onclick="getPoint('#Depoimentos')"><span
-                                    class="hidden" id="dotDepoimentos">&#8226;</span> Depoimentos</a>
+                            <a class="nav-link active" id="DepoimentosNav"
+                                href="javascript:getPoint('#Depoimentos')"><span class="hidden"
+                                    id="dotDepoimentos">&#8226;</span> Depoimentos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="FAQNav" onclick="getPoint('#FAQ')"><span class="hidden"
-                                    id="dotFAQ">&#8226;</span> FAQ</a>
+                            <a class="nav-link active" id="FAQNav" href="javascript:getPoint('#FAQ')"><span
+                                    class="hidden" id="dotFAQ">&#8226;</span> FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="ContactoNav" onclick="getPoint('#Contacto')"><span
+                            <a class="nav-link active" id="ContactoNav" href="javascript:getPoint('#Contacto')"><span
                                     class="hidden" id="dotContacto">&#8226;</span> Contacto</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <input type="search" class="hidden" id="pesquisa" onchange="searchAperance(1)"
-                                onsearch="search()">
-                            <button class=" btn btn-outline-light procurar" id="btnPesquisa"
-                                onclick="searchAperance(1)">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </li>
                         <li class="nav-item">
                             <button class="btn btn-light tema" onclick="changeTema()">
                                 <i class="fa-solid fa-sun"></i>
@@ -96,7 +92,7 @@
     </header>
 
     <main>
-        <div class="conteudo container-fluid">
+        <article class="conteudo container-fluid">
             <section id="Inicio" class="Inicio">
                 <div class="px-5 text-center text-md-start">
                     <div class="row ms-lg-5">
@@ -111,10 +107,10 @@
                                 <span class="dot">&#8226;</span>SERVIÇOS TECNOLÓGICOS<span class="dot">&#8226;</span>
                             </div>
                             <div class="titulo">
-                                Fornecemos Soluções<br>Para <span class="dualTone">Web & App</span>
+                                <h1>Fornecemos Soluções<br>Para <span class="dualTone">Web & App</span></h1>
                             </div>
                             <div class="btnServicos">
-                                <button type="button" class="btn">Serviços</button>
+                                <button type="button" class="btn" onclick="getPoint('#Servicos')">Serviços</button>
                             </div>
                         </div>
                         <div class="col-12 col-md-5 col-lg-4 containerSVG">
@@ -147,14 +143,20 @@
                                 <span class="dot">&#8226;</span>SOBRE NÓS<span class="dot">&#8226;</span>
                             </div>
                             <div class="titulo">
-                                Criamos excelência para hoje e amanhã,
-                                Construímos confiança desde <span class="dualTone">2023</span>
+                                <h2>
+                                    Criamos excelência para hoje e amanhã,
+                                    Construímos confiança desde <span class="dualTone"><time
+                                            datetime="2023-01-01">2023</time></span>
+                                </h2>
                             </div>
                             <div class="descricao">
-                                A GlobalMighty Development é uma empresa dedicada ao desenvolvimento de software, com
-                                foco em transformar as suas ideias em soluções digitais notáveis. Junte-se a nós na
-                                exploração das infindáveis possibilidades da tecnologia enquanto moldamos o futuro
-                                digital!
+                                <p>
+                                    A GlobalMighty Development é uma empresa dedicada ao desenvolvimento de software,
+                                    com
+                                    foco em transformar as suas ideias em soluções digitais notáveis. Junte-se a nós na
+                                    exploração das infindáveis possibilidades da tecnologia enquanto moldamos o futuro
+                                    digital!
+                                </p>
                             </div>
                             <div class="pontosFortes text-start">
                                 <div class="row">
@@ -164,7 +166,9 @@
                                                 <i class="fa-solid fa-handshake-angle icon"></i>
                                             </div>
                                             <div class="informacoes">
-                                                <div class="titulo">Suporte 24/7</div>
+                                                <div class="titulo">
+                                                    <h3>Suporte 24/7
+                                                </div>
                                                 <div class="descricao">
                                                     Estamos sempre disponíveis para fornecer suporte contínuo. A sua
                                                     tranquilidade é nossa prioridade.
@@ -178,10 +182,14 @@
                                                 <i class="fa-solid fa-medal icon"></i>
                                             </div>
                                             <div class="informacoes">
-                                                <div class="titulo">Eficiência</div>
+                                                <div class="titulo">
+                                                    <h3>Eficiência</h3>
+                                                </div>
                                                 <div class="descricao">
-                                                    Comprometemo-nos a oferecer soluções eficientes, com a máxima
-                                                    precisão e rapidez para satisfazer as suas necessidades.
+                                                    <p>
+                                                        Comprometemo-nos a oferecer soluções eficientes, com a máxima
+                                                        precisão e rapidez para satisfazer as suas necessidades.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -194,10 +202,14 @@
                                                 <i class="fa-solid fa-person icon"></i>
                                             </div>
                                             <div class="informacoes">
-                                                <div class="titulo">Foco no Cliente</div>
+                                                <div class="titulo">
+                                                    <h3>Foco no Cliente</h3>
+                                                </div>
                                                 <div class="descricao">
-                                                    Colocamos o cliente no centro de tudo, com uma abordagem
-                                                    personalizada para garantir a sua satisfação.
+                                                    <p>
+                                                        Colocamos o cliente no centro de tudo, com uma abordagem
+                                                        personalizada para garantir a sua satisfação.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -208,16 +220,21 @@
                                                 <i class="fa-solid fa-database icon"></i>
                                             </div>
                                             <div class="informacoes">
-                                                <div class="titulo">Segurança</div>
+                                                <div class="titulo">
+                                                    <h3>Segurança</h3>
+                                                </div>
                                                 <div class="descricao">
-                                                    A sua segurança é a nossa principal preocupação, implementando
-                                                    medidas para proteger as suas informações.
+                                                    <p>
+                                                        A sua segurança é a nossa principal preocupação, implementando
+                                                        medidas para proteger as suas informações.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="btnServicos text-center text-md-start mt-5 mt-md-1">
-                                        <button type="button" class="btn">Entre em Contacto</button>
+                                        <button type="button" class="btn" onclick="getPoint('#Contacto')">Entre em
+                                            Contacto</button>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +267,9 @@
                                 <span class="dot">&#8226;</span>SERVIÇOS<span class="dot">&#8226;</span>
                             </div>
                             <div class="titulo">
-                                Serviços que nós <span class="dualTone">fornecemos</span>
+                                <h2>
+                                    Serviços que nós <span class="dualTone">fornecemos</span>
+                                </h2>
                             </div>
                             <div class="servicosList justify-content-center">
                                 <div class="row">
@@ -263,12 +282,18 @@
                                                         d="M33.3333 0H6.66667C4.89856 0 3.20286 0.702379 1.95262 1.95262C0.702379 3.20286 0 4.89856 0 6.66667V33.3333C0 35.1014 0.702379 36.7971 1.95262 38.0474C3.20286 39.2976 4.89856 40 6.66667 40H33.3333C35.1014 40 36.7971 39.2976 38.0474 38.0474C39.2976 36.7971 40 35.1014 40 33.3333V6.66667C40 4.89856 39.2976 3.20286 38.0474 1.95262C36.7971 0.702379 35.1014 0 33.3333 0ZM20 6.66667C20.4395 6.66667 20.8692 6.797 21.2346 7.04118C21.6 7.28536 21.8849 7.63242 22.0531 8.03848C22.2213 8.44454 22.2653 8.89135 22.1795 9.32242C22.0938 9.75349 21.8821 10.1495 21.5713 10.4602C21.2606 10.771 20.8646 10.9827 20.4335 11.0684C20.0025 11.1542 19.5557 11.1102 19.1496 10.942C18.7435 10.7738 18.3965 10.4889 18.1523 10.1235C17.9081 9.75805 17.7778 9.3284 17.7778 8.88889C17.7778 8.29952 18.0119 7.73429 18.4287 7.31754C18.8454 6.90079 19.4106 6.66667 20 6.66667ZM11.1111 6.66667C11.5506 6.66667 11.9803 6.797 12.3457 7.04118C12.7112 7.28536 12.996 7.63242 13.1642 8.03848C13.3324 8.44454 13.3764 8.89135 13.2906 9.32242C13.2049 9.75349 12.9932 10.1495 12.6825 10.4602C12.3717 10.771 11.9757 10.9827 11.5446 11.0684C11.1136 11.1542 10.6668 11.1102 10.2607 10.942C9.85465 10.7738 9.50758 10.4889 9.2634 10.1235C9.01922 9.75805 8.88889 9.3284 8.88889 8.88889C8.88889 8.29952 9.12302 7.73429 9.53976 7.31754C9.95651 6.90079 10.5217 6.66667 11.1111 6.66667ZM35.5556 33.3333C35.5556 33.9227 35.3214 34.4879 34.9047 34.9047C34.4879 35.3214 33.9227 35.5556 33.3333 35.5556H6.66667C6.0773 35.5556 5.51207 35.3214 5.09532 34.9047C4.67857 34.4879 4.44444 33.9227 4.44444 33.3333V17.7778H35.5556V33.3333Z" />
                                                 </svg>
                                             </div>
-                                            <div class="titulo">Desenvolvimento Web</div>
+                                            <div class="titulo">
+                                                <h3>Desenvolvimento Web</h3>
+                                            </div>
                                             <div class="descricao">
-                                                Destacamo-nos no desenvolvimento web, criando presenças online notáveis
-                                                para empresas. Desde websites informativos a plataformas dinâmicas,
-                                                oferecemos soluções personalizadas para satisfazer as suas necessidades
-                                                digitais.
+                                                <p>
+                                                    Destacamo-nos no desenvolvimento web, criando presenças online
+                                                    notáveis
+                                                    para empresas. Desde websites informativos a plataformas dinâmicas,
+                                                    oferecemos soluções personalizadas para satisfazer as suas
+                                                    necessidades
+                                                    digitais.
+                                                </p>
                                             </div>
                                             <div class="lerMais align-text-bottom">
                                                 <a href="servicos/desenvolvimento-web.html"
@@ -289,12 +314,18 @@
                                                         d="M20 27C18.6155 27 17.2622 26.5895 16.111 25.8203C14.9599 25.0511 14.0627 23.9579 13.5328 22.6788C13.003 21.3997 12.8644 19.9922 13.1345 18.6344C13.4046 17.2765 14.0713 16.0292 15.0503 15.0503C16.0292 14.0713 17.2765 13.4046 18.6344 13.1345C19.9922 12.8644 21.3997 13.003 22.6788 13.5328C23.9579 14.0627 25.0511 14.9599 25.8203 16.111C26.5895 17.2622 27 18.6155 27 20C27 21.8565 26.2625 23.637 24.9497 24.9497C23.637 26.2625 21.8565 27 20 27ZM20 17C19.4067 17 18.8266 17.1759 18.3333 17.5056C17.8399 17.8352 17.4554 18.3038 17.2284 18.852C17.0013 19.4001 16.9419 20.0033 17.0576 20.5853C17.1734 21.1672 17.4591 21.7018 17.8787 22.1213C18.2982 22.5409 18.8328 22.8266 19.4147 22.9424C19.9967 23.0581 20.5999 22.9987 21.1481 22.7716C21.6962 22.5446 22.1648 22.1601 22.4944 21.6667C22.8241 21.1734 23 20.5933 23 20C23 19.2044 22.6839 18.4413 22.1213 17.8787C21.5587 17.3161 20.7957 17 20 17Z" />
                                                 </svg>
                                             </div>
-                                            <div class="titulo">Desenvolvimento de Aplicações Móveis</div>
+                                            <div class="titulo">
+                                                <h3>Desenvolvimento de Aplicações Móveis</h3>
+                                            </div>
                                             <div class="descricao">
-                                                Oferecemos soluções de desenvolvimento de aplicações móveis para elevar
-                                                a sua empresa para o próximo nível. Criamos experiências mobile
-                                                envolventes e funcionais, adaptadas às necessidades específicas do seu
-                                                público.
+                                                <p>
+                                                    Oferecemos soluções de desenvolvimento de aplicações móveis para
+                                                    elevar
+                                                    a sua empresa para o próximo nível. Criamos experiências mobile
+                                                    envolventes e funcionais, adaptadas às necessidades específicas do
+                                                    seu
+                                                    público.
+                                                </p>
                                             </div>
                                             <div class="lerMais">
                                                 <a href="servicos/desenvolvimento-apps.html"
@@ -313,11 +344,15 @@
                                                         d="M39.1502 30.911L30.0022 21.7635C28.1976 19.959 25.5025 19.6075 23.3307 20.6777L15.0031 12.3504V7.49927L5.00363 0L0.00390597 4.99951L7.50349 14.9985H12.3548L20.6824 23.3258C19.62 25.4975 19.9637 28.1926 21.7683 29.9971L30.9162 39.1446C32.0568 40.2851 33.9005 40.2851 35.0332 39.1446L39.1502 35.0278C40.2829 33.8873 40.2829 32.0437 39.1502 30.911ZM25.9165 17.5764C28.1273 17.5764 30.2053 18.4357 31.7678 19.998L33.2833 21.5135C34.5176 20.9745 35.6894 20.2246 36.705 19.2091C39.6033 16.3109 40.5876 12.2332 39.6658 8.53042C39.4939 7.82736 38.6111 7.5852 38.0955 8.10077L32.2834 13.9127L26.979 13.03L26.0962 7.72581L31.9084 1.91388C32.424 1.3983 32.174 0.515575 31.4631 0.335905C27.7602 -0.578068 23.6823 0.40621 20.7918 3.29655C18.5654 5.5229 17.5186 8.46011 17.5732 11.3895L23.9869 17.8029C24.6197 17.6545 25.2759 17.5764 25.9165 17.5764ZM17.7998 23.982L13.3703 19.5528L1.46476 31.4657C-0.488254 33.4186 -0.488254 36.5824 1.46476 38.5353C3.41778 40.4882 6.58166 40.4882 8.53468 38.5353L18.1904 28.88C17.5967 27.3255 17.417 25.6303 17.7998 23.982ZM5.00363 36.8714C3.97244 36.8714 3.12873 36.0277 3.12873 34.9966C3.12873 33.9576 3.96462 33.1218 5.00363 33.1218C6.04263 33.1218 6.87852 33.9576 6.87852 34.9966C6.87852 36.0277 6.04263 36.8714 5.00363 36.8714Z" />
                                                 </svg>
                                             </div>
-                                            <div class="titulo">Manutenção</div>
+                                            <div class="titulo">
+                                                <h3>Manutenção</h3>
+                                            </div>
                                             <div class="descricao">
-                                                Oferecemos serviços de manutenção para garantir que as suas soluções
-                                                digitais permaneçam atualizadas e operacionais. A nossa abordagem
-                                                proativa visa prevenir problemas antes que impactem o desempenho.
+                                                <p>
+                                                    Oferecemos serviços de manutenção para garantir que as suas soluções
+                                                    digitais permaneçam atualizadas e operacionais. A nossa abordagem
+                                                    proativa visa prevenir problemas antes que impactem o desempenho.
+                                                </p>
                                             </div>
                                             <div class="lerMais">
                                                 <a href="servicos/manutencao.html" onmouseover="overLerMais('3')"
@@ -336,11 +371,15 @@
                                                         d="M28.6573 6.00645L35.0778 12.5261C35.3483 12.8007 35.3483 13.2489 35.0778 13.5235L19.5319 29.3094L12.9264 30.0539C12.0437 30.1551 11.2964 29.3962 11.396 28.4999L12.1292 21.7923L27.675 6.00645C27.9455 5.73178 28.3868 5.73178 28.6573 6.00645ZM40.1885 4.35124L36.7149 0.823989C35.633 -0.274663 33.8748 -0.274663 32.7858 0.823989L30.266 3.38269C29.9955 3.65736 29.9955 4.10549 30.266 4.38015L36.6865 10.8998C36.9569 11.1744 37.3983 11.1744 37.6688 10.8998L40.1885 8.34108C41.2705 7.2352 41.2705 5.44989 40.1885 4.35124ZM27.3333 25.016V32.3741H4.55556V9.24458H20.9128C21.1406 9.24458 21.3542 9.15062 21.5179 8.9916L24.3651 6.10041C24.9061 5.55108 24.5217 4.61868 23.7601 4.61868H3.41667C1.53038 4.61868 0 6.17269 0 8.0881V33.5306C0 35.446 1.53038 37 3.41667 37H28.4722C30.3585 37 31.8889 35.446 31.8889 33.5306V22.1248C31.8889 21.3514 30.9707 20.9684 30.4297 21.5105L27.5825 24.4016C27.4259 24.5679 27.3333 24.7847 27.3333 25.016Z" />
                                                 </svg>
                                             </div>
-                                            <div class="titulo">Restruturação</div>
+                                            <div class="titulo">
+                                                <h3>Restruturação</h3>
+                                            </div>
                                             <div class="descricao">
-                                                Se a sua presença digital precisa de uma transformação, estamos aqui
-                                                para ajudar. Oferecemos serviços de restruturação para revitalizar e
-                                                otimizar as suas soluções digitais existentes.
+                                                <p>
+                                                    Se a sua presença digital precisa de uma transformação, estamos aqui
+                                                    para ajudar. Oferecemos serviços de restruturação para revitalizar e
+                                                    otimizar as suas soluções digitais existentes.
+                                                </p>
                                             </div>
                                             <div class="lerMais">
                                                 <a href="servicos/restruturacao.html" onmouseover="overLerMais('4')"
@@ -364,14 +403,18 @@
                                 <span class="dot">&#8226;</span>Orçamento<span class="dot">&#8226;</span>
                             </div>
                             <div class="titulo">
-                                Apreciamos estar prontos para o nosso <span class="dualTone">primeiro diálogo</span>.
-                                <br>Inicie preenchendo o <span class="dualTone">formulário</span> de pedido de
-                                proposta!</span>
+                                <h2>
+                                    Apreciamos estar prontos para o nosso <span class="dualTone">primeiro
+                                        diálogo</span>.
+                                    <br>Inicie preenchendo o <span class="dualTone">formulário</span> de pedido de
+                                    proposta!</span>
+                                </h2>
                             </div>
 
                             <form action="https://formsubmit.co/9a4e79af8a52126bc1941c9f9edbd68c" method="POST">
                                 <input type="hidden" name="_template" value="box">
-                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                                <input type="hidden" name="_next"
+                                    value="https://globalmighty.pt/agradecimentos/agradecimento-orcamento.html">
                                 <input type="hidden" name="_subject" id="subject" value="">
 
                                 <div class="row">
@@ -468,7 +511,7 @@
                                                     <input class="form-check-input" type="checkbox"
                                                         name="Manutenção App Web" value="Selecionado"
                                                         id="flexCheckManutencaoAppWeb">
-                                                    <label class="form-check-label" for="flexCheckManutencaAppWebo">
+                                                    <label class="form-check-label" for="flexCheckManutencaAppWeb">
                                                         Manutenção de Aplicação Web</label>
                                                 </div>
                                                 <div class="form-check">
@@ -513,7 +556,7 @@
                                             <span class="dot">&#8226;</span>DEPOIMENTOS<span class="dot">&#8226;</span>
                                         </div>
                                         <div class="titulo">
-                                            Depoimentos de <span class="dualTone">Clientes</span>
+                                            <h2>Depoimentos de <span class="dualTone">Clientes</span></h2>
                                         </div>
                                         <div class="fotoCliente">
                                             <img src="./ASSETS/depoimentos/futuroDasJoias.png" alt="FuturoDasJoias">
@@ -526,10 +569,17 @@
                                             <i class="fa-solid fa-star estrelaPreenchida"></i>
                                         </div>
                                         <div class="descricao">
-                                            Equipa prestável e sempre presente em todo o processo criativo.
+                                            <p>
+                                                Equipa prestável e sempre presente em todo o processo criativo.
+                                            </p>
                                         </div>
-                                        <div class="empresa"><span class="dualTone">Filipa Santos</span> - Futuro das
-                                            Joias</div>
+                                        <div class="empresa">
+                                            <p>
+                                                <span class="dualTone">
+                                                    Filipa Santos</span> - Futuro das
+                                                Joias
+                                            </p>
+                                        </div>
                                         <div class="profissao">Gerente</div>
                                     </div>
 
@@ -538,14 +588,20 @@
                                             <span class="dot">&#8226;</span>DEPOIMENTOS<span class="dot">&#8226;</span>
                                         </div>
                                         <div class="titulo">
-                                            Depoimentos de <span class="dualTone">Clientes</span>
+                                            <h2>Depoimentos de <span class="dualTone">Clientes</span></h2>
                                         </div>
                                         <div class="texto1">
-                                            Tem um projeto e quer ser o nosso próximo cliente?<br>
+                                            <p>Tem um projeto e quer ser o nosso próximo cliente?</p><br>
                                         </div>
-                                        <div class="texto2"><span class="dualTone">Junte-se a nós</span> e vamos criar
-                                            juntos um</div>
-                                        <div class="texto3"> futuro tecnológico surpreendente!</div>
+                                        <div class="texto2">
+                                            <p>
+                                                <span class="dualTone">Junte-se a nós</span> e vamos criar
+                                                juntos um
+                                            </p>
+                                        </div>
+                                        <div class="texto3">
+                                            <p>futuro tecnológico surpreendente!</p>
+                                        </div>
                                     </div>
                                     <div class="btnDepoimento col-2" id="btnNext" onclick="cliente()">
                                         <i class="fa-solid fa-circle-arrow-right"></i></i>
@@ -567,7 +623,7 @@
                                 <span class="dot">&#8226;</span>FAQ<span class="dot">&#8226;</span>
                             </div>
                             <div class="titulo">
-                                Questões <span class="dualTone">Frequentes</span>
+                                <h2>Questões <span class="dualTone">Frequentes</span></h2>
                             </div>
                             <div class="col-12">
                                 <div class="row">
@@ -578,18 +634,22 @@
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapse1"
                                                         aria-expanded="false" aria-controls="collapse1">
-                                                        Como posso iniciar um projeto com a GlobalMighty Development?
+                                                        Como posso iniciar um projeto com a GlobalMighty
+                                                        Development?
                                                     </button>
                                                 </h2>
                                                 <div id="collapse1" class="accordion-collapse collapse"
                                                     aria-labelledby="heading1" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                        O primeiro passo é entrar em contacto connosco através do
-                                                        formulário de <a onclick="getPoint('#Orcamento')">orçamento</a>
-                                                        no nosso website ou por email. A nossa
-                                                        equipa entrará em contacto consigo para discutir os detalhes do
-                                                        seu projeto, compreender as suas necessidades e fornecer uma
-                                                        proposta personalizada.
+                                                        <p>
+                                                            O primeiro passo é entrar em contacto connosco através do
+                                                            formulário de
+                                                            <a href="javascript:getPoint('#Orcamento')">orçamento</a>
+                                                            no nosso website ou por email. A nossa
+                                                            equipa entrará em contacto consigo para discutir os detalhes
+                                                            do seu projeto, compreender as suas necessidades e fornecer
+                                                            uma proposta personalizada.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -609,12 +669,16 @@
                                                 <div id="collapse2" class="accordion-collapse collapse"
                                                     aria-labelledby="heading2" data-bs-parent="#accordionExample2">
                                                     <div class="accordion-body">
-                                                        O nosso processo de desenvolvimento é colaborativo. Começamos
-                                                        com uma fase de compreensão, onde analisamos as suas
-                                                        necessidades. Em seguida, avançamos para a fase de design e
-                                                        desenvolvimento, mantendo uma comunicação constante para
-                                                        garantir que as suas expectativas são atendidas. Após a
-                                                        conclusão, realizamos testes rigorosos antes da entrega final.
+                                                        <p>
+                                                            O nosso processo de desenvolvimento é colaborativo.
+                                                            Começamos
+                                                            com uma fase de compreensão, onde analisamos as suas
+                                                            necessidades. Em seguida, avançamos para a fase de design e
+                                                            desenvolvimento, mantendo uma comunicação constante para
+                                                            garantir que as suas expectativas são atendidas. Após a
+                                                            conclusão, realizamos testes rigorosos antes da entrega
+                                                            final.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -633,11 +697,14 @@
                                                 <div id="collapse3" class="accordion-collapse collapse"
                                                     aria-labelledby="heading3" data-bs-parent="#accordionExample3">
                                                     <div class="accordion-body">
-                                                        Os prazos de conclusão variam consoante a complexidade do
-                                                        projeto. Durante as discussões iniciais, estabelecemos um
-                                                        cronograma realista e transparente. Comprometemo-nos a cumprir
-                                                        prazos acordados, garantindo simultaneamente a qualidade do
-                                                        trabalho.
+                                                        <p>
+                                                            Os prazos de conclusão variam consoante a complexidade do
+                                                            projeto. Durante as discussões iniciais, estabelecemos um
+                                                            cronograma realista e transparente. Comprometemo-nos a
+                                                            cumprir
+                                                            prazos acordados, garantindo simultaneamente a qualidade do
+                                                            trabalho.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -656,15 +723,21 @@
                                                 <div id="collapse4" class="accordion-collapse collapse"
                                                     aria-labelledby="heading4" data-bs-parent="#accordionExample4">
                                                     <div class="accordion-body">
-                                                        A avaliação de custos é única para cada projeto, dependendo da
-                                                        sua complexidade e requisitos específicos. Após discutirmos os
-                                                        detalhes do seu projeto, a GlobalMighty Development fornecerá
-                                                        uma estimativa transparente e detalhada, garantindo que tenha
-                                                        uma compreensão clara dos investimentos envolvidos antes de
-                                                        iniciarmos o trabalho. Estamos comprometidos em oferecer
-                                                        soluções acessíveis e personalizadas que atendam às suas
-                                                        necessidades e ao seu <a
-                                                            onclick="getPoint('#Orcamento')">orçamento</a>.
+                                                        <p>
+                                                            A avaliação de custos é única para cada projeto, dependendo
+                                                            da
+                                                            sua complexidade e requisitos específicos. Após discutirmos
+                                                            os
+                                                            detalhes do seu projeto, a GlobalMighty Development
+                                                            fornecerá
+                                                            uma estimativa transparente e detalhada, garantindo que
+                                                            tenha
+                                                            uma compreensão clara dos investimentos envolvidos antes de
+                                                            iniciarmos o trabalho. Estamos comprometidos em oferecer
+                                                            soluções acessíveis e personalizadas que atendam às suas
+                                                            necessidades e ao seu <a
+                                                                href="javascript:getPoint('#Orcamento')">orçamento</a>.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -684,13 +757,21 @@
                                                 <div id="collapse5" class="accordion-collapse collapse"
                                                     aria-labelledby="heading5" data-bs-parent="#accordionExample5">
                                                     <div class="accordion-body">
-                                                        A nossa equipa está pronta para discutir as suas necessidades
-                                                        específicas e determinar a melhor abordagem para o seu projeto.
-                                                        <a onclick="getPoint('#Contacto')">Contacte-nos</a> através do
-                                                        formulário no nosso website ou por
-                                                        email, e teremos o prazer de oferecer orientação personalizada e
-                                                        detalhada sobre como os nossos serviços podem atender às suas
-                                                        expectativas e objetivos.
+                                                        <p>
+                                                            A nossa equipa está pronta para discutir as suas
+                                                            necessidades
+                                                            específicas e determinar a melhor abordagem para o seu
+                                                            projeto.
+                                                            <a href="javascript:getPoint('#Contacto')">Contacte-nos</a>
+                                                            através
+                                                            do
+                                                            formulário no nosso website ou por
+                                                            email, e teremos o prazer de oferecer orientação
+                                                            personalizada e
+                                                            detalhada sobre como os nossos serviços podem atender às
+                                                            suas
+                                                            expectativas e objetivos.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -710,16 +791,19 @@
                                                 <div id="collapse6" class="accordion-collapse collapse"
                                                     aria-labelledby="heading6" data-bs-parent="#accordionExample6">
                                                     <div class="accordion-body">
-                                                        Optar pelos serviços da GlobalMighty Development significa
-                                                        beneficiar-se de uma jovem equipa dedicada e apaixonada pelo
-                                                        desenvolvimento de software. Estamos comprometidos em
-                                                        oferecer
-                                                        soluções inovadoras, personalizadas e de alta qualidade que
-                                                        impulsionam o sucesso do seu projeto. <a
-                                                            onclick="getPoint('#Contacto')">Contacte-nos</a> para
-                                                        explorar
-                                                        como podemos agregar valor e fazer do seu projeto um sucesso
-                                                        digital.
+                                                        <p>
+                                                            Optar pelos serviços da GlobalMighty Development significa
+                                                            beneficiar-se de uma jovem equipa dedicada e apaixonada pelo
+                                                            desenvolvimento de software. Estamos comprometidos em
+                                                            oferecer
+                                                            soluções inovadoras, personalizadas e de alta qualidade que
+                                                            impulsionam o sucesso do seu projeto. <a
+                                                                href="javascript:getPoint('#Contacto')">Contacte-nos</a>
+                                                            para
+                                                            explorar
+                                                            como podemos agregar valor e fazer do seu projeto um sucesso
+                                                            digital.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -742,12 +826,13 @@
                                 <span class="dot">&#8226;</span>Contacto<span class="dot">&#8226;</span>
                             </div>
                             <div class="titulo">
-                                Tem Questões? <span class="dualTone">Vamos Respondê-las!</span>
+                                <h2>Tem Questões? <span class="dualTone">Vamos Respondê-las!</span></h2>
                             </div>
 
                             <form action="https://formsubmit.co/9a4e79af8a52126bc1941c9f9edbd68c" method="POST">
                                 <input type="hidden" name="_template" value="box">
-                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                                <input type="hidden" name="_next"
+                                    value="https://globalmighty.pt/agradecimentos/agradecimento-contacto.html">
 
                                 <div class="row">
                                     <div class="inputGrupo col-12 col-lg-5">
@@ -781,35 +866,40 @@
                     </div>
                 </div>
             </section>
-        </div>
+            </div>
     </main>
 
-    <footer>
-        <div class="row p-5">
+    <footer class="p-5">
+        <div class="row">
             <div class="col-12 col-xl-4 mb-3 marginEnd">
                 <div class="logo">
                     <img id="logoDarkFooter" class="" src="./ASSETS/logoDark.png" alt="GlobalMighty">
                     <img id="logoLightFooter" class="hidden" src="./ASSETS/logoLight.png" alt="GlobalMighty">
                 </div>
                 <div class="descricao">
-                    Somos a GlobalMighty Development, uma equipa dinâmica que combina a paixão pelo desenvolvimento de
-                    software com anos de experiência. Oferecemos soluções inovadoras e personalizadas aos nossos
-                    clientes, transformando ideias em realidade digital.
-                    Comprometemo-nos a fornecer serviços de desenvolvimento de software de alta qualidade,
-                    destacando-nos pela excelência e dedicação.
+                    <p>
+                        Somos a GlobalMighty Development, uma equipa dinâmica que combina a paixão pelo desenvolvimento
+                        de
+                        software com anos de experiência. Oferecemos soluções inovadoras e personalizadas aos nossos
+                        clientes, transformando ideias em realidade digital.
+                        Comprometemo-nos a fornecer serviços de desenvolvimento de software de alta qualidade,
+                        destacando-nos pela excelência e dedicação.
+                    </p>
                 </div>
             </div>
             <div class="col-12 col-xl-2 mb-3 marginEnd">
-                <div class="titulo">Links Úteis</div>
+                <div class="titulo">
+                    <h2>Links Úteis</h2>
+                </div>
                 <div class="items">
                     <ul class="footerLinks">
-                        <li class="link"><a onclick="getPoint('#Inicio')">
+                        <li class="link"><a href="javascript:getPoint('#Inicio')">
                                 Início</a>
                         </li>
-                        <li class="link"><a onclick="getPoint('#SobreNos')">
+                        <li class="link"><a href="javascript:getPoint('#SobreNos')">
                                 Sobre Nós</a>
                         </li>
-                        <li class="link"><a onclick="getPoint('#Servicos')">
+                        <li class="link"><a href="javascript:getPoint('#Servicos')">
                                 Serviços</a>
                         </li>
                         <li class="link"><a href="./servicos/desenvolvimento-web.html">
@@ -824,20 +914,25 @@
                         <li class="link"><a href="./servicos/restruturacao.html">
                                 Restruturação</a>
                         </li>
-                        <li class="link"><a onclick="getPoint('#Depoimentos')">
+                        <li class="link"><a href="javascript:getPointSubPage('#Orcamento')">
+                                Orçamento</a>
+                        </li>
+                        <li class="link"><a href="javascript:getPointSubPage('#Depoimentos')">
                                 Depoimentos</a>
                         </li>
-                        <li class="link"><a onclick="getPoint('#FAQ')">
+                        <li class="link"><a href="javascript:getPointSubPage('#FAQ')">
                                 FAQ</a>
                         </li>
-                        <li class="link"><a onclick="getPoint('#Contacto')">
+                        <li class="link"><a href="javascript:getPointSubPage('#Contacto')">
                                 Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-12 col-xl-2 mb-3">
-                <div class="titulo">Recursos</div>
+                <div class="titulo">
+                    <h2>Recursos</h2>
+                </div>
                 <div class="items">
                     <ul class="footerLinks">
                         <li class="link"><a href="politicas/politicas.html">
@@ -847,20 +942,16 @@
                 </div>
             </div>
             <div class="col-12 col-xl-3 mb-3">
-                <div class="titulo">Informações de Contacto</div>
+                <div class="titulo">
+                    <h2>Informações de Contacto</h2>
+                </div>
                 <div class="contactos">
                     <div class="row">
                         <div class="item row">
                             <div class="email">
-                                <i class="icon fa-solid fa-envelope"></i><span
-                                    class="texto">globalmighty.development@gmail.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="item">
-                            <div class="telemovel">
-                                <i class="icon fa-solid fa-phone"></i><span class="texto">(+351) 962 817 885</span>
+                                <i class="icon fa-solid fa-envelope"></i>
+                                <a href="mailto:globalmighty.development@gmail.com"
+                                    class="texto">globalmighty.development@gmail.com</a>
                             </div>
                         </div>
                     </div>
