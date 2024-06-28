@@ -1670,7 +1670,7 @@ footer .contactos .redesSociais .item {
 }
 
 @media screen and (max-width: 1400px) {
-    .servico .titulo {
+    .servico .titulo h1{
         font-size: 2vw;
     }
 
@@ -1694,13 +1694,13 @@ footer .contactos .redesSociais .item {
 @media screen and (max-width: 1249px) {}
 
 @media screen and (max-width: 1200px) {
-    .servico .titulo {
+    .servico .titulo h1{
         font-size: 2.3vw;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .servico .titulo {
+    .servico .titulo h1{
         font-size: 2.5vw;
     }
 
@@ -1729,7 +1729,7 @@ footer .contactos .redesSociais .item {
         padding-top: 16%;
     }
 
-    .servico .titulo {
+    .servico .titulo h1{
         font-size: 4vw;
     }
 }
@@ -1747,7 +1747,7 @@ footer .contactos .redesSociais .item {
         width: 110%;
     }
 
-    .servico .titulo {
+    .servico .titulo h1{
         font-size: 4vw;
     }
 }
@@ -1757,7 +1757,7 @@ footer .contactos .redesSociais .item {
         padding-top: 25%;
     }
 
-    .servico .titulo {
+    .servico .titulo h1{
         font-size: 5vw;
     }
 }
